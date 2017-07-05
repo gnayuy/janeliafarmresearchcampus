@@ -1,0 +1,1000 @@
+   64  ./neurolabi/build/neuTube 
+   65  history
+   66  reset
+   67  ./neurolabi/build/neuTube 
+   68  pwd
+   69  ls
+   70  git branch
+   71  git pull
+   72  cd ..
+   73  ls
+   74  cd neutube
+   75  ls
+   76  git pull
+   77  ./neurolabi/build/neuTube 
+   78  git branch
+   79  git checkout yangbranch
+   80  git pull
+   81  ./neurolabi/build/neuTube 
+   82  reset
+   83  history
+   84  sh build.sh /usr/bin/qmake /usr/lib64/qt4/mkspecs/linux-g++ -e flyem -q DVIDCPP_PATH=/usr/local
+   85  git pull
+   86  git diff
+   87  git add -u
+   88  git add neurolabi/gui/z3dsurfacefilter.*
+   89  git add neurolabi/gui/z3dtrianglerenderer.*
+   90  git commit -m "start adding surfacefilter and trianglerenderer"
+   91  git push
+   92  git pull
+   93  git pull origin develop
+   94  git pull
+   95  git push
+   96  git diff
+   97  git pull
+   98  git pull origin develop
+   99  git pull
+  100  pwd
+  101  git pull
+  102  git pull origin develop
+  103  git pull
+  104  yum list docker
+  105  yum list docker*
+  106  yum list *docker*
+  107  sudo yum install docker*
+  108  which docker
+  109  pwd
+  110  cd ..
+  111  ls
+  112  cd ..
+  113  ls
+  114  tar zxvf qt-everywhere-opensource-src-5.5.0.tar.gz 
+  115  ls
+  116  rm -rf qt-everywhere-opensource-src-5.5.0.tar.gz 
+  117  ls
+  118  cd qt-everywhere-opensource-src-5.5.0/
+  119  ls
+  120  which qmake
+  121  ls /usr/local/bin/qmake
+  122  ls /usr/bin/qmake
+  123  ls /usr/bin/qmake -l
+  124  /usr/bin/qmake --version
+  125  echo $PATH
+  126  ls /opt/
+  127  ls /opt/local
+  128  ls /opt/
+  129  ls /opt/qt5
+  130  ls /opt/qt5/bin
+  131  ls ..
+  132  /opt/local/qt5
+  133  /opt/qt5/bin/qmake --version
+  134  ls
+  135  ./configure --version
+  136  ./configure --help
+  137  ./configure -prefix=/opt/local/Qt -debug
+  138  ./configure --prefix=/opt/local/Qt --debug
+  139  make -j16
+  140  sudo make install
+  141  ls /opt/local/Qt
+  142  ls /opt/local/Qt/bin
+  143  ls /opt/local/Qt/bin/qmake
+  144  /opt/local/Qt/bin/qmake --version
+  145  cd ..
+  146  ls
+  147  cd ..
+  148  ls
+  149  mkdir coding
+  150  cd coding/
+  151  ls
+  152  mkdir opengl
+  153  cd opengl/
+  154  git clone https://github.com/TimofeyLonchakov/toptal-opengl-intro.git
+  155  ls
+  156  cd toptal-opengl-intro/
+  157  ls
+  158  /opt/local/Qt/bin/qmake 
+  159  export PATH=/opt/local/Qt/bin:$PATH
+  160  qmake --version
+  161  uic
+  162  ldd uic
+  163  ldd /opt/local/Qt/bin/uic
+  164  export LD_LIBRARY_PATH=/opt/local/Qt/lib:$LD_LIBRARY_PATH 
+  165  which uic
+  166  uic
+  167  qmake
+  168  make -j8
+  169  ls
+  170  cd ..
+  171  ls
+  172  rm -rf toptal-opengl-intro/
+  173  ls
+  174  git clone https://github.com/DomNomNom/anisotropic.git
+  175  ls
+  176  cd anisotropic/
+  177  make 
+  178  which clang
+  179  clang --version
+  180  gedit Makefile 
+  181  ls /usr/include/OpenEXR/
+  182  ls /usr/X11
+  183  ls /usr/pkg
+  184  cd ..
+  185  ls
+  186  cd ..
+  187  mkdir GPU
+  188  cd GPU/
+  189  ls
+  190  git clone https://github.com/CIS565-Fall-2015/cis565-fall-2015.github.io.git
+  191  ls
+  192  ls cis565-fall-2015.github.io/
+  193  ls cis565-fall-2015.github.io/images/
+  194  cd ..
+  195  cd opengl/
+  196  ls
+  197  git clone https://github.com/g-truc/ogl-samples.git
+  198  ls
+  199  cd ogl-samples/
+  200  ls
+  201  mkdir build
+  202  cd build
+  203  ccmake ..
+  204  make -j8
+  205  ls
+  206  make
+  207  ls
+  208  ls tests
+  209  ls build
+  210  ls build/Release/
+  211  cd build/Release/
+  212  ls
+  213  ./gl-410-program-binary 
+  214  ./gl-420-texture-array
+  215  ls
+  216  gl-320-draw-image-space
+  217  ./gl-320-draw-image-space
+  218  ./gl-320-texture-cube
+  219  cd ..
+  220  git clone https://github.com/OpenGLInsights/OpenGLInsightsCode.git
+  221  ls
+  222  ls OpenGLInsightsCode/
+  223  ls /home/yuy
+  224  ls /home/yuy/work
+  225  ls /home/yuy/work/OpenGL_Class/
+  226  cp -r /home/yuy/work/OpenGL_Class/ ./
+  227  ls
+  228  ls OpenGLInsightsCode/
+  229  ls
+  230  cd EM2LM/2015alphalobe/
+  231  ls
+  232  mkdir warpfield
+  233  cp lmcc* warpfield/
+  234  ls warpfield/
+  235  cd neurons/
+  236  ls
+  237  cd ..
+  238  for i in neurons/*tif; do neucv_ifilter -f imageReadWrite -i $i -o ${i%*.tif}.nii; done
+  239  ls
+  240  ln -s ../../bin/ANTS ./
+  241  ln -s ../../bin/WarpImageMultiTransform ./
+  242  ls
+  243  for i in neurons/*.nii; do ./WarpImageMultiTransform 3 $i ${i%*.nii}_affwarped.nii -; 
+  244  for i in neurons/*.nii; do ./WarpImageMultiTransform 3 $i ${i%*.nii}_affwarped.nii -R $i warpfield/lmccAffine.txt --use-BSpline; done 
+  245  FIX='/lhome/yy/work/tools/ANTs/build/EM2LM/2015alphalobe/em_tops_ds2_yflip_xflip.nii'
+  246  for i in neurons/*.nii; do ./WarpImageMultiTransform 3 $i ${i%*.nii}_affwarped.nii -R $FIX warpfield/lmccAffine.txt --use-BSpline; done 
+  247  MOV=lm.nii
+  248  ./WarpImageMultiTransform 3 $i ${i%*.nii}_affwarped.nii -R $FIX warpfield/lmccAffine.txt --use-BSpline 
+  249  ls lm_aff*
+  250  ./WarpImageMultiTransform 3 $MOV ${MOV%*.nii}_affwarped.nii -R $FIX warpfield/lmccAffine.txt --use-BSpline 
+  251  for i in neurons/*.nii; do ./WarpImageMultiTransform 3 $i ${i%*.nii}_deformed.nii -R $FIX warpfield/lmccWarp.nii.gz warpfield/lmccAffine.txt --use-BSpline; done 
+  252  mkdir neuron/affine
+  253  mkdir neurons/affine
+  254  mkdir neurons/deform
+  255  mv neurons/*_affwarped.nii neurons/affine/
+  256  mv neurons/*deformed.nii neurons/deform/
+  257  rm neurons/deform/*aff*
+  258  rm neurons/affine/*_aff*_aff*
+  259  for i in neurons/affine/*.nii; do neucv_ifilter -f imageReadWrite -i $i -o ${i%*.nii}_byte.nii.gz; done
+  260  rm neurons/affine/*nii
+  261  for i in neurons/deform/*.nii; do neucv_ifilter -f imageReadWrite -i $i -o ${i%*.nii}_byte.nii.gz; done
+  262  rm neurons/deform/*.nii
+  263  ls /home/yuy/work/neurons/
+  264  cp -r neurons/deform/affine/ /home/yuy/work/neurons/
+  265  sudo cp -r neurons/deform/affine/ /home/yuy/work/neurons/
+  266  sudo cp -r neurons/deform/affine/ /home/yuy/work/neurons_affine
+  267  sudo cp -r neurons/deform/deform/ /home/yuy/work/neurons_deform
+  268  pwd
+  269  history
+  270  echo $FIX
+  271  ls
+  272  ls ..
+  273  ls ../vaa3d 
+  274  ls
+  275  neucv_ifilter -f imageReadWrite -i em_tops_ds2_yflip_xflip_rc.v3draw -o em_tops_ds2_yflip_xflip_rc.nii
+  276  MOV=lm.nii
+  277  FIX=em_tops_ds2_yflip_xflip_rc.nii
+  278  ./ANTS 3 -m MI[$FIX, $MOV, 1, 32] -i 0  CC[ $FIX, $MOV, 1, 4] -o ${MOV%*.nii}1 -i 0 --number-of-affine-iterations 10000x10000x10000x10000
+  279  time ./ANTS 3 -m  CC[ $FIX, $MOV, 1, 4] -o ${MOV%*.nii}test -i 0 --number-of-affine-iterations 10000x10000x10000x10000
+  280  ./WarpImageMultiTransform 3 $MOV ${MOV%*.nii}test.nii -R $FIX lmtestAffine.txt 
+  281  ./WarpImageMultiTransform 3 $MOV ${MOV%*.nii}test2.nii -R em_tops_ds2_yflip_xflip.nii warpfield/lmccAffine.txt 
+  282  echo $MOV
+  283  echo $FIX
+  284  cd ..
+  285  ls
+  286  mv ~/Downloads/glumpy-1.0.4.tar.gz ./
+  287  ls
+  288  tar zxvf glumpy-1.0.4.tar.gz 
+  289  ls
+  290  cd glumpy-1.0.4/
+  291  ls
+  292  sudo python setup.py install
+  293  ls
+  294  cd work/
+  295  ls
+  296  cd tools/
+  297  ls
+  298  which qmake
+  299  ls /usr/local/bin/qmake
+  300  ls /usr/bin/qmake*
+  301  qmake-qt5 --version
+  302  echo $PATH
+  303  source ~/.bashrc
+  304  echo $PATH
+  305  gedit ~/.bashrc
+  306  gedit /sge/current/default/common/settings.sh
+  307  source ~/.bashrc
+  308  cd
+  309  ls
+  310  rm -rf etc
+  311  sudo rm -rf etc
+  312  sudo rm -rf usr/
+  313  ls tmp/
+  314  sudo rm -rf tmp/
+  315  ls
+  316  rm work*
+  317  rm works*
+  318  ls
+  319  rm WorkstationSearchResults*
+  320  ls
+  321  more searchVNC.sh 
+  322  ls
+  323  mv searchVNC.sh work/
+  324  ls
+  325  ls rpmbuild/
+  326  sudo rm -rf rpmbuild/
+  327  ls
+  328  ls NewFolder/
+  329  rm -rf NewFolder/
+  330  ls
+  331  ls Templates/
+  332  rm -rf Templates/
+  333  ls
+  334  ls Videos/
+  335  ls jwsearch/
+  336  rm -rf jwsearch/
+  337  ls
+  338  cd ..
+  339  tar zxvf intltool-0.51.0.tar.gz 
+  340  cd intltool-0.51.0/
+  341  ls
+  342  ./configure
+  343  make -j8
+  344  sudo make install
+  345  which intltool
+  346  which intltool-update
+  347  which xz
+  348  xz --version
+  349  cd
+  350  cd Downloads/
+  351  ls
+  352  ls xz
+  353  tar zxvf xz-5.2.2.tar.gz 
+  354  cd xz-5.2.2/
+  355  ls
+  356  ./configure 
+  357  which xz
+  358  rpmwhere xz
+  359  yum list xz
+  360  ./configure --prefix=/usr
+  361  make -j8
+  362  sudo make install
+  363  which xz
+  364  xz --verison
+  365  xz -v
+  366  xz --help
+  367  xz --version
+  368  yum list log4cpp
+  369  yum list
+  370  yum update
+  371  sudo yum list
+  372  sudo yum update
+  373  pip install xz
+  374  ls /var/cache/yum
+  375  find /var/cache/yum -name *.xz
+  376  which yum
+  377  yum --version
+  378  cd
+  379  sudo yum clean
+  380  yum -help
+  381  sudo yum autoremove
+  382  sudo yum check
+  383  which gmake
+  384  gmake --version
+  385  sudo yum update gmake
+  386  sudo yum install yum
+  387  sudo yum remove epel-release
+  388  cd Downloads/
+  389  ls
+  390  bzip2 --help
+  391  bzip2 -d pyliblzma-0.5.3.tar.bz2 
+  392  ls pyliblzma-0.5.3.tar 
+  393  tar zxvf pyliblzma-0.5.3.tar
+  394  tar xvf pyliblzma-0.5.3.tar
+  395  cd pyliblzma-0.5.3/
+  396  ls
+  397  sudo python setup.py install
+  398  yum list xz
+  399  yum --help
+  400  sudo yum upgrade yum
+  401  yum list gmake
+  402  cd ..
+  403  ls
+  404  ls yum*
+  405  rm *(1)*
+  406  ls
+  407  rm fedupdebug.log 
+  408  ls
+  409  cd yum-3.4.3/
+  410  ls
+  411  gedit Makefile 
+  412  sudo make install
+  413  which yum
+  414  ls -lat /usr/bin/yum
+  415  yum --version
+  416  yum list xz
+  417  yum list gmake
+  418  yum list libz
+  419  yum list z
+  420  yum list OpenEXR
+  421  yum --help
+  422  sudo yum upgrade
+  423  yum list tbb
+  424  cd ..
+  425  cd yum
+  426  ls
+  427  git pull
+  428  ls
+  429  gedit INSTALL 
+  430  make -j8
+  431  make
+  432  ls
+  433  git diff
+  434  mv Makefile Makefile.local
+  435  git pull
+  436  ls
+  437  git diff
+  438  git diff > Makefile
+  439  gedit Makefile
+  440  make
+  441  git diff
+  442  diff Makefile Makefile.local 
+  443  make
+  444  ls
+  445  ls rpmUtils/
+  446  gedit rpmUtils/Makefile 
+  447  sudo make install
+  448  sudo make clean
+  449  sudo make install
+  450  ls ~/
+  451  ls ~/etc
+  452  ls ~/etc v-lat
+  453  ls ~/etc -lat
+  454  ls -lat ~/usr
+  455  sudo make install
+  456  ls
+  457  sudo make install
+  458  ls
+  459  ls yum
+  460  ls  /lhome/yy//usr/share/bash-completion/completions/yummain.py
+  461  rm /lhome/yy//usr/share/bash-completion/completions/yummain.py
+  462  sudo rm /lhome/yy//usr/share/bash-completion/completions/yummain.py
+  463  sudo make install
+  464  which intltool-update
+  465  findstr . intltool
+  466  ls po
+  467  gedit po/Makefile 
+  468  sudo make install
+  469  sudo rm /lhome/yy//usr/share/bash-completion/completions/yummain.py
+  470  reset
+  471  sudo make install
+  472  yum --version
+  473  which yum
+  474  ls -lat /usr/share/yum-*
+  475  yum list xz
+  476  which log4cpp
+  477  pwd
+  478  ls
+  479  python yummain.py 
+  480  python yummain.py clean
+  481  yum clean
+  482  sudo yum clean
+  483  pwd
+  484  cd /var/cache/yum/
+  485  ls
+  486  cd x86_64/
+  487  ls
+  488  cd 20/
+  489  ls
+  490  uname
+  491  uname -a
+  492  find . -name *xz
+  493  cd updates-debuginfo/
+  494  ls
+  495  xz --help
+  496  xz -d 95408dde64242aa0dedec300ea9f6846f3d37be21be0c52b2e9b74eb9c9d7f5d-primary.sqlite.xz 
+  497  sudo xz -d 95408dde64242aa0dedec300ea9f6846f3d37be21be0c52b2e9b74eb9c9d7f5d-primary.sqlite.xz 
+  498  ls
+  499  xz -z 95408dde64242aa0dedec300ea9f6846f3d37be21be0c52b2e9b74eb9c9d7f5d-primary.sqlite 
+  500  sudo xz -z 95408dde64242aa0dedec300ea9f6846f3d37be21be0c52b2e9b74eb9c9d7f5d-primary.sqlite 
+  501  ls
+  502  cd ..
+  503  ls
+  504  cd updates
+  505  ls
+  506  for i in *xz; do echo $i; done
+  507  for i in *xz; do echo ${i%*.xz}; done
+  508  for i in *xz; do xz -d $i; xz -z ${i%*.xz}; done
+  509  for i in *xz; do sudo xz -d $i; sudo xz -z ${i%*.xz}; done
+  510  yum list xz
+  511  which  yum
+  512  ls /usr/bin/yum -lat
+  513  echo $PYTHONHOME
+  514  source ~/.bashrc
+  515  ls
+  516  sudo sh Network/connect.sh 
+  517  su - yuy
+  518  su - yuy
+  519  ls
+  520  cd JaneliaWorkstation/
+  521  ls
+  522  ./bin/JaneliaWorkstation
+  523  cd
+  524  ls
+  525  pwd
+  526  cd work/
+  527  ls
+  528  cd dvid
+  529  ls
+  530  cd ..
+  531  cd tools/
+  532  ls
+  533  cd dvid/
+  534  ls
+  535  cd libdvid-cpp
+  536  git pull
+  537  mv CMakeLists.txt CMakeLists.txt.bk
+  538  git pull
+  539  ls
+  540  gedit CMakeLists.txt*
+  541  diff CMakeLists.txt CMakeLists.txt.bk
+  542  ls
+  543  cd build_cmake/
+  544  ccmake ..
+  545  make -j8
+  546  make clean
+  547  make -j8
+  548  ccmake ..
+  549  make -j8
+  550  cd ..
+  551  ls
+  552  cd build
+  553  ls
+  554  ccmake ..
+  555  cd ..
+  556  ls
+  557  cd build_cmake/
+  558  cd ..
+  559  git pull
+  560  cp CMakeLists.txt CMakeLists.txt.local
+  561  git pull
+  562  ls
+  563  git diff
+  564  rm CMakeLists.txt
+  565  git pull
+  566  ls
+  567  diff CMakeLists.txt CMakeLists.txt.local
+  568  cp CMakeLists.txt.local CMakeLists.txt
+  569  cd build_cmake/
+  570  ccmake ..
+  571  make -j8
+  572  make clean
+  573  make -j8
+  574  ls /usr/local/lib/libjsoncpp.a 
+  575  yum list libjsoncpp
+  576  yum list xz
+  577  pip list xz
+  578  ls
+  579  cd ..
+  580  ls
+  581  cd neutube/
+  582  git pull
+  583  git diff
+  584  git pull
+  585  pwd
+  586  cd ..
+  587  git add -u
+  588  git commit -m "add glsl version to solve linux running issue"
+  589  git push
+  590  ls
+  591  ./neurolabi/build/neuTube 
+  592  cd neurolabi/build/
+  593  make -j8
+  594  gdb neuTube
+  595  reset
+  596  gdb neuTube
+  597  reset
+  598  gdb neuTube
+  599  su - yuy
+  600  cp alignadj.sh alignadj2.sh
+  601  gedit alignadj2.sh 
+  602  which java
+  603  java --version
+  604  java -v
+  605  java
+  606  cd 
+  607  ls
+  608  cd JaneliaWorkstation/
+  609  ls
+  610  cd bin
+  611  ls
+  612  ./JaneliaWorkstation
+  613  su - yuy
+  614  echo $PATH
+  615  which qmake
+  616  qmake --version
+  617  git clone git://code.qt.io/qt/qt5.git
+  618  ls
+  619  cd qt5
+  620  git branch
+  621  git submodule init
+  622  git submodule update
+  623  ls
+  624  ./configure
+  625  make -j8
+  626  sudo make install
+  627  /usr/local/Qt-5.6.0/bin/qmake --version
+  628  yum list tbb
+  629  yum --version
+  630  which yum
+  631  ls -lat /usr/bin/yum
+  632  cd ..
+  633  ls
+  634  ls opengl
+  635  cd ..
+  636  ls
+  637  ls test
+  638  ls experiments/
+  639  ls coding/
+  640  cd coding/
+  641  ls
+  642  cd opengl/
+  643  ls
+  644  svn co https://svn.theharmers.co.uk/svn/codes/public/opengl/trunk openglexamples
+  645  ls
+  646  cd openglexamples/
+  647  ls ../ogl-samples/
+  648  ls
+  649  cd 07
+  650  cd 07-core-profile/
+  651  ls
+  652  /usr/local/Qt-5.6.0/bin/qmake 
+  653  make
+  654  ls
+  655  ./07-core-profile 
+  656  gdb ./07-core-profile 
+  657  ldd -l ./07-core-profile
+  658  ldd ./07-core-profile
+  659  echo $LD_LIBRARY_PATH
+  660  export LD_LIBRARY_PATH=/usr/local/Qt-5.6.0/lib:$LD_LIBRARY_PATH
+  661  ./07-core-profile 
+  662  qmake
+  663  make clean
+  664  make -j8
+  665  ldd ./07-core-profile
+  666  ./07-core-profile 
+  667  gdb ./07-core-profile 
+  668  ls
+  669  pwd
+  670  make -j8
+  671  gdb ./07-core-profile 
+  672  ls
+  673  yum list xz
+  674  yum list yum
+  675  echo $PYTHONPATH
+  676  echoh $PYTHONHOME
+  677  echo $PYTHONHOME
+  678  export PYTHONHOME
+  679  echo $PYTHONHOME
+  680  export PYTHONHOME=/usr/local/lib/python2.7
+  681  yum list xz
+  682  python -c "import site"
+  683  echo $PYTHONHOME
+  684  more ~/.bashrc
+  685  python -c "import site"
+  686  yum list yum
+  687  unset PYTHONHOME
+  688  yum list xz
+  689  export PYTHONHOME=
+  690  yum list xz
+  691  export PYTHONHOME=/usr
+  692  yum list xz
+  693  python -c "import site"
+  694  export PYTHONHOME=/usr/local
+  695  python -c "import site"
+  696  yum list xz
+  697  yum --version
+  698  which yum
+  699  cd Downloads/yum-3.4.3/
+  700  ls
+  701  sudo make install
+  702  which python
+  703  python --version
+  704  cd ..
+  705  ls
+  706  xz -d Python-2.7.11.tar.xz 
+  707  ls
+  708  tar xvf Python-2.7.11.tar 
+  709  ls
+  710  cd Python-2.7.11
+  711  ls
+  712  ./configure
+  713  make -j8
+  714  sudo make install
+  715  which python
+  716  python --version
+  717  yum list xz
+  718  ls /usr/local/lib/python2.7/site-packages/
+  719  ls -lat /usr/local/lib/python2.7/site-packages/
+  720  pip install numpy
+  721  sudo pip install --upgrade numpy
+  722  ls -lat /usr/local/lib/python2.7/site-packages/
+  723  sudo pip install --upgrade site
+  724  python -c "import site"
+  725  yum list xz
+  726  cd ..
+  727  ls
+  728  echo $PYTHONHOME
+  729  cd yum-3.4.3/
+  730  ls
+  731  make
+  732  sudo make install
+  733  python -v
+  734  ls /usr/local/lib/python2.7/
+  735  ls /usr/local/lib/python2.7/*.so
+  736  ls /usr/local/lib/python2.7/site-packages/*.so
+  737  ls /usr/local/lib/*python*
+  738  ls /usr/local/lib/*python*so
+  739  which python
+  740  ls /usr/local/lib
+  741  ls /usr/local/lib/site-packages/
+  742  sudo mv /usr/local/lib/site-packages/mpi4py /usr/local/lib/python2.7/site-packages/
+  743  sudo rm -rf /usr/local/lib/site-packages/
+  744  ls /usr/local/lib/python
+  745  sudo rm -rf /usr/local/lib/python
+  746  ls /usr/local/lib/python2.7/
+  747  reset
+  748  ls -lat /usr/local/lib/python2.7/
+  749  ls
+  750  sudo make install
+  751  yum list xz
+  752  echo $PYTHONHOME
+  753  make clean
+  754  ls
+  755  sudo make install
+  756  echo $PYTHONPATH
+  757  which python
+  758  python yummain.py
+  759  cd ..
+  760  ls
+  761  rm -rf yum-3.4.3
+  762  ls
+  763  tar zxvf yum-3.4.3.tar.gz 
+  764  cd yum-3.4.3/
+  765  ls
+  766  sudo make install
+  767  ls
+  768  gedit Makefile 
+  769  sudo make install
+  770  ls /usr/share/yum-cli
+  771  ls /usr/local/share/
+  772  echo  $PYTHONHOME
+  773  sudo make install
+  774  ls -lat /usr/share/yum-cli
+  775  ls
+  776  python -c "import compileall"
+  777  python -c "import site"
+  778  cd ..
+  779  cd Python2.7.11
+  780  ls 
+  781  cd Python-2.7.11/
+  782  ls
+  783  ./configure --help
+  784  ./configure --enable-shared
+  785  make -j8
+  786  make clean
+  787  make -j8
+  788  make clean
+  789  make
+  790  ls
+  791  cd ..
+  792  cd Python-2.7.10
+  793  ls
+  794  cd ..
+  795  rm -rf Python-2.7.10
+  796  cd Python-2.7.11/
+  797  ls
+  798  python setup.py install
+  799  cd ..
+  800  ls
+  801  rm -rf Python-2.7.11
+  802  tar xvf Python-2.7.11.tar 
+  803  cd Python-2.7.11/
+  804  ls
+  805  gedit README 
+  806  ./configure --help
+  807  ./configure --enable-shared
+  808  make -j8
+  809  ls
+  810  sudo make install
+  811  ls /usr/local/lib/*python*so
+  812  ls -l /usr/local/lib/*python*so
+  813  ls -l /usr/local/lib/*python*so*
+  814  echo $PYTHONHOME
+  815  cd ..
+  816  python -c "import site"
+  817  python
+  818  python --version
+  819  which python
+  820  /usr/local/bin/python --version
+  821  ls -lat /usr/local/bin/python
+  822  ls -lat /usr/local/bin/python2
+  823  ls -lat /usr/local/bin/python2.7
+  824  which python2.7
+  825  python2.7 --version
+  826  cd Python-2.7.11/
+  827  ls
+  828  ldd libpython2.7.so
+  829  ./python --version
+  830  make -j8
+  831  cd
+  832  su yuy
+  833  su yuy
+  834  ls
+  835  cd work/tools/
+  836  ls
+  837  cd ANTs/
+  838  ls
+  839  gi
+  840  git pull
+  841  git diff
+  842  mv Examples/WarpImageMultiTransform.cxx Examples/WarpImageMultiTransform.cxx.bk
+  843  git pull
+  844  git diff
+  845  ls
+  846  git pull
+  847  mv Utilities/itkWarpImageMultiTransformFilter.hxx Utilities/itkWarpImageMultiTransformFilter.hxx.bk
+  848  git pull
+  849  ls
+  850  cd build
+  851  ccmake ..
+  852  make -j8
+  853  cd ..
+  854  git pull
+  855  vim Examples/WarpImageMultiTransform.cxx
+  856  git pull
+  857  git diff
+  858  gi
+  859  git remote
+  860  git status
+  861  git push
+  862  git merge
+  863  git branch
+  864  git merge master
+  865  git diff
+  866  git branch
+  867  git pull origin master
+  868  git status
+  869  vim Utilities/itkWarpImageMultiTransformFilter.hxx
+  870  vim Examples/WarpImageMultiTransform.cxx
+  871  rm Examples/WarpImageMultiTransform.cxx
+  872  git merge master
+  873  vim Examples/WarpImageMultiTransform.cxx
+  874  git pull origin master
+  875  git diff
+  876  git diff > temp.txt
+  877  gedit temp.txt
+  878  gedit Examples/WarpImageMultiTransform.cxx
+  879  git diff
+  880  ls
+  881  cd build
+  882  ls
+  883  make -j8
+  884  sudo make install
+  885  ls
+  886  ls bin
+  887  which ANTS
+  888  pwd
+  889  sudo cp bin/ANTS /usr/local/bin/
+  890  sudo cp bin/WarpImageMultiTransform /usr/local/bin
+  891  ls
+  892  cp -r /home/yuy/work/segbw ./
+  893  ls
+  894  which ANTS
+  895  cd segbw/
+  896  ls
+  897  time sh alignadj.sh image2.nii image1.nii ./cc21
+  898  ls
+  899  gedit alignadj.sh 
+  900  ls
+  901  diff cc21Affine.txt cc21_localAffine.txt 
+  902  WarpImageMultiTransform 2 image2.nii image2to1.nii -R image1.nii cc21_localWarp.nii.gz cc21_localAffine.txt --use-BSpline
+  903  ls
+  904  time sh alignadj.sh image2.nii image1.nii ./cc21_t2
+  905  WarpImageMultiTransform 2 image2.nii image2to1_t2.nii -R image1.nii cc21_t2_localWarp.nii.gz cc21_t2_localAffine.txt --use-BSpline
+  906  time sh alignadj.sh image2.nii image1.nii ./cc21_t3
+  907  WarpImageMultiTransform 2 image2.nii image2to1_t3.nii -R image1.nii cc21_t3_localWarp.nii.gz cc21_t3_localAffine.txt --use-BSpline
+  908  time sh alignadj.sh image2.nii image1.nii ./cc21_t4
+  909  WarpImageMultiTransform 2 image2.nii image2to1_t4.nii -R image1.nii cc21_t4_localWarp.nii.gz cc21_t4_localAffine.txt --use-BSpline
+  910  time sh alignadj.sh image2.nii image1.nii ./cc21_t5
+  911  WarpImageMultiTransform 2 image2.nii image2to1_t5.nii -R image1.nii cc21_t5_localWarp.nii.gz cc21_t5_localAffine.txt --use-BSpline
+  912  ls
+  913  time sh alignadj2.sh image2.nii image1.nii ./cc21_t6
+  914  WarpImageMultiTransform 2 image2.nii image2to1_t6.nii -R image1.nii cc21_t6_localWarp.nii.gz cc21_t6_localAffine.txt --use-BSpline
+  915  ls
+  916  WarpImageMultiTransform 2 image2.nii image2to1_t6.nii -R image1.nii cc21_t6_localiter2Warp.nii.gz cc21_t6_localiter2Affine.txt --use-BSpline
+  917  WarpImageMultiTransform 2 image2.nii image2to1_t6.nii -R image1.nii cc21_t6_local_iter2Warp.nii.gz cc21_t6_local_iter2Affine.txt --use-BSpline
+  918  WarpImageMultiTransform 2 tempresult1.nii.gz image2to1_t6.nii -R image1.nii cc21_t6_local_iter2Warp.nii.gz cc21_t6_local_iter2Affine.txt --use-BSpline
+  919  su - yuy
+  920  su yuy
+  921  pwd
+  922  cd work/tools/
+  923  ls
+  924  git clone https://github.com/lyonel/lshw.git
+  925  ls
+  926  cd lshw
+  927  ls
+  928  make -j8
+  929  ls
+  930  sudo make install
+  931  ls
+  932  which lshw
+  933  lshw -class disk
+  934  sudo lshw -class disk
+  935  fdisk /dev/hd*
+  936  ls
+  937  ls work/
+  938  df
+  939  df -h
+  940  ls /dev/hd*
+  941  fdisk -l
+  942  ls /dev/*
+  943  ls /dev
+  944  df -h
+  945  ls /dev/mapper
+  946  ls -l /dev/mapper
+  947  ls -lat /dev
+  948  ls /etc/fstab
+  949  more /etc/fstab
+  950  ls /dev/
+  951  df -h
+  952  ls /dev/sda2
+  953  ls -l /dev/sda2
+  954  ls -l /dev/sda3
+  955  ls -l /dev/sda
+  956  ls -l /dev/sda1
+  957  ls -l /dev/sdb
+  958  ls -l /dev/sdb1
+  959  ls -l /dev/sdbc
+  960  ls -l /dev/sdc
+  961  ls -l /dev/sdd
+  962  ls -l /dev/sg0
+  963  ls /mnt
+  964  ls /mnt/sysimage/
+  965  ls /mnt/sysimage/home/
+  966  ls -l /dev/dm-0
+  967  ls -l /dev/dm*
+  968  ls -l /dev/mapper/fedora-home
+  969  dmesg
+  970  ls /dev/disk
+  971  ls /dev/disk/by-id
+  972  ls /dev/disk/by-path
+  973  ls /dev/disk/by-label
+  974  lshw -class disk
+  975  lshw
+  976  yum list lshw
+  977  yum list yum
+  978  yum
+  979  lsblk
+  980  hwinfo
+  981  sudo fdisk -l
+  982  sudo yum list lshw
+  983  echo $PYTHONHOME
+  984  ls /usr/local/
+  985  ls
+  986  sudo lshw -class disk
+  987  sudo lshw -class disk > newcable.txt
+  988  sudo lshw -class disk
+  989  lsblk
+  990  sudo fdisk -l
+  991  pwd
+  992  ls
+  993  ls /
+  994  mkdir /backup
+  995  sudo mkdir /backups
+  996  sudo mkdir /backups/hd1
+  997  sudo mkdir /backups/hd2
+  998  sudo mount /dev/sdd /backups/hd1
+  999  ls -l /dev/sdd
+ 1000  sudo lshw -class disk
+ 1001  ls
+ 1002  rm newcable.txt 
+ 1003  ls
+ 1004  sudo lshw -class disk > disklist.txt
+ 1005  ls
+ 1006  more disklist.txt 
+ 1007  more /etc/fstab
+ 1008  ls /dev/mapper/
+ 1009  lsblk
+ 1010  cat /etc/fstab
+ 1011  sudo mount /dev/sda /backups/hd1
+ 1012  sudo fdisk -l
+ 1013  ls /sbin/mkfs*
+ 1014  mkfs.ext4 /dev/sda
+ 1015  sudo mkfs.ext4 /dev/sda
+ 1016  ls
+ 1017  sudo mount /dev/sda /backups/hd1
+ 1018  ls /backups/
+ 1019  ls -l /backups/
+ 1020  du -sh /backups/hd1
+ 1021  mkdir /backups/hd1/nobackup
+ 1022  sudo mkdir /backups/hd1/nobackup
+ 1023  ls /backups/hd1/nobackup/
+ 1024  ls
+ 1025  sudo mkfs.ext4 /dev/sdc
+ 1026  sudo mount /dev/sdc /backups/hd2
+ 1027  cd /backups/hd1
+ 1028  ls
+ 1029  ls -lat nobackup/
+ 1030  chown --help
+ 1031  chown -hR yuy /nobackup
+ 1032  chown -hR yuy ./nobackup
+ 1033  sudo chown -hR yuy ./nobackup
+ 1034  ls -lat
+ 1035  cd ..
+ 1036  ls
+ 1037  cd hd2
+ 1038  ls
+ 1039  mkdir nobackup
+ 1040  sudo mkdir nobackup
+ 1041  ls
+ 1042  ls -lat
+ 1043  sudo chown -hR yuy nobackup/
+ 1044  ls -lat
+ 1045  sudo fdisk -l
+ 1046  sudo lshw -class disk
+ 1047  lsblk
+ 1048  history > cmdhistory
+ 1049  ls
+ 1050  history > ./cmdhistory.txt
+ 1051  cd ..
+ 1052  ls
+ 1053  history > ./cmdhistory.txt
+ 1054  sudo history > ./cmdhistory.txt
+ 1055  ls
+ 1056  pwd
+ 1057  mkdir cmd
+ 1058  sudo mkdir cmd
+ 1059  ls
+ 1060  sudo history > ./cmdhistory.txt
+ 1061  chown -hR yy cmd
+ 1062  sudo chown -hR yy cmd
+ 1063  history > cmd/cmdhistory

@@ -1,0 +1,8 @@
+40 /groups/scicomp/jacsData/yuTest/YoshiMB/sources/standardbrainDPX/TX/FCF_CSMH__54383_20121206_35_C3_zb15_zt01_20X_0-0-0_R1_L22_20130108184013116.lsm
+38 /groups/scicomp/jacsData/yuTest/YoshiMB/sources/standardbrainDPX/TX/FCF_CSMH__54383_20121206_35_C2_zb14_zt01_20X_0-0-0_R1_L20_20130108183922562.lsm
+9 /groups/scicomp/jacsData/yuTest/YoshiMB/sources/standardbrainDPX/TX/FCF_CSMH__53704_20121206_35_D1_zb19_zt01_20X_0-0-0_R1_L41_20130108184403160.lsm
+28 /groups/scicomp/jacsData/yuTest/YoshiMB/sources/standardbrainDPX/TX/FCF_CSMH__54379_20121206_35_B1_zb07_zt01_20X_0-0-0_R1_L10_20130108183546628.lsm
+17 /groups/scicomp/jacsData/yuTest/YoshiMB/sources/standardbrainDPX/TX/FCF_CSMH__53704_20121206_35_D5_zb23_zt01_20X_0-0-0_R1_L34_20130108184743291.lsm
+
+
+

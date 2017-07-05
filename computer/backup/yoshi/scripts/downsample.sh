@@ -1,0 +1,34 @@
+#!/bin/bash
+
+PORT=1031
+while (test -f "/tmp/.X${PORT}-lock") || (netstat -atwn | grep "^.*:${PORT}.*:\*\s*LISTEN\s*$")
+do PORT=$(( ${PORT} + 1 ))
+done
+/usr/bin/Xvfb :${PORT} -screen 0 1x1x24 -sp /usr/lib64/xserver/SecurityPolicy -fp /usr/share/X11/fonts/misc &
+MYPID=$!
+export DISPLAY="localhost:${PORT}.0"
+
+
+NUMPARAMS=$#
+if [ $NUMPARAMS -lt 5 ]
+then
+echo " "
+echo " USAGE ::  "
+echo " sh downsample.sh input output ratio_x ratio_y ratio_z"
+echo " "
+exit
+fi
+
+Vaa3D=/groups/scicomp/jacsData/yuTest/YoshiMB/toolkits/Vaa3D/vaa3d
+
+INPUT=$1
+OUTPUT=$2
+RX=$3
+RY=$4
+RZ=$5
+
+$Vaa3D -x ireg -f isampler -i $INPUT -o $OUTPUT -p "#x $RX #y $RY #z $RZ"
+
+# We're done with the frame buffer
+kill -9 $MYPID
+

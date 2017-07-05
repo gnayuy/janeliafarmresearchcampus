@@ -1,0 +1,13 @@
+ 1007  JBA -t $TAR -s $SUBTXGACR -w 10 -o $SUBTXLACR -L $TARMARKER -B 1280 -H 2
+ 1008  cd /groups/scicomp/jacsData/yuTest/markReconstruction/Alignment/script
+ 1009  pwd
+ 1010  ls
+ 1011  JBA=/groups/scicomp/jacsData/yuTest/toolkits/JBA/brainaligner 
+ 1012  JBA -t $TAR -s $SUBTXGACR -w 10 -o $SUBTXLACR -L $TARMARKER -B 1280 -H 2
+ 1013  TAR=/groups/scicomp/jacsData/yuTest/markReconstruction/Alignment/target.v3draw
+ 1014  SUB=/groups/scicomp/jacsData/yuTest/markReconstruction/Alignment/subject.v3draw
+ 1015  TARMARKER=/groups/scicomp/jacsData/yuTest/markReconstruction/Alignment/target.marker
+ 1016  SUBWARP=/groups/scicomp/jacsData/yuTest/markReconstruction/Alignment/subject_jba.v3draw
+ 1017  time $JBA -t $TAR -s $SUB -w 10 -o $SUBWARP -L $TARMARKER -B 528 -H 2
+
+

@@ -1,0 +1,64 @@
+
+# p1.sh
+
+/home/yuy/work/research/tools/neucv/gnubuild/ifilter -f splitColorChannels -i /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/ds_rc.tif -o /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/ds_rc_c
+
+/home/yuy/work/research/tools/neucv/gnubuild/ifilter -f stack2seq -i /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/ds_rc_c0.tif -o /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/dsrc/red
+
+/home/yuy/work/research/tools/neucv/gnubuild/ifilter -f stack2seq -i /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/ds_rc_c1.tif -o /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/dsrc/green
+
+/home/yuy/work/research/tools/neucv/gnubuild/ifilter -f stack2seq -i /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/ds_rc_c2.tif -o /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/dsrc/blue
+
+# crossPairsAlign.sh
+
+for((i=0; i<528; i++)); do mkdir /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/workdir/rigidreg/sec$i; done
+
+sh /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/pipeline/crossPairsAlign.sh /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/dsrc/blue/sec /groups/jacs/jacsShare/yuTest/Share4Mark/AMBA/resliced/targetseq/atlasSec /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/workdir/rigidreg 87
+
+for((i=0; i<528; i++)); do for j in /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/workdir/rigidreg/sec$i/*.sh; do chmod 755 $j;  done; done
+
+for((i=0; i<528; i++)); do for j in /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/workdir/rigidreg/sec$i/*.sh; do qsub -A cembrowskim -b y -cwd -V -pe batch 2 $j;  done; done
+
+### generate cross correlation matrix
+
+# warpingMB.sh
+
+sh /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/pipeline/warpingMB.sh /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/dsrc/blue/sec /groups/jacs/jacsShare/yuTest/Share4Mark/AMBA/resliced/targetseq/atlasSec /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/workdir/rigidreg /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/workdir/rigidreg 87
+
+# dpm.sh
+
+sh /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/pipeline/dpm.sh /groups/jacs/jacsShare/yuTest/Share4Mark/AMBA/resliced/targetseq/atlasSec /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/workdir/rigidreg 87
+
+# genDPM.sh
+
+sh /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/pipeline/genDPM.sh 528 87 /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/workdir/rigidreg /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/workdir/rigidreg/dpm.txt
+
+
+# blue channel
+
+sh /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/pipeline/found.sh /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/workdir/rigidreg /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/workdir/blue
+
+
+sh /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/pipeline/interpolation.sh /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/workdir/blue /groups/jacs/jacsShare/yuTest/Share4Mark/AMBA/resliced/LinearTransforms >> warpintblue_run.sh
+
+
+# green
+
+sh /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/pipeline/warpBestMatch.sh /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/dsrc/green/sec .nii /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/workdir/rigidreg matches.txt /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/workdir/green
+
+sh /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/pipeline/interpolation.sh /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/workdir/green /groups/jacs/jacsShare/yuTest/Share4Mark/AMBA/resliced/LinearTransforms >> warpintgreen_run.sh
+
+# gen NULL images
+
+sh /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/pipeline/genNULL.sh 0 527 /nobackup/scicompsoft/yuTest/markCembrowski/workdir/aligned/blue/links/sec0000.nii /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/workdir/blue/links
+
+cp /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/workdir/blue/found/* /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/workdir/blue/links
+
+cp /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/workdir/blue/interpolation/* /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/workdir/blue/links
+
+sh /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/pipeline/genNULL.sh 0 527 /nobackup/scicompsoft/yuTest/markCembrowski/workdir/aligned/blue/links/sec0000.nii /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/workdir/green/links
+
+cp /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/workdir/green/found/* /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/workdir/green/links
+
+cp /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/workdir/green/interpolation/* /nobackup/scicompsoft/yuTest/markCembrowski/remainingMouseBrains/mbLypd1/workdir/green/links
+

@@ -1,0 +1,1 @@
+time while read line; do echo "sh warpsectionimage.sh /groups/jacs/jacsShare/yuTest/Share4Mark/wbLypd1/downsample/green/imstack_ra_ds _c1.nii /groups/jacs/jacsShare/yuTest/Share4Mark/wbLypd1/downsample/refrb/workdir/warpedfinal/alignment/green/found/sec $line /groups/jacs/jacsShare/yuTest/Share4Mark/AMBA/resliced/atlasTransforms 2"; done < warpGreenLypd1.sh
