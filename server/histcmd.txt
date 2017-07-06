@@ -1,0 +1,379 @@
+    1  export HOME=/home/yuy
+    2  source ~/.bashrc
+    3  ls
+    4  cd /nrs/scicompsoft/yuy
+    5  ls
+    6  cd Vaa3D/
+    7  cd Ming/
+    8  ls
+    9  gedit copyFile.sh
+   10  sh copyFile.sh 
+   11  ls
+   12  du -sh
+   13  du -sh *
+   14  ls *C3
+   15  ls -lath *C3
+   16  ls
+   17  ls *A6
+   18  ls *A6/merge
+   19  ls
+   20  ls *D4
+   21  cd *A6
+   22  ls
+   23  mv merge/* ./
+   24  ls
+   25  rm -rf merge
+   26  ls
+   27  cd ..
+   28  ls
+   29  ls ..
+   30  ls
+   31  for in in *GMR*; do echo $i/*png; done
+   32  for in in *GMR*/*png; do echo $i; done
+   33  for in in *GMR*/*.png; do echo $i; done
+   34  for in in *GMR*/*.png; do ls $i; done
+   35  for in in GMR*/; do echo $i; done
+   36  for i in ./*/*.png; do echo $i; done
+   37  for i in ./*/; do echo $i/old; done
+   38  for i in ./*/; do mkdir $i/old; done
+   39  for i in ./*/; do ls $i/*.png; done
+   40  for i in ./*/; do mv $i/*.png $i/old; done
+   41  ls
+   42  ls *D4
+   43  for i in ./*/; do echo $i/*.v3draw; done
+   44  for i in ./*/; do ls $i/*.v3draw; done
+   45  n=0; for i in ./*/; do n=$(n+1); echo $n; ls $i/*.v3draw; done
+   46  n=0; for i in ./*/; do n=$((n+1)); echo $n; ls $i/*.v3draw; done
+   47  for i in ./*/; do ls $i/*.v3draw; done
+   48  for i in ./*/; do ls $i/*.v3draw >> files.txt; done
+   49  ls
+   50  while read line; do echo $line; done < files.txt
+   51  while read line; do echo ${line%*/*}; done < files.txt
+   52  ln -s ../vaa3d ./
+   53  ln -s ../genMIP_local.sh ./
+   54  ls
+   55  time while read line; do sh genMIP_local.sh $line ${line%*/*}; done < files.txt
+   56  ls
+   57  cd ..
+   58  ls
+   59  convert tile-2368601932638978216_signal.png -channel RGB -separate tile-2368601932638978216.png
+   60  ls
+   61  convert tile-2368601932638978216-0.png tile-2368601932638978216-1.png tile-2368601932638978216-2.png tile-2368601932638978216_c3.png -channel RGBA -combine test.png
+   62  convert tile-2368601932638978216-0.png tile-2368601932638978216-1.png tile-2368601932638978216-2.png tile-2368601932638978216_c3.png -channel RGB -combine test1.png
+   63  convert tile-2368601932638978216-0.png tile-2368601932638978216-1.png tile-2368601932638978216-2.png tile-2368601932638978216_c3.png -channel Red,Green,Blue,Gray -combine test1.png
+   64  time convert tile-2368601932638978216-0.png tile-2368601932638978216-1.png tile-2368601932638978216-2.png tile-2368601932638978216_c3.png -channel Red,Green,Blue,Gray -combine test2.png
+   65  time convert tile-2368601932638978216-0.png tile-2368601932638978216-1.png tile-2368601932638978216-2.png tile-2368601932638978216_c3.png -combine test2.png
+   66  convert tile-2368601932638978216-0.png tile-2368601932638978216-1.png tile-2368601932638978216-2.png tile-2368601932638978216_c3_invert.png -channel RGBA -combine test3.png
+   67  time convert -negate tile-2368601932638978216_c3.png tile-2368601932638978216_c3_negated.png
+   68  cd Ming/
+   69  time while read line; do sh genMIP_local.sh $line ${line%*/*}; done < files.txt
+   70  cd ..
+   71  ls
+   72  history > histcmd.txt
+   73  time convert -brightness-contrast -10 -negate tile-2368601932638978216_c3.png tile-2368601932638978216_c3_negated1.png 
+   74  convert tile-2368601932638978216-0.png tile-2368601932638978216-1.png tile-2368601932638978216-2.png tile-2368601932638978216_c3_negated1.png -channel RGBA -combine test4.png
+   75  time convert -brightness-contrast -50 -negate tile-2368601932638978216_c3.png tile-2368601932638978216_c3_negated2.png 
+   76  convert tile-2368601932638978216-0.png tile-2368601932638978216-1.png tile-2368601932638978216-2.png tile-2368601932638978216_c3_negated2.png -channel RGBA -combine test5.png
+   77  time convert -brightness-contrast -20 -negate tile-2368601932638978216_c3.png tile-2368601932638978216_c3_negated3.png 
+   78  convert tile-2368601932638978216-0.png tile-2368601932638978216-1.png tile-2368601932638978216-2.png tile-2368601932638978216_c3_negated3.png -channel RGBA -combine test6.png
+   79  cd Ming/
+   80  time while read line; do sh genMIP_local.sh $line ${line%*/*}; done < files.txt
+   81  ls
+   82  time convert -brightness-contrast -20 -negate tile-2368605543272022184_reference_negated.png
+   83  time convert -brightness-contrast -20 -negate tile-2368605543272022184_reference.png tile-2368605543272022184_reference_negated.png
+   84  time convert -channel RGB -separate  tile-2368605543272022184_signals.png  tile-2368605543272022184_signals.png
+   85  ls
+   86  time convert  tile-2368605543272022184_signals-0.png  tile-2368605543272022184_signals-1.png  tile-2368605543272022184_signals-2.png tile-2368605543272022184_reference_negated.png -channel RGBA -combine test.png
+   87  time while read line; do sh genMIP_local.sh $line ${line%*/*}; done < files.txt
+   88  ls
+   89  cd *32_D7
+   90  ls
+   91  gedit files.txt
+   92  cd ..
+   93  time while read line; do sh genMIP_local.sh $line ${line%*/*}; done < filesD7.txt
+   94  mv filesD7.txt filesSubset.txt
+   95  time while read line; do sh genMIP_local.sh $line ${line%*/*}; done < filesD7.txt
+   96  time while read line; do sh genMIP_local.sh $line ${line%*/*}; done < filesSubset.txt
+   97  ls
+   98  cp '/nrs/scicompsoft/yuy/Vaa3D/Ming/GMR_OL0070B-20131115_34_D4/tile-2368605543280410792_reference.png' ./
+   99  ls
+  100  convert -brightness-contrast -15 -negate tile-2368605543280410792_reference.png tile-2368605543280410792_reference_negated.png
+  101  convert -brightness-contrast -15x-15 tile-2368605543280410792_reference.png tile-2368605543280410792_reference_bc.png
+  102  convert -brightness-contrast -15 tile-2368605543280410792_reference.png tile-2368605543280410792_reference_b.png
+  103  convert -brightness-contrast -15x-50 tile-2368605543280410792_reference.png tile-2368605543280410792_reference_bc.png
+  104  convert -brightness-contrast -15x-25 tile-2368605543280410792_reference.png tile-2368605543280410792_reference_bc.png
+  105  ls
+  106  mkdir D4
+  107  ls
+  108  cd D4
+  109  for i in ../GMR_OL0070B-20131115_34_D4/*.png; do ln -s $i ./; done
+  110  ls
+  111  cd ..
+  112  ls
+  113  time while read line; do sh genMIP_local.sh $line ${line%*/*}; done < filesSubset.txt
+  114  ls
+  115  mkdir MIPS
+  116  for i in GMR*/*.png; do cp $i MIPS; done
+  117  for i in BJD*/*.png; do cp $i MIPS; done
+  118  ls MIPS
+  119  mkdir MIPSnew
+  120  cp MIPS/*.png MIPSnew/
+  121  ls MIPSnew
+  122  cp files.txt filesnew.txt
+  123  while read line; do echo ${line#*/*}; done < filesnew.txt 
+  124  while read line; do k=${line#*/*}; echo ${k#*/*}; done < filesnew.txt 
+  125  while read line; do k=${line#*/*}; echo ${k#*/*} >> filesnew1.txt;  done < filesnew.txt 
+  126  time while read line; do sh genMIP_local.sh $line ${line%*/*}; done < filesnew1.txt
+  127  '/lhome/yy/Downloads/Fiji.app/ImageJ-linux64' -macro convert2png.ijm "/nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_signals.png,/nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_reference.png, /nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_test.png"
+  128  '/lhome/yy/Downloads/Fiji.app/ImageJ-linux64' -macro '/lhome/yy/Downloads/Fiji.app/plugins/Macros/convert2png.ijm' "/nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_signals.png,/nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_reference.png, /nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_test.png"
+  129  reset
+  130  '/lhome/yy/Downloads/Fiji.app/ImageJ-linux64' -macro '/lhome/yy/Downloads/Fiji.app/plugins/Macros/convert2png.ijm' "/nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_signals.png,/nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_reference.png, /nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_test.png"
+  131  reset
+  132  '/lhome/yy/Downloads/Fiji.app/ImageJ-linux64' -macro '/lhome/yy/Downloads/Fiji.app/plugins/Macros/convert2png.ijm' "/nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_signals.png,/nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_reference.png, /nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_test.png"
+  133  '/lhome/yy/Downloads/Fiji.app/ImageJ-linux64' -macro '/lhome/yy/Downloads/Fiji.app/plugins/Macros/convert2png.ijm' "/nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_signals.png,/nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_reference.png, /home/yuy/work/tile-2368605543272022184_test.png"
+  134  '/lhome/yy/Downloads/Fiji.app/ImageJ-linux64' -macro '/lhome/yy/Downloads/Fiji.app/plugins/Macros/convert2png.ijm' "/nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_signals.png,/nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_reference.png, /home/yuy/work/t2368605543272022184.png"
+  135  '/lhome/yy/Downloads/Fiji.app/ImageJ-linux64' -macro '/lhome/yy/Downloads/Fiji.app/plugins/Macros/convert2png.ijm' "/nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_signals.png,/nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_reference.png, /home/yuy/"
+  136  ls
+  137  convert -brightness-contrast -45x-55  tile-2368605543272022184_reference.png  tile-2368605543272022184_reference_bc.png 
+  138  convert tile-2368605543272022184_signals-0.png tile-2368605543272022184_reference_bc.png -compose lighten -composite tile-2368605543272022184_c1.png
+  139  convert tile-2368605543272022184_signals-1.png tile-2368605543272022184_reference_bc.png -compose lighten -composite tile-2368605543272022184_c2.png
+  140  convert tile-2368605543272022184_signals-2.png tile-2368605543272022184_reference_bc.png -compose lighten -composite tile-2368605543272022184_c3.png
+  141  convert  tile-2368605543272022184_c1.png  tile-2368605543272022184_c2.png  tile-2368605543272022184_c3.png -channel RGB -combine  tile-2368605543272022184_test.png
+  142  convert -brightness-contrast -45x-55  -negate tile-2368605543272022184_reference.png  tile-2368605543272022184_reference_bcn.png 
+  143  convert  tile-2368605543272022184_signals-0.png  tile-2368605543272022184_signals-1.png  tile-2368605543272022184_signals-2.png tile-2368605543272022184_reference_bcn.png -channel RGBA -combine tile-2368605543272022184_test1.png
+  144  history >> histcmd.txt
+    1  export HOME=/home/yuy
+    2  source ~/.bashrc
+    3  ls
+    4  cd /nrs/scicompsoft/yuy
+    5  ls
+    6  cd Vaa3D/
+    7  cd Ming/
+    8  ls
+    9  gedit copyFile.sh
+   10  sh copyFile.sh 
+   11  ls
+   12  du -sh
+   13  du -sh *
+   14  ls *C3
+   15  ls -lath *C3
+   16  ls
+   17  ls *A6
+   18  ls *A6/merge
+   19  ls
+   20  ls *D4
+   21  cd *A6
+   22  ls
+   23  mv merge/* ./
+   24  ls
+   25  rm -rf merge
+   26  ls
+   27  cd ..
+   28  ls
+   29  ls ..
+   30  ls
+   31  for in in *GMR*; do echo $i/*png; done
+   32  for in in *GMR*/*png; do echo $i; done
+   33  for in in *GMR*/*.png; do echo $i; done
+   34  for in in *GMR*/*.png; do ls $i; done
+   35  for in in GMR*/; do echo $i; done
+   36  for i in ./*/*.png; do echo $i; done
+   37  for i in ./*/; do echo $i/old; done
+   38  for i in ./*/; do mkdir $i/old; done
+   39  for i in ./*/; do ls $i/*.png; done
+   40  for i in ./*/; do mv $i/*.png $i/old; done
+   41  ls
+   42  ls *D4
+   43  for i in ./*/; do echo $i/*.v3draw; done
+   44  for i in ./*/; do ls $i/*.v3draw; done
+   45  n=0; for i in ./*/; do n=$(n+1); echo $n; ls $i/*.v3draw; done
+   46  n=0; for i in ./*/; do n=$((n+1)); echo $n; ls $i/*.v3draw; done
+   47  for i in ./*/; do ls $i/*.v3draw; done
+   48  for i in ./*/; do ls $i/*.v3draw >> files.txt; done
+   49  ls
+   50  while read line; do echo $line; done < files.txt
+   51  while read line; do echo ${line%*/*}; done < files.txt
+   52  ln -s ../vaa3d ./
+   53  ln -s ../genMIP_local.sh ./
+   54  ls
+   55  time while read line; do sh genMIP_local.sh $line ${line%*/*}; done < files.txt
+   56  ls
+   57  cd ..
+   58  ls
+   59  convert tile-2368601932638978216_signal.png -channel RGB -separate tile-2368601932638978216.png
+   60  ls
+   61  convert tile-2368601932638978216-0.png tile-2368601932638978216-1.png tile-2368601932638978216-2.png tile-2368601932638978216_c3.png -channel RGBA -combine test.png
+   62  convert tile-2368601932638978216-0.png tile-2368601932638978216-1.png tile-2368601932638978216-2.png tile-2368601932638978216_c3.png -channel RGB -combine test1.png
+   63  convert tile-2368601932638978216-0.png tile-2368601932638978216-1.png tile-2368601932638978216-2.png tile-2368601932638978216_c3.png -channel Red,Green,Blue,Gray -combine test1.png
+   64  time convert tile-2368601932638978216-0.png tile-2368601932638978216-1.png tile-2368601932638978216-2.png tile-2368601932638978216_c3.png -channel Red,Green,Blue,Gray -combine test2.png
+   65  time convert tile-2368601932638978216-0.png tile-2368601932638978216-1.png tile-2368601932638978216-2.png tile-2368601932638978216_c3.png -combine test2.png
+   66  convert tile-2368601932638978216-0.png tile-2368601932638978216-1.png tile-2368601932638978216-2.png tile-2368601932638978216_c3_invert.png -channel RGBA -combine test3.png
+   67  time convert -negate tile-2368601932638978216_c3.png tile-2368601932638978216_c3_negated.png
+   68  cd Ming/
+   69  time while read line; do sh genMIP_local.sh $line ${line%*/*}; done < files.txt
+   70  cd ..
+   71  ls
+   72  history > histcmd.txt
+   73  time convert -brightness-contrast -10 -negate tile-2368601932638978216_c3.png tile-2368601932638978216_c3_negated1.png 
+   74  convert tile-2368601932638978216-0.png tile-2368601932638978216-1.png tile-2368601932638978216-2.png tile-2368601932638978216_c3_negated1.png -channel RGBA -combine test4.png
+   75  time convert -brightness-contrast -50 -negate tile-2368601932638978216_c3.png tile-2368601932638978216_c3_negated2.png 
+   76  convert tile-2368601932638978216-0.png tile-2368601932638978216-1.png tile-2368601932638978216-2.png tile-2368601932638978216_c3_negated2.png -channel RGBA -combine test5.png
+   77  time convert -brightness-contrast -20 -negate tile-2368601932638978216_c3.png tile-2368601932638978216_c3_negated3.png 
+   78  convert tile-2368601932638978216-0.png tile-2368601932638978216-1.png tile-2368601932638978216-2.png tile-2368601932638978216_c3_negated3.png -channel RGBA -combine test6.png
+   79  cd Ming/
+   80  time while read line; do sh genMIP_local.sh $line ${line%*/*}; done < files.txt
+   81  ls
+   82  time convert -brightness-contrast -20 -negate tile-2368605543272022184_reference_negated.png
+   83  time convert -brightness-contrast -20 -negate tile-2368605543272022184_reference.png tile-2368605543272022184_reference_negated.png
+   84  time convert -channel RGB -separate  tile-2368605543272022184_signals.png  tile-2368605543272022184_signals.png
+   85  ls
+   86  time convert  tile-2368605543272022184_signals-0.png  tile-2368605543272022184_signals-1.png  tile-2368605543272022184_signals-2.png tile-2368605543272022184_reference_negated.png -channel RGBA -combine test.png
+   87  time while read line; do sh genMIP_local.sh $line ${line%*/*}; done < files.txt
+   88  ls
+   89  cd *32_D7
+   90  ls
+   91  gedit files.txt
+   92  cd ..
+   93  time while read line; do sh genMIP_local.sh $line ${line%*/*}; done < filesD7.txt
+   94  mv filesD7.txt filesSubset.txt
+   95  time while read line; do sh genMIP_local.sh $line ${line%*/*}; done < filesD7.txt
+   96  time while read line; do sh genMIP_local.sh $line ${line%*/*}; done < filesSubset.txt
+   97  ls
+   98  cp '/nrs/scicompsoft/yuy/Vaa3D/Ming/GMR_OL0070B-20131115_34_D4/tile-2368605543280410792_reference.png' ./
+   99  ls
+  100  convert -brightness-contrast -15 -negate tile-2368605543280410792_reference.png tile-2368605543280410792_reference_negated.png
+  101  convert -brightness-contrast -15x-15 tile-2368605543280410792_reference.png tile-2368605543280410792_reference_bc.png
+  102  convert -brightness-contrast -15 tile-2368605543280410792_reference.png tile-2368605543280410792_reference_b.png
+  103  convert -brightness-contrast -15x-50 tile-2368605543280410792_reference.png tile-2368605543280410792_reference_bc.png
+  104  convert -brightness-contrast -15x-25 tile-2368605543280410792_reference.png tile-2368605543280410792_reference_bc.png
+  105  ls
+  106  mkdir D4
+  107  ls
+  108  cd D4
+  109  for i in ../GMR_OL0070B-20131115_34_D4/*.png; do ln -s $i ./; done
+  110  ls
+  111  cd ..
+  112  ls
+  113  time while read line; do sh genMIP_local.sh $line ${line%*/*}; done < filesSubset.txt
+  114  ls
+  115  mkdir MIPS
+  116  for i in GMR*/*.png; do cp $i MIPS; done
+  117  for i in BJD*/*.png; do cp $i MIPS; done
+  118  ls MIPS
+  119  mkdir MIPSnew
+  120  cp MIPS/*.png MIPSnew/
+  121  ls MIPSnew
+  122  cp files.txt filesnew.txt
+  123  while read line; do echo ${line#*/*}; done < filesnew.txt 
+  124  while read line; do k=${line#*/*}; echo ${k#*/*}; done < filesnew.txt 
+  125  while read line; do k=${line#*/*}; echo ${k#*/*} >> filesnew1.txt;  done < filesnew.txt 
+  126  time while read line; do sh genMIP_local.sh $line ${line%*/*}; done < filesnew1.txt
+  127  '/lhome/yy/Downloads/Fiji.app/ImageJ-linux64' -macro convert2png.ijm "/nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_signals.png,/nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_reference.png, /nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_test.png"
+  128  '/lhome/yy/Downloads/Fiji.app/ImageJ-linux64' -macro '/lhome/yy/Downloads/Fiji.app/plugins/Macros/convert2png.ijm' "/nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_signals.png,/nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_reference.png, /nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_test.png"
+  129  reset
+  130  '/lhome/yy/Downloads/Fiji.app/ImageJ-linux64' -macro '/lhome/yy/Downloads/Fiji.app/plugins/Macros/convert2png.ijm' "/nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_signals.png,/nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_reference.png, /nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_test.png"
+  131  reset
+  132  '/lhome/yy/Downloads/Fiji.app/ImageJ-linux64' -macro '/lhome/yy/Downloads/Fiji.app/plugins/Macros/convert2png.ijm' "/nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_signals.png,/nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_reference.png, /nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_test.png"
+  133  '/lhome/yy/Downloads/Fiji.app/ImageJ-linux64' -macro '/lhome/yy/Downloads/Fiji.app/plugins/Macros/convert2png.ijm' "/nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_signals.png,/nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_reference.png, /home/yuy/work/tile-2368605543272022184_test.png"
+  134  '/lhome/yy/Downloads/Fiji.app/ImageJ-linux64' -macro '/lhome/yy/Downloads/Fiji.app/plugins/Macros/convert2png.ijm' "/nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_signals.png,/nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_reference.png, /home/yuy/work/t2368605543272022184.png"
+  135  '/lhome/yy/Downloads/Fiji.app/ImageJ-linux64' -macro '/lhome/yy/Downloads/Fiji.app/plugins/Macros/convert2png.ijm' "/nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_signals.png,/nrs/scicompsoft/yuy/Vaa3D/Ming/tile-2368605543272022184_reference.png, /home/yuy/"
+  136  ls
+  137  convert -brightness-contrast -45x-55  tile-2368605543272022184_reference.png  tile-2368605543272022184_reference_bc.png 
+  138  convert tile-2368605543272022184_signals-0.png tile-2368605543272022184_reference_bc.png -compose lighten -composite tile-2368605543272022184_c1.png
+  139  convert tile-2368605543272022184_signals-1.png tile-2368605543272022184_reference_bc.png -compose lighten -composite tile-2368605543272022184_c2.png
+  140  convert tile-2368605543272022184_signals-2.png tile-2368605543272022184_reference_bc.png -compose lighten -composite tile-2368605543272022184_c3.png
+  141  convert  tile-2368605543272022184_c1.png  tile-2368605543272022184_c2.png  tile-2368605543272022184_c3.png -channel RGB -combine  tile-2368605543272022184_test.png
+  142  convert -brightness-contrast -45x-55  -negate tile-2368605543272022184_reference.png  tile-2368605543272022184_reference_bcn.png 
+  143  convert  tile-2368605543272022184_signals-0.png  tile-2368605543272022184_signals-1.png  tile-2368605543272022184_signals-2.png tile-2368605543272022184_reference_bcn.png -channel RGBA -combine tile-2368605543272022184_test1.png
+  144  history >> histcmd.txt
+  145  time while read line; do sh genMIP_local.sh $line ${line%*/*}; done < filesnew1.txt
+  146  time while read line; do sh genMIP_local.sh $line ${line%*/*}; done < files.txt
+  147  time while read line; do sh genMIP_local.sh $line ${line%*/*}; done < filesSubset.txt
+  148  cd
+  149  pwd
+  150  cd work/flybrainaligner/
+  151  ls
+  152  cd pipelines/
+  153  git pull
+  154  cd ..
+  155  git pull
+  156  cd pipelines/
+  157  ls
+  158  mkdir misc
+  159  cd misc/
+  160  cp /nrs/scicompsoft/yuy/Vaa3D/Ming/genMIP_local.sh ./genMIP.sh
+  161  ls
+  162  rm *~
+  163  ls
+  164  cd ..
+  165  git add misc/
+  166  git commit -m "add mip generation"
+  167  git push
+  168  cd ..
+  169  ls
+  170  git pull
+  171  cd pipelines/
+  172  ls
+  173  cd misc/
+  174  ls
+  175  cp ../../misc/timing.sh ./
+  176  ls
+  177  git add timing.sh 
+  178  ls
+  179  cd ..
+  180  ls
+  181  git rm misc/
+  182  git rm -r misc/
+  183  git add -a 
+  184  git add -u
+  185  git commit -m "adjust folder structure"
+  186  git push
+  187  git pull
+  188  cp -r /lhome/yy/Downloads/Fiji.app/ /home/yuy/work/
+  189  pwd
+  190  ls ..
+  191  du -sh ../Fiji.app/
+  192  ls ../Fiji.app/
+  193  ls ../Fiji.app/plugins/
+  194  ls
+  195  ls /nrs/scicompsoft/yuy/Vaa3D/Ming/
+  196  cp pipelines/misc/* /nrs/scicompsoft/yuy/Vaa3D/Ming/
+  197  cd /nrs/scicompsoft/yuy/Vaa3D/Ming/
+  198  ls
+  199  pwd
+  200  cp substractBackground.ijm ~/work/Fiji.app/macros/
+  201  ls -l ~/work/Fiji.app/
+  202  chown -r yuy ~/work/Fiji.app
+  203  chown --help
+  204  chown -R yuy ~/work/Fiji.app
+  205  sudo chown -R yuy ~/work/Fiji.app
+  206  sudo chown yuy ~/work/Fiji.app/
+  207  sudo chown yuy ~/work/Fiji.app
+  208  sudo chown yuy ~/work/Fiji.app/ImageJ-linux64
+  209  sudo chown +r yuy ~/work/Fiji.app
+  210  ls -l ~/work/Fiji.app/
+  211  sudo chmod +r ~/work/Fiji.app
+  212  ls
+  213  rm -rf MIPSnew/
+  214  mkdir MIPS2
+  215  mv MIPS MIPS1
+  216  mv MIPS1 MIPSv1RGBA
+  217  mv MIPS2 MIPSv2RGBmipA
+  218  ls GMR_*
+  219  for i in GMR_*/*.png; do echo $i; done
+  220  for i in GMR_*/*.png; do cp $i MIPSv2RGBmipA/; done
+  221  ls
+  222  for i in BJD_*/*.png; do cp $i MIPSv2RGBmipA/; done
+  223  ls
+  224  mkdir MIPSv3RGBplusA
+  225  cp MIPSv2RGBmipA/* MIPSv3RGBplusA/
+  226  ls $PWD/MIPv3RGBplusA/ >> filesv3.txt
+  227  ls $PWD/MIPSv3RGBplusA/ >> filesv3.txt
+  228  for i in  $PWD/MIPSv3RGBplusA/*.png; do ls $i; done
+  229  for i in  $PWD/MIPSv3RGBplusA/*.png; do if [[ $i != *"_"* ]] then echo $i >> filesv3.txt; fi; done
+  230  for i in  $PWD/MIPSv3RGBplusA/*.png; do if [[ $i != *"_"* ]] echo $i >> filesv3.txt; fi; done
+  231  for i in  $PWD/MIPSv3RGBplusA/*.png; do if [[ $i != *"_"* ]]; echo $i >> filesv3.txt; fi; done
+  232  for i in  $PWD/MIPSv3RGBplusA/*.png; do if [[ $i != *"_"* ]]; then echo $i >> filesv3.txt; fi; done
+  233  while read line; do rm $line; done < filesv3.txt
+  234  ls
+  235  history >> histcmd.txt 
