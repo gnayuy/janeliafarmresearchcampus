@@ -1,0 +1,1000 @@
+  429  reset
+  430  history
+  431  qsub -A dicksonb -b y -cwd -V -pe batch 16 '/nobackup/scicompsoft/yuTest/dicksonlab/warpJFRC2010and2014/alignCmd.sh' 
+  432  qstat
+  433  ls
+  434  qstat
+  435  qdel 11527504
+  436  rm *.*o*
+  437  rm *.*e*
+  438  mkdir submit
+  439  cd submit/
+  440  qsub -A dicksonb -b y -cwd -V -pe batch 16 '/nobackup/scicompsoft/yuTest/dicksonlab/warpJFRC2010and2014/alignCmd.sh' 
+  441  qstat
+  442  ls
+  443  more alignCmd.sh.o11527505 
+  444  tail alignCmd.sh.o11527505 
+  445  ls
+  446  pwd
+  447  cd ..
+  448  ls
+  449  cd calciumimaging/
+  450  ls
+  451  pwd
+  452  history
+  453  for i in $pwd/sub/align*.sh; do echo $i; done
+  454  for i in $PWD/sub/align*.sh; do echo $i; done
+  455  for i in $PWD/sub/align*.sh; do qsub -A dicksonb -b y -cwd -V -pe batch 16 $i; done
+  456  qstat
+  457  ls
+  458  qstat
+  459  more alignCmd1.sh.o11584391 
+  460  more alignCmd1.sh.e11584391 
+  461  ls
+  462  rm *.*o*
+  463  rm *.*e*
+  464  for i in $PWD/sub/align*.sh; do qsub -A dicksonb -b y -cwd -V -pe batch 16 $i; done
+  465  qstat
+  466  ls
+  467  qstat
+  468  more alignCmd1.sh.o11584416 
+  469  ls /misc/public
+  470  ls /misc/public/Kaiyu2Yang/
+  471  ls /misc/public/Kaiyu2Yang/1495_mflyA_g_7d
+  472  ls /misc/public/Kaiyu2Yang/*
+  473  tail alignCmd1.sh.o11584416 
+  474  qstat
+  475  ls
+  476  ls sub/1
+  477  ls /misc/public/
+  478  ls /misc/public/Kaiyu2Yang/
+  479  ls /misc/public/Kaiyu2Yang/1495_mflyA_g_7d
+  480  cp -r /misc/public/Kaiyu2Yang/ ./
+  481  ls
+  482  rm -rf /misc/public/Kaiyu2Yang/1495_mflyA_g_7d
+  483  rm -rf /misc/public/Kaiyu2Yang/1504_mflyA_g_7d
+  484  rm -rf /misc/public/Kaiyu2Yang/SS01495_mflyC_7d_s
+  485  ls /misc/public/Kaiyu2Yang/
+  486  ls
+  487  rm '/nobackup/scicompsoft/yuTest/dicksonlab/calciumimaging/sub/._.DS_Store' 
+  488  rm '/nobackup/scicompsoft/yuTest/dicksonlab/calciumimaging/sub/.DS_Store' 
+  489  logout
+  490  ls
+  491  ls /misc/public
+  492  ls /misc/public/Yang/
+  493  ls /misc/public/forHideo/
+  494  ls /misc/public/forHideo/JFRC2010/
+  495  cp /misc/public/forHideo/JFRC2010/JFRC2010_16bit.v3draw /nobackup/scicompsoft/yuTest/GMR/
+  496  qlogin
+  497  logout
+  498  cd /nobackup/scicompsoft/yuTest/
+  499  ls
+  500  cd dicksonlab/
+  501  ls
+  502  history
+  503  find . -name *btx*
+  504  ls
+  505  pwd
+  506  cd projects/gcamptemplate/
+  507  ls
+  508  rm *~
+  509  ls
+  510  chmod +x alignCmd*sh
+  511  ls
+  512  cd SS01506/
+  513  ls
+  514  qsub -A dicksonb -b y -cwd -V -pe batch 32 -l haswell=true /nobackup/scicompsoft/yuTest/dicksonlab/projects/gcamptemplate/alignCmd2.sh
+  515  qsub -A dicksonb -b y -cwd -V -pe batch 32 -l haswell=true /nobackup/scicompsoft/yuTest/dicksonlab/projects/gcamptemplate/alignCmd1.sh
+  516  qstat
+  517  ls
+  518  more alignCmd2.sh.o12713727 
+  519  ls /nobackup/scicompsoft/yuTest/dicksonlab/projects/gcamptemplate/SS01506/a/1506_mflyB_b_ds.nii
+  520  ls /nobackup/scicompsoft/yuTest/dicksonlab/projects/gcamptemplate/SS01506/b/1506_mflyB_b_ds.nii
+  521  rm *2.sh*
+  522  ls
+  523  qsub -A dicksonb -b y -cwd -V -pe batch 32 -l haswell=true /nobackup/scicompsoft/yuTest/dicksonlab/projects/gcamptemplate/alignCmd2.sh
+  524  qstat
+  525  logout
+  526  qlogin
+  527  logout
+  528  ls
+  529  ./matlab 
+  530  logout
+  531  ./matlab
+  532  logout
+  533  qlogin
+  534  ls /usr/local/include/*drmaa*
+  535  ls /usr/local
+  536  ls /usr/local/*drma*
+  537  ls /usr/local/*ge*
+  538  echo $PATH
+  539  ls /usr/local/uge_nodes/
+  540  ls /usr/local/uge_nodes/8.2.1
+  541  ls /usr/local/uge_nodes/8.2.1/include
+  542  ls /usr/local/uge_nodes/8.2.1/lib
+  543  ls /usr/local/uge_nodes/8.2.1/lib/lx-amd64/
+  544  ls
+  545  qstat
+  546  qdel 146*
+  547  qdel 14605879
+  548  qstat
+  549  logout
+  550  logout
+  551  qstat
+  552  ls
+  553  echo $GOPATH
+  554  ls
+  555  ls /lhome/yy
+  556  ls /sge/current/
+  557  ls /sge/current/include/
+  558  ls /sge/current/bin
+  559  ls -lat /sge
+  560  ls
+  561  echo $LD_LIBRARY_PATH 
+  562  pwd
+  563  cd work
+  564  ls
+  565  mkdir gocode
+  566  rm -rf gocode/
+  567  mkdir gospace
+  568  cd gospace
+  569  ls
+  570  vim ~/.bashrc
+  571  ls $SGE_ROOT
+  572  ls $SGE_ROOT/lib
+  573  ls /sge/8.2.1/lib/lx-amd64/
+  574  vim ~/.bashrc
+  575  ls /opt/
+  576  ls /home/yuy/work/gospace/
+  577  more ~/.bashrc
+  578  vim ~/.bashrc
+  579  vim ~/.bash_profile
+  580  vim ~/.bashrc
+  581  source ~/.bashrc
+  582  ls
+  583  git clone https://go.googlesource.com/go
+  584  echo $GOPATH
+  585  ls
+  586  cd go
+  587  ls
+  588  cd src
+  589  ls
+  590  ./all.bash
+  591  ls bin
+  592  cd ..
+  593  ls
+  594  ls lib
+  595  ls
+  596  git checkout go1.4.2
+  597  git checkout master
+  598  which go
+  599  ls
+  600  find ./ -name go
+  601  cd src
+  602  ls
+  603  ls cmd
+  604  ls cmd/go
+  605  ls go
+  606  ls
+  607  ./all.bash
+  608  yum list go
+  609  yum list *go*
+  610  cd ..
+  611  ls
+  612  mv ../go1.4.2.linux-amd64.tar.gz ./
+  613  ls
+  614  tar zxvf go1.4.2.linux-amd64.tar.gz 
+  615  ls
+  616  rm go1.4.2.linux-amd64.tar.gz 
+  617  ls
+  618  cd go
+  619  ls
+  620  ls bin
+  621  pwd
+  622  cd src
+  623  ls
+  624  vim all.bash
+  625  ./all.bash
+  626  cd ..
+  627  ls
+  628  ls include/
+  629  mv bin ../
+  630  mv include ../
+  631  ls lib
+  632  ls src
+  633  cd ..
+  634  ls
+  635  ls bin
+  636  which go
+  637  go get golang.org/x/tools/cmd/...
+  638  vim ~/.bashrc
+  639  ls
+  640  cp -r bin go/
+  641  cp -r include go/
+  642  source ~/.bashrc
+  643  go get golang.org/x/tools/cmd/...
+  644  echo $GOROOT
+  645  go get golang.org/x/tools/cmd/godoc
+  646  ls /usr/local/go
+  647  echo $GOROOT
+  648  go get golang.org/x/tools/cmd/godoc
+  649  go get golang.org/x/tools/cmd/...
+  650  ls
+  651  cd go/src
+  652  ls
+  653  ./all.bash
+  654  git pull
+  655  rm -rf *
+  656  ls
+  657  git pull
+  658  cd ..
+  659  git pull
+  660  ls
+  661  cd ..
+  662  ls
+  663  rm -rf go
+  664  git clone https://go.googlesource.com/go
+  665  ls
+  666  cd go
+  667  ls
+  668  cd src
+  669  ls
+  670  pwd
+  671  ls
+  672  ./all.bash
+  673  echo $GOROOT
+  674  vim all.bash
+  675  ./all.bash
+  676  vim make.bash
+  677  ./all.bash
+  678  ls /home/yuy/work/gospace/bin/go
+  679  vim make.bash
+  680  ./all.bash
+  681  echo $GOPATH
+  682  echo $GOROOT
+  683  ls /opt
+  684  vim make.bash
+  685  cd ..
+  686  ls
+  687  cp -r ../bin ./
+  688  cd src
+  689  ls
+  690  ./all.bash 
+  691  GOOS=linux GOARCH=amd64 ./make.bash --no-clean
+  692  go get golang.org/x/tools/cmd/...
+  693  GOOS=linux GOARCH=amd64 go build
+  694  ls /usr/local/
+  695  ls
+  696  go build
+  697  go --version
+  698  go env
+  699  go gopath
+  700  go help 
+  701  go help gopath
+  702  CGO_ENABLED=1 GOOS=linux GOARCH=amd64 go build
+  703  ln -s /home/yuy/work/gospace/go /usr/local/go
+  704  sudo ln -s /home/yuy/work/gospace/go /usr/local/go
+  705  pwd
+  706  cd ..
+  707  ls
+  708  cd ..
+  709  ls
+  710  go get -d github.com/dgruber/drmaa
+  711  which go
+  712  go --version
+  713  ls
+  714  rm -rf go1.4.2.linux-amd64.tar.gz 
+  715  ls
+  716  ls src
+  717  ls
+  718  ls bin
+  719  cd src
+  720  ls
+  721  cd github.com/dgruber/drmaa/
+  722  ls
+  723  go run example/example.go 
+  724  echo $GOROOT
+  725  ls /home/yuy/work/
+  726  ls
+  727  pwd
+  728  ls $GOROOT
+  729  ls
+  730  go --version
+  731  go run example/example.go 
+  732  vim ~/.bashrc
+  733  source ~/.bashrc
+  734  ls
+  735  go run example/example.go
+  736  pwd
+  737  ls
+  738  go
+  739  go run example/example.go
+  740  source ~/.bashrc
+  741  go run example/example.go
+  742  source ~/.bashrc
+  743  go run example/example.go
+  744  reset
+  745  history
+  746  vim ~/.bashrc
+  747  logout
+  748  echo $SGE_ROOT
+  749  cd /sge/8.2.1/
+  750  ls
+  751  cd bin
+  752  ls
+  753  cd lx-amd64/
+  754  ls
+  755  pwd
+  756  cd /lhome/yy
+  757  echo $GOPATH
+  758  qlogin
+  759  cd /nobackup/scicompsoft/yuTest/debugh
+  760  cd /nobackup/scicompsoft/yuTest/debug/
+  761  cd todd
+  762  ls
+  763  ./netpbm-redhat/pamtotiff
+  764  ./netpbm-redhat/bin/pamtotiff
+  765  rm -rf output/*
+  766  ls
+  767  reset
+  768  time sh mipCreator.sh ./output png $PWD/stitched-2171416244194902114.v3draw 0 1 2 1039
+  769  rm -rf output/*
+  770  reset
+  771  time sh mipCreator.sh ./output png $PWD/stitched-2171416244194902114.v3draw 0 1 2 1039
+  772  reset
+  773  time sh mipCreator.sh ./output png $PWD/stitched-2171416244194902114.v3draw 0 1 2 1039
+  774  reset
+  775  time sh mipCreator.sh ./output png $PWD/stitched-2171416244194902114.v3draw 0 1 2 1039
+  776  cd output
+  777  cat stitched-2171416244194902114_signal.ppm | /nobackup/scicompsoft/yuTest/debug/todd/netpbm-redhat//bin/pamtotiff -truecolor > stitched-2171416244194902114_signal.tif
+  778  rm '/nobackup/scicompsoft/yuTest/debug/todd/output/stitched-2171416244194902114_reference.ppm' '/nobackup/scicompsoft/yuTest/debug/todd/output/stitched-2171416244194902114_signal.png' '/nobackup/scicompsoft/yuTest/debug/todd/output/stitched-2171416244194902114_signal.ppm' '/nobackup/scicompsoft/yuTest/debug/todd/output/stitched-2171416244194902114_signal.tif' 
+  779  cd output
+  780  cd ..
+  781  reset
+  782  time sh mipCreator.sh ./output png $PWD/stitched-2171416244194902114.v3draw 0 1 2 1039
+  783  cd output
+  784  ls
+  785  /nobackup/scicompsoft/yuTest/debug/todd/netpbm-redhat//bin/pamtotiff -truecolor stitched-2171416244194902114_signal.ppm > stitched-2171416244194902114_signal.tif
+  786  rm *
+  787  cd ..
+  788  reset
+  789  time sh mipCreator.sh ./output png $PWD/stitched-2171416244194902114.v3draw 0 1 2 1039
+  790  ls
+  791  ls output/
+  792  rm -rf output/*
+  793  reset
+  794  time sh mipCreator.sh ./output png $PWD/stitched-2171416244194902114.v3draw 0 2
+  795  reset
+  796  mkdir output1
+  797  time sh mipCreator.sh ./output1 png $PWD/stitched-2171416244194902114.v3draw 0 2
+  798  mkdir output2
+  799  time sh mipCreator.sh ./output2 png $PWD/stitched-2171416244194902114.v3draw 0 2
+  800  ls
+  801  rm -rf output1
+  802  rm -rf output2
+  803  mkdir output1
+  804  time sh mipCreator.sh ./output2 png $PWD/stitched-2171416244194902114.v3draw 0 2
+  805  ls
+  806  rm -rf output1
+  807  mkdir output1
+  808  ls
+  809  time sh mipCreator.sh ./output1 png $PWD/stitched-2171416244194902114.v3draw 0 2
+  810  cd output
+  811  ls
+  812  ../vaa3d-redhat/vaa3d -x ireg -f iContrastEnhancer -i titched-2171416244194902114_reference.tif  -o titched-2171416244194902114_reference_test1.tif -p "#s 128 #m 5.0" 
+  813  ../vaa3d-redhat/vaa3d -x ireg -f iContrastEnhancer -i stitched-2171416244194902114_reference.tif  -o stitched-2171416244194902114_reference_test1.tif -p "#s 128 #m 5.0" 
+  814  ../vaa3d-redhat/vaa3d -x ireg -f iContrastEnhancer -i stitched-2171416244194902114_reference.tif  -o stitched-2171416244194902114_reference_test2.tif -p "#s 255 #m 5.0" 
+  815  ../vaa3d-redhat/vaa3d -x ireg -f iContrastEnhancer -i stitched-2171416244194902114_reference.tif  -o stitched-2171416244194902114_reference_test3.tif -p "#s 256 #m 5.0" 
+  816  ../vaa3d-redhat/vaa3d -x ireg -f iContrastEnhancer -i stitched-2171416244194902114_reference.tif  -o stitched-2171416244194902114_reference_test3.tif -p "#s 1024 #m 5.0" 
+  817  ../vaa3d-redhat/vaa3d -x ireg -f iContrastEnhancer -i ref.v3draw  -o ref_test1.tif -p " #m 5.0" 
+  818  ../vaa3d-redhat/vaa3d -x ireg -f iContrastEnhancer -i ref.v3draw  -o ref_test1.v3draw -p " #m 5.0" 
+  819  ls
+  820  ../vaa3d-redhat/vaa3d -x ireg -f iContrastEnhancer -i ref.v3draw  -o ref_test1.v3draw -p " #m 5.0" 
+  821  ls
+  822  ../vaa3d-redhat/vaa3d -x ireg -f iContrastEnhancer -i ref.v3draw  -o ref_test2.v3draw -p " #m 5.0" 
+  823  ls
+  824  logout
+  825  pwd
+  826  ls
+  827  uname -a
+  828  reset
+  829  cd /nobackup/scicompsoft/yuTest
+  830  ls
+  831  cd dicksonlab/
+  832  ls
+  833  ls -lat
+  834  cd calciumimaging/
+  835  ls
+  836  ls -lat
+  837  ls  /groups/jacs/jacsDev/servers/jacs-staging/executables/scripts/single_neuron/Toolkits/JBA/brainaligner
+  838  ./brainaligner 
+  839  ls
+  840  gedit align.sh 
+  841  nautilus
+  842  logout
+  843  ls
+  844  exit
+  845  groups
+  846  quit
+  847  logout
+  848  pwd
+  849  ls
+  850  cd /nobackup/
+  851  ls
+  852  ls mousebrainmicro
+  853  ls mousebrainmicro/stitch/
+  854  ls mousebrainmicro/stitch/StitchingFiles/
+  855  ls /nobackup/scicomp
+  856  ls /nobackup/scicompsoft
+  857  ls /nobackup/scicompsoft/yuTest/
+  858  du -sh /nobackup/scicompsoft/yuTest/
+  859  logout
+  860  ls
+  861  ./matlab
+  862  logout
+  863  ./matlab
+  864  logout
+  865  ls /misc/public
+  866  nautilus
+  867  logout
+  868  nautilus
+  869  logout
+  870  pwd
+  871  cd work/
+  872  ls
+  873  ls /misc/public
+  874  cp subject.nii /misc/public/XSJ/
+  875  cp target.nii /misc/public/XSJ/
+  876  ls /misc/public/XSJ/
+  877  logout
+  878  ls
+  879  nautilus
+  880  logout
+  881  ls /misc/public
+  882  ls /misc/public/Fluent2016/
+  883  ls
+  884  ls /lhome
+  885  cp -r /misc/public/Fluent2016/ ./Documents/
+  886  logout
+  887  ls
+  888  ls /groups/flyem/
+  889  ls /groups/flyem/data
+  890  ls /groups/flyem/data/dvid-data
+  891  ls /groups/flyem/data/dvid-data/labelsurf_mac/
+  892  ls /mnt/public
+  893  ls /misc/publid
+  894  ls /misc/public
+  895  mkdir /misc/public/Yang
+  896  cp -r /groups/flyem/data/dvid-data/labelsurf_mac /misc/public/Yang/
+  897  logout
+  898  ls
+  899  ls /groups/flyem/data/dvid-data/labelsurf_mac/
+  900  ls /groups/flyem/data/dvid-data/labelsurf_mac/test-v1/
+  901  du -sh /groups/flyem/data/dvid-data/labelsurf_mac/test-v1/
+  902  du -sh /misc/public/Yang/labelsurf_mac/test-v1/
+  903  logout
+  904  ls
+  905  pwd
+  906  cd /home
+  907  ls
+  908  cd /opt
+  909  ls
+  910  ls /opt/paragt
+  911  ls /opt/users/
+  912  mkdir /opt/Download
+  913  sudo mkdir /opt/Download
+  914  ls /opt/
+  915  ls /groups/flyem/home/zhaot/Work/
+  916  ls /groups/flyem/home/zhaot/Work/neutube_ws
+  917  which qmake
+  918  qmake --version
+  919  echo $PATH
+  920  ls /groups/flyem/home/zhaot/Work/neutube_ws/neurolabi
+  921  ls /opt/
+  922  ls /opt/bin
+  923  ls /groups/flyem/home/zhaot/Work/neutube_ws
+  924  ls /groups/flyem/home/zhaot/Work/
+  925  ls /groups/flyem/home/zhaot/Work/neutube_ws
+  926  ls /groups/flyem/home/zhaot/Work/neutube_ws/neuTube1_0
+  927  ls -lat /groups/flyem/home/zhaot/Work/neutube_ws/
+  928  ls /home/
+  929  glinfo
+  930  logout
+  931  ping paragt-ws1
+  932  ping paragt-ws1.hhmi.org
+  933  ssh paragt-ws1
+  934  ping yuy-ws.hhmi.org
+  935  ping paragt-ws1.hhmi.org
+  936  group
+  937  who
+  938  whoami
+  939  who
+  940  ping paragt-ws.hhmi.org
+  941  ssh -X paragt-ws.hhmi.org
+  942  logout
+  943  ls /misc/public
+  944  ls /misc/public/SJ2Yang/
+  945  pwd
+  946  ls
+  947  cd work/
+  948  ls
+  949  cp -r /misc/public/SJ2Yang/ ./
+  950  ls
+  951  logout
+  952  ls
+  953  cp -r /groups/jacs/jacsShare/yuTest/ ~/work
+  954  ls
+  955  cd work/
+  956  ls
+  957  du -sh yuTest
+  958  ls
+  959  sudo cp -r /groups/jacs/jacsShare/yuTest/Share4Christopher/ /lhome/yy/servers/yuTest
+  960  logout
+  961  ls /nobackup2
+  962  ls
+  963  ls /nobackup2
+  964  cd /nobackup2
+  965  ls
+  966  cd mouselight
+  967  ls
+  968  mkdir yuy
+  969  ls
+  970  ls arthurb/
+  971  du -sh yuy
+  972  ls
+  973  ls 2015-07-11-johan/
+  974  du -sh 2015-07-11-johan/
+  975  du -sh 2015-07-11-johan/*
+  976  tree 2015-07-11-johan/
+  977  tree 2015-07-11-johan/ > yuy/octree.txt
+  978  ls
+  979  cd 2015-07-11-johan/
+  980  ls
+  981  cp default.* ~/Dropbox\ \(HHMI\)/
+  982  ls
+  983  cp calculated_parameters.jl ../yuy/data/
+  984  cp transform.txt ../yuy/data
+  985  ls
+  986  cp -r 3 ../yuy/data
+  987  tree 3
+  988  ls
+  989  pwd
+  990  ls /
+  991  ls /groups/
+  992  which dvid
+  993  which g++
+  994  g++ --version
+  995  ls /usr/bin/
+  996  uname -a
+  997  ifconfig
+  998  logout
+  999  which dvid
+ 1000  ls /data
+ 1001  echo $BUILDEM_DIR 
+ 1002  ls
+ 1003  cd /data
+ 1004  ls
+ 1005  mkdir mouselight
+ 1006  ls
+ 1007  cd mouselight/
+ 1008  ls
+ 1009  ls /opt/
+ 1010  reset
+ 1011  echo $BUILDEM_DIR 
+ 1012  echo $PATH
+ 1013  mkdir dvidspace
+ 1014  mkdir config
+ 1015  ls
+ 1016  mv config/ dvidspace/
+ 1017  ls
+ 1018  cd dvidspace/
+ 1019  ls
+ 1020  mkdir dvidstore
+ 1021  ls
+ 1022  pwd
+ 1023  ls
+ 1024  vim config/config826.toml
+ 1025  gedit config/config826.toml 
+ 1026  vim config/config826.toml 
+ 1027  cp ~/work/dvid-v0.8.4-linux.tar.gz ./
+ 1028  ls
+ 1029  tar zxvf dvid-v0.8.4-linux.tar.gz 
+ 1030  ls
+ 1031  mv dvid-distro/ dvid
+ 1032  ls
+ 1033  ls dvid
+ 1034  echo $BUILDEM_DIR 
+ 1035  ls $BUILDEM_DIR 
+ 1036  export BUILDEM_DIR=/data/mouselight/dvidspace/dvid
+ 1037  which dvid
+ 1038  export PATH=/data/mouselight/dvidspace/dvid/bin:$PATH
+ 1039  which dvid
+ 1040  dvid -version
+ 1041  ls dvid/lib
+ 1042  echo $LD_LIBRARY_PATH 
+ 1043  export LD_LIBRARY_PATH=/data/mouselight/dvidspace/dvid/lib:$LD_LIBRARY_PATH 
+ 1044  which dvid
+ 1045  dvid -version
+ 1046  which gcc
+ 1047  gcc --version
+ 1048  ls
+ 1049  dvid help
+ 1050  ldd dvid/bin/dvid
+ 1051  which gcc
+ 1052  /usr/local/bin/gcc --version
+ 1053  ls
+ 1054  ls /opt/
+ 1055  ls /opt/buildem
+ 1056  ls /opt/buildem/bin/
+ 1057  ls /opt/buildem/bin/dvid
+ 1058  /opt/buildem/bin/dvid -version
+ 1059  ls /lib64/libc.so.6 
+ 1060  ldd /lib64/libc.so.6 
+ 1061  ls /usr/lib64/
+ 1062  df -h
+ 1063  ls
+ 1064  ls /usr/lib64
+ 1065  ls -lath /
+ 1066  ls /usr/bin/gcc
+ 1067  which gcc
+ 1068  gcc --version
+ 1069  echo $LD_LIBRARY_PATH 
+ 1070  gcc --version
+ 1071  dvid help
+ 1072  export LD_LIBRARY_PATH=/lib64:$LD_LIBRARY_PATH 
+ 1073  dvid help
+ 1074  diff /lib64/libc.so.6 /usr/lib64/libc.so 
+ 1075  ldd dvid/bin/dvid
+ 1076  export LD_LIBRARY_PATH=/usr/lib64:$LD_LIBRARY_PATH 
+ 1077  dvid help
+ 1078  which go
+ 1079  go --version
+ 1080  go version
+ 1081  ls /home/yuy/work/go
+ 1082  ls
+ 1083  mdkir /home/yuy/work/go
+ 1084  mkdir
+ 1085  mkdir ~/work/go
+ 1086  ls
+ 1087  which go
+ 1088  go version
+ 1089  echo $GOROOT
+ 1090  echo $GOPATH
+ 1091  ls $GOPATH
+ 1092  ls
+ 1093  ls dvid/bin
+ 1094  ls
+ 1095  tar -C $BUILDEM_DIR -xzf go1.6.3.linux-amd64.tar.gz
+ 1096  export GOROOT=$BUILDEM_DIR/go
+ 1097  export PATH=${PATH}:${GOROOT//://bin:}/bin:
+ 1098  which go
+ 1099  export PATH=${GOROOT//://bin:}/bin:${PATH}
+ 1100  which go
+ 1101  ls
+ 1102  echo $GOROOT
+ 1103  mkdir src
+ 1104  ls
+ 1105  make -p src/github.com/janelia-flyem/
+ 1106  ls
+ 1107  ls src/
+ 1108  export DVIDSRC=$GOPATH/src/github.com/janelia-flyem/dvid
+ 1109  export GOPATH=/data/mouselight/dvidspace
+ 1110  export DVIDSRC=$GOPATH/src/github.com/janelia-flyem/dvid
+ 1111  mkdir -p $DVIDSRC
+ 1112  ls
+ 1113  ls src/
+ 1114  cd $DVIDSRC 
+ 1115  git clone https://github.com/janelia-flyem/dvid .
+ 1116  cd ..
+ 1117  ls
+ 1118  git clone https://go.googlesource.com/go
+ 1119  echo $GOROOT
+ 1120  ls
+ 1121  cd go
+ 1122  ls
+ 1123  cd src/
+ 1124  ls
+ 1125  ./all.bash
+ 1126  export GOROOT_BOOTSTRAP=$GOROOT
+ 1127  ls
+ 1128  cd ..
+ 1129  ls
+ 1130  cd ..
+ 1131  ls
+ 1132  echo $GOROOT
+ 1133  cd dvid
+ 1134  ls
+ 1135  git clone https://go.googlesource.com/go
+ 1136  ls
+ 1137  which go
+ 1138  cd go
+ 1139  cd src
+ 1140  ls
+ 1141  ./all.bash
+ 1142  cd ..
+ 1143  export GOROOT_BOOTSTRAP=/usr/bin
+ 1144  export GOROOT_BOOTSTRAP=/usr
+ 1145  ls
+ 1146  cd src/
+ 1147  ls
+ 1148  ./all.bash
+ 1149  export GOROOT_BOOTSTRAP=$GOROOT
+ 1150  ./all.bash
+ 1151  cd ..
+ 1152  mkdir bin
+ 1153  cp /usr/bin/go bin/
+ 1154  cd src/
+ 1155  all.bash
+ 1156  cd ..
+ 1157  ls
+ 1158  cd ..
+ 1159  ls
+ 1160  cd src/github.com/janelia-flyem/dvid
+ 1161  makdir build
+ 1162  cd build
+ 1163  ls
+ 1164  mkdir build
+ 1165  cd build/
+ 1166  ccmake -D BUILEM_DIR=$BUILDEM_DIR ..
+ 1167  make
+ 1168  make dvid
+ 1169  make test
+ 1170  ls
+ 1171  make
+ 1172  make dvid
+ 1173  make test
+ 1174  ccmake -D BUILEM_DIR=$BUILDEM_DIR ..
+ 1175  make
+ 1176  make dvid
+ 1177  which python
+ 1178  python --version
+ 1179  make
+ 1180  make dvid
+ 1181  make clean
+ 1182  make 
+ 1183  make dvid
+ 1184  make test
+ 1185  go version
+ 1186  ls
+ 1187  cd ..
+ 1188  ls
+ 1189  cd ..
+ 1190  ls
+ 1191  cd ..
+ 1192  ls
+ 1193  cd janelia-flyem/
+ 1194  ls
+ 1195  cd dvid
+ 1196  ls
+ 1197  pwd
+ 1198  tar -C $BUILDEM_DIR -xzf go1.6.3.linux-amd64.tar.gz
+ 1199  tar -C $BUILDEM_DIR -xzf ~/work/go1.6.3.linux-amd64.tar.gz
+ 1200  cd build
+ 1201  which go
+ 1202  go version
+ 1203  make
+ 1204  make clean
+ 1205  make
+ 1206  make dvid
+ 1207  which go
+ 1208  ls /data/mouselight/dvidspace/dvid/go
+ 1209  ls /data/mouselight/dvidspace/dvid/go/lib
+ 1210  ls /data/mouselight/dvidspace/dvid/go/lib/time
+ 1211  ls /data/mouselight/dvidspace/dvid/go/
+ 1212  make
+ 1213  cd ..
+ 1214  git checkout development
+ 1215  git branch
+ 1216  git branches
+ 1217  cd ..
+ 1218  ls
+ 1219  cd dvid
+ 1220  ls
+ 1221  ls go
+ 1222  ls go/bin
+ 1223  ls go/bin/go
+ 1224  go/bin/go --version
+ 1225  go/bin/go version
+ 1226  ls
+ 1227  ls bin
+ 1228  bin/dvid
+ 1229  bin/dvid --verison
+ 1230  ls
+ 1231  cd ..
+ 1232  ls
+ 1233  cd src/
+ 1234  echo $DVIDSRC
+ 1235  rm -rf $DVIDSRC 
+ 1236  tar -C /data/mouselight/dvidspace/src/github.com/janelia-flyem/ -xzf ~/work/dvid-0.8.4.tar.gz 
+ 1237  cd $DVIDSRC 
+ 1238  cd /data/mouselight/dvidspace/src/github.com/janelia-flyem/
+ 1239  ls
+ 1240  mv dvid-0.8.4/ dvid
+ 1241  ls
+ 1242  cd dvid
+ 1243  ls
+ 1244  mdkir build
+ 1245  mkdir build
+ 1246  cd build/
+ 1247  ccmake ..
+ 1248  ccmake -D BUILEM_DIR=$BUILDEM_DIR ..
+ 1249  make
+ 1250  make dvid
+ 1251  which go
+ 1252  go version
+ 1253  ls /usr/local/lib
+ 1254  ls /usr/local/
+ 1255  ls /usr/local/lib64
+ 1256  ls /usr/local/
+ 1257  ls /usr/local/lib
+ 1258  ls /usr/local/bin
+ 1259  ls /opt/
+ 1260  ls /opt/bin/g++
+ 1261  ls /opt/lib/libc*
+ 1262  ls /opt/lib64/libc*
+ 1263  ls
+ 1264  make
+ 1265  make clean
+ 1266  make
+ 1267  ls
+ 1268  make dvid
+ 1269  go version
+ 1270  ls /opt/lib64/libc*
+ 1271  ccmake -D BUILEM_DIR=$BUILDEM_DIR ..
+ 1272  make
+ 1273  make dvid
+ 1274  ls
+ 1275  ls ../
+ 1276  ls ../../../../dvid/go
+ 1277  ls ../../../../dvid/go/src
+ 1278  ls ../
+ 1279  cd ..
+ 1280  ls
+ 1281  cd ..
+ 1282  ls
+ 1283  rm -rf go
+ 1284  cd dvid/
+ 1285  ls
+ 1286  cd build/
+ 1287  make
+ 1288  make dvid
+ 1289  ls
+ 1290  vim Makefile 
+ 1291  make
+ 1292  make dvid
+ 1293  which go
+ 1294  go version
+ 1295  gcc --version
+ 1296  cd ..
+ 1297  ls
+ 1298  cd ..
+ 1299  ls
+ 1300  cd src
+ 1301  ls
+ 1302  cp ~/work/gcc-4.8.5.tar.gz ./
+ 1303  ls
+ 1304  tar zxvf gcc-4.8.5.tar.gz 
+ 1305  ls
+ 1306  cd gcc-4.8.5
+ 1307  ls
+ 1308  which go
+ 1309  echo $LD_LIBRARY_PATH 
+ 1310  echo $BUILDEM_DIR 
+ 1311  ls
+ 1312  ./configure --prefix=$BUILDEM_DIR 
+ 1313  cp ~/work/mpfr-3.1.4.tar.gz ../
+ 1314  cp ~/work/gmp-6.1.1.tar.bz2 ../
+ 1315  cd ..
+ 1316  ls
+ 1317  tar zxvf mpfr-3.1.4.tar.gz 
+ 1318  ls
+ 1319  bzip2 -d gmp-6.1.1.tar.bz2 
+ 1320  ls
+ 1321  tar xvf gmp-6.1.1.tar 
+ 1322  ls
+ 1323  cd gmp-6.1.1
+ 1324  ls
+ 1325  ./configure --prefix=$BUILDEM_DIR 
+ 1326  make -j8
+ 1327  make install
+ 1328  cd ..
+ 1329  ls
+ 1330  cd mpfr-3.1.4
+ 1331  ls
+ 1332  ./configure --prefix=$BUILDEM_DIR 
+ 1333  make -j8
+ 1334  make install
+ 1335  ls
+ 1336  cd ..
+ 1337  ls
+ 1338  cd gcc-4.8.5
+ 1339  ls
+ 1340  ./configure --prefix=$BUILDEM_DIR 
+ 1341  ./configure --help
+ 1342  ./configure --prefix=$BUILDEM_DIR --with-gmp=$BUILDEM_DIR --with-mpfr=$BUILDEM_DIR 
+ 1343  cd ..
+ 1344  ls
+ 1345  cp ~/work/mpc-1.0.3.tar.gz ./
+ 1346  ls
+ 1347  tar zxvf mpc-1.0.3.tar.gz 
+ 1348  cd mpc-1.0.3
+ 1349  ls
+ 1350  ./configure --help
+ 1351  ./configure --prefix=$BUILDEM_DIR --with-gmp=$BUILDEM_DIR  --with-mpfr=$BUILDEM_DIR 
+ 1352  make -j8
+ 1353  make install
+ 1354  cd ..
+ 1355  ls
+ 1356  cd gcc
+ 1357  cd gcc-4.8.5
+ 1358  ls
+ 1359  ./configure --prefix=$BUILDEM_DIR --with-gmp=$BUILDEM_DIR  --with-mpfr=$BUILDEM_DIR --with-mpc=$BUILDEM_DIR 
+ 1360  make -j8
+ 1361  make clean
+ 1362  make -j16
+ 1363  /opt/buildem/dvid
+ 1364  ls /opt/
+ 1365  ls /opt/buildem
+ 1366  ls /opt/buildem/bin/dvid
+ 1367  /opt/buildem/bin/dvid
+ 1368  /opt/buildem/bin/dvid help
+ 1369  make 
+ 1370  yum whatprovides *stubs-32.h
+ 1371  echo $RESULT
+ 1372  yum list glibc-devel
+ 1373  make
+ 1374  ls
+ 1375  make install
+ 1376  make
+ 1377  yum list gcc
+ 1378  yum list gcc-c++
+ 1379  ls
+ 1380  make
+ 1381  reset
+ 1382  make
+ 1383  ls /usr/include/gnu
+ 1384  reset
+ 1385  ./configure --help
+ 1386  make clean
+ 1387  make distclean
+ 1388  ./configure --prefix=$BUILDEM_DIR --with-cpu=x86-64  --with-gmp=$BUILDEM_DIR  --with-mpfr=$BUILDEM_DIR --with-mpc=$BUILDEM_DIR 
+ 1389  uname -a
+ 1390  make -j16
+ 1391  vim /data/dvid-env 
+ 1392  echo $BUILDEM_DIR 
+ 1393  cd ..
+ 1394  ls
+ 1395  echo $BUILDEM_DIR > myenv
+ 1396  echo $GOPATH >> myenv
+ 1397  more myenv 
+ 1398  echo $GOROOT >> myenv
+ 1399  more myenv 
+ 1400  source /data/dvid-env 
+ 1401  which dvid
+ 1402  dvid --version
+ 1403  dvid help
+ 1404  ldd dvid
+ 1405  echo $PATH
+ 1406  ls /opt/buildem/lib
+ 1407  echo $LD_LIBRARY_PATH 
+ 1408  ls /opt/local/lib
+ 1409  more /data/dvid-env 
+ 1410  ldd dvid
+ 1411  ls
+ 1412  ls config/
+ 1413  more config/config826.toml 
+ 1414  ls
+ 1415  ls dvid
+ 1416  ls
+ 1417  nohup dvid -verbose serve /data/mouselight/dvidspace/config/config826.toml 
+ 1418  ps aux | grep dvid
+ 1419  cat config/config826.toml 
+ 1420  nohup dvid -verbose serve /data/mouselight/dvidspace/config/config826.toml 
+ 1421  ls
+ 1422  pwd
+ 1423  cat myenv 
+ 1424  vim runDVID.sh
+ 1425  pwd
+ 1426  ls
+ 1427  cat myenv 
+ 1428  history > historycmd_temdvid.txt

@@ -1,0 +1,1000 @@
+   46  ls
+   47  source set_env
+   48  ls
+   49  ./launch_prod
+   50  ps aux | grep dvid
+   51  ./launch_prod
+   52  ps aux | grep dvid
+   53  qlogin -l excl=true
+   54  pwd
+   55  cd /nobackup/scicompsoft/yuTest/dicksonlab/warpVienna2JFRC2014
+   56  mkdir submit
+   57  cd submit
+   58  ls
+   59  history
+   60  pwd
+   61  qstat
+   62  sh /nobackup/scicompsoft/yuTest/dicksonlab/warpVienna2JFRC2014/cmdWarp.sh /nobackup/scicompsoft/yuTest/dicksonlab/LexAp65 /nobackup/scicompsoft/yuTest/dicksonlab/LexAp65_JFRC2014
+   63  qstat
+   64  ls
+   65  qstat
+   66  more warpVienna.sh.e9367310
+   67  more warpVienna.sh.o9367310
+   68  reset
+   69  sh /nobackup/scicompsoft/yuTest/dicksonlab/warpVienna2JFRC2014/cmdWarp.sh /nobackup/scicompsoft/yuTest/dicksonlab/LexAp65 /nobackup/scicompsoft/yuTest/dicksonlab/LexAp65_JFRC2014
+   70  rm -rf '/nobackup/scicompsoft/yuTest/dicksonlab/LexAp65_JFRC2014' 
+   71  mkdir '/nobackup/scicompsoft/yuTest/dicksonlab/LexAp65_JFRC2014' 
+   72  ls
+   73  rm *
+   74  ls -lat '/nobackup/scicompsoft/yuTest/dicksonlab/warpVienna2JFRC2014/warpVienna.sh' 
+   75  sh /nobackup/scicompsoft/yuTest/dicksonlab/warpVienna2JFRC2014/cmdWarp.sh /nobackup/scicompsoft/yuTest/dicksonlab/LexAp65 /nobackup/scicompsoft/yuTest/dicksonlab/LexAp65_JFRC2014
+   76  ls
+   77  qstat
+   78  ls
+   79  qstat
+   80  rm *
+   81  sh /nobackup/scicompsoft/yuTest/dicksonlab/warpVienna2JFRC2014/cmdWarp.sh /nobackup/scicompsoft/yuTest/dicksonlab/LexAp65 /nobackup/scicompsoft/yuTest/dicksonlab/LexAp65_JFRC2014
+   82  rm *
+   83  ls
+   84  rm -rf ../../LexAp65_JFRC2014/
+   85  mkdir ../../LexAp65_JFRC2014/
+   86  sh /nobackup/scicompsoft/yuTest/dicksonlab/warpVienna2JFRC2014/cmdWarp.sh /nobackup/scicompsoft/yuTest/dicksonlab/LexAp65 /nobackup/scicompsoft/yuTest/dicksonlab/LexAp65_JFRC2014
+   87  ls
+   88  more warpVienna.sh.e9370407
+   89  more warpVienna.sh.o9370407
+   90  more warpVienna.sh.e9370407
+   91  qstat
+   92  rm *
+   93  sh /nobackup/scicompsoft/yuTest/dicksonlab/warpVienna2JFRC2014/cmdWarp.sh /nobackup/scicompsoft/yuTest/dicksonlab/LexAp65 /nobackup/scicompsoft/yuTest/dicksonlab/LexAp65_JFRC2014
+   94  ls
+   95  qstat
+   96  ls
+   97  more warpVienna.sh.e9371401
+   98  more warpVienna.sh.o9371401
+   99  ls
+  100  rm *
+  101  for((i=9371155; i<9371833; i++)); do qdel $i; done
+  102  ls
+  103  rm *
+  104  rm -rf ../../LexAp65_JFRC2014/
+  105  mkdir ../../LexAp65_JFRC2014/
+  106  reset
+  107  qstat
+  108  sh /nobackup/scicompsoft/yuTest/dicksonlab/warpVienna2JFRC2014/cmdWarp.sh /nobackup/scicompsoft/yuTest/dicksonlab/LexAp65 /nobackup/scicompsoft/yuTest/dicksonlab/LexAp65_JFRC2014
+  109  qstat
+  110  ls
+  111  more  warpVienna.sh.o9372158
+  112  cd ..
+  113  ls
+  114  cd ..
+  115  ls
+  116  ls /nobackup/scicompsoft/yuTest/dicksonlab/LexAp65_JFRC2014/VT013334_LexAp65_attP2_1/VT013334_LexAp65_attP2_1_rs.v3draw
+  117  ls /nobackup/scicompsoft/yuTest/dicksonlab/LexAp65_JFRC2014/VT013334_LexAp65_attP2_1
+  118  pwd
+  119  cd warpVienna2JFRC2014/
+  120  ls
+  121  rm submit/*
+  122  ls
+  123  rm *v3draw
+  124  ls
+  125  rm *~
+  126  ls
+  127  cd submit/
+  128  ls
+  129  qstat
+  130  sh /nobackup/scicompsoft/yuTest/dicksonlab/warpVienna2JFRC2014/cmdWarp.sh /nobackup/scicompsoft/yuTest/dicksonlab/LexAp65 /nobackup/scicompsoft/yuTest/dicksonlab/LexAp65_JFRC2014
+  131  qstat
+  132  reset
+  133  qstat
+  134  reset
+  135  qstat
+  136  ls /nobackup/scicompsoft/yuTest/dicksonlab/LexAp65_JFRC2014/*.tif  | wc
+  137  rm *
+  138  reset
+  139  qstat
+  140  sh /nobackup/scicompsoft/yuTest/dicksonlab/warpVienna2JFRC2014/cmdWarp.sh /nobackup/scicompsoft/yuTest/dicksonlab/LexAp65 /nobackup/scicompsoft/yuTest/dicksonlab/LexAp65_JFRC2014
+  141  qstat
+  142  ls -lat
+  143  reset
+  144  qstat
+  145  ls /nobackup/scicompsoft/yuTest/dicksonlab/LexAp65_JFRC2014/*.tif  | wc
+  146  rm *
+  147  ls
+  148  sh /nobackup/scicompsoft/yuTest/dicksonlab/warpVienna2JFRC2014/cmdWarp.sh /nobackup/scicompsoft/yuTest/dicksonlab/LexAp65 /nobackup/scicompsoft/yuTest/dicksonlab/LexAp65_JFRC2014
+  149  qstat
+  150  ls
+  151  qstat
+  152  ls
+  153  ls /nobackup/scicompsoft/yuTest/dicksonlab/LexAp65_JFRC2014/*.tif  | wc
+  154  rm *
+  155  ls
+  156  qstat
+  157  sh /nobackup/scicompsoft/yuTest/dicksonlab/warpVienna2JFRC2014/cmdWarp.sh /nobackup/scicompsoft/yuTest/dicksonlab/p65ADZp /nobackup/scicompsoft/yuTest/dicksonlab/p65ADZp_jfrc
+  158  qstat
+  159  ls
+  160  qstat
+  161  reset
+  162  qstat
+  163  python 9487197 - 9486193
+  164  python
+  165  ls /nobackup/scicompsoft/yuTest/dicksonlab/p65ADZp_jfrc/*.tif | wc
+  166  reset
+  167  qstat
+  168  rm -rf '/nobackup/scicompsoft/yuTest/dicksonlab/tmpdir' 
+  169  qstat
+  170  ls '/nobackup/scicompsoft/yuTest/dicksonlab/p65ADZp_jfrc' | wc
+  171  rm *
+  172  sh /nobackup/scicompsoft/yuTest/dicksonlab/warpVienna2JFRC2014/cmdWarp.sh /nobackup/scicompsoft/yuTest/dicksonlab/p65ADZp /nobackup/scicompsoft/yuTest/dicksonlab/p65ADZp_jfrc
+  173  qstat
+  174  ls '/nobackup/scicompsoft/yuTest/dicksonlab/p65ADZp_jfrc' | wc
+  175  ls /nobackup/scicompsoft/yuTest/dicksonlab/p65ADZp_jfrc/*.tif | wc
+  176  qstat
+  177  ls /nobackup/scicompsoft/yuTest/dicksonlab/p65ADZp_jfrc/*.tif | wc
+  178  qstat
+  179  ls /nobackup/scicompsoft/yuTest/dicksonlab/p65ADZp_jfrc/*.tif | wc
+  180  sh /nobackup/scicompsoft/yuTest/dicksonlab/warpVienna2JFRC2014/cmdWarp.sh /nobackup/scicompsoft/yuTest/dicksonlab/p65ADZp /nobackup/scicompsoft/yuTest/dicksonlab/p65ADZp_jfrc
+  181  qstat
+  182  ls /nobackup/scicompsoft/yuTest/dicksonlab/p65ADZp_jfrc/*.tif | wc
+  183  rm *
+  184  ls
+  185  qstat
+  186  sh /nobackup/scicompsoft/yuTest/dicksonlab/warpVienna2JFRC2014/cmdWarp.sh /nobackup/scicompsoft/yuTest/dicksonlab/GAL4 /nobackup/scicompsoft/yuTest/dicksonlab/GAL4_jfrc
+  187  qstat
+  188  qlogin
+  189  logout
+  190  qlogin
+  191  logout
+  192  cd /nobackup/scicompsoft/yuTest/
+  193  ls
+  194  cd dicksonlab/
+  195  ls
+  196  qstat
+  197  cd warpVienna2JFRC2014/submit
+  198  rm *
+  199  vim /nobackup/scicompsoft/yuTest/dicksonlab/warpVienna2JFRC2014/cmdWarp.sh
+  200  sh /nobackup/scicompsoft/yuTest/dicksonlab/warpVienna2JFRC2014/cmdWarp.sh /nobackup/scicompsoft/yuTest/dicksonlab/GAL4 /nobackup/scicompsoft/yuTest/dicksonlab/GAL4_jfrc
+  201  qstat
+  202  reset
+  203  history
+  204  qstat
+  205  logout
+  206  qlogin
+  207  logout
+  208  qstat
+  209  cd /nobackup/scicompsoft/yuTest/dicksonlab/
+  210  ls
+  211  ls GLA4_jfrc/*.tif | wc
+  212  ls GAL4_jfrc
+  213  ls GAL4_jfrc | wc
+  214  ls GAL4_jfrc/*.tif | wc
+  215  cd submit
+  216  ls
+  217  cd warpVienna2JFRC2014/
+  218  cd submit/
+  219  qstat
+  220  rm *
+  221  ls
+  222  sh /nobackup/scicompsoft/yuTest/dicksonlab/warpVienna2JFRC2014/cmdWarp.sh /nobackup/scicompsoft/yuTest/dicksonlab/GAL4 /nobackup/scicompsoft/yuTest/dicksonlab/GAL4_jfrc
+  223  qstat
+  224  ls *e*5826
+  225  ls *.e*5826
+  226  more *.e*5826
+  227  qstat
+  228  ls GAL4_jfrc/*.tif | wc
+  229  ls GAL4_jfrc | wc
+  230  ls ../../GAL4_jfrc/*.tif | wc
+  231  qstat
+  232  ls ../../GAL4_jfrc/*.tif | wc
+  233  rm *
+  234  for i in ../../GAL4_jfrc/*.tif; do echo ${i%*.am*}; done
+  235  for i in ../../GAL4_jfrc/*.tif; do ls ${i%*.am*}; done
+  236  for i in ../../GAL4_jfrc/*.tif; do rm -rf ${i%*.am*}; done
+  237  rm *
+  238  ls
+  239  qstat
+  240  reset
+  241  sh /nobackup/scicompsoft/yuTest/dicksonlab/warpVienna2JFRC2014/cmdWarp.sh /nobackup/scicompsoft/yuTest/dicksonlab/ZpGAL4DBD /nobackup/scicompsoft/yuTest/dicksonlab/ZpGAL4DBD_jfrc
+  242  qstat
+  243  sh /nobackup/scicompsoft/yuTest/dicksonlab/warpVienna2JFRC2014/cmdWarp.sh /nobackup/scicompsoft/yuTest/dicksonlab/LexAGAD /nobackup/scicompsoft/yuTest/dicksonlab/LexAGAD_jfrc
+  244  qstat
+  245  ls
+  246  qstat
+  247  reset
+  248  qstat
+  249  reset
+  250  qstat
+  251  reset
+  252  qstat
+  253  reset
+  254  qstat
+  255  reset
+  256  qstat
+  257  sh /nobackup/scicompsoft/yuTest/dicksonlab/warpVienna2JFRC2014/cmdWarp.sh /nobackup/scicompsoft/yuTest/dicksonlab/ZpGAL4DBD /nobackup/scicompsoft/yuTest/dicksonlab/ZpGAL4DBD_jfrc
+  258  reset
+  259  qstat
+  260  sh /nobackup/scicompsoft/yuTest/dicksonlab/warpVienna2JFRC2014/cmdWarp.sh /nobackup/scicompsoft/yuTest/dicksonlab/LexAGAD /nobackup/scicompsoft/yuTest/dicksonlab/LexAGAD_jfrc
+  261  qstat
+  262  sh /nobackup/scicompsoft/yuTest/dicksonlab/warpVienna2JFRC2014/cmdWarp.sh /nobackup/scicompsoft/yuTest/dicksonlab/LexAGAD /nobackup/scicompsoft/yuTest/dicksonlab/LexAGAD_jfrc
+  263  qstat
+  264  rm *
+  265  qstat
+  266  logout
+  267  qlogin
+  268  logout
+  269  qlogin
+  270  cd /nobackup/scicompsoft/yuTest/dicksonlab/warpJFRC2010and2014
+  271  qstat
+  272  qsub -A dicksonb -b y -cwd -V -pe batch 16 '/nobackup/scicompsoft/yuTest/dicksonlab/warpJFRC2010and2014/alignCmd.sh' 
+  273  qstat
+  274  ls
+  275  qstat
+  276  more alignCmd.sh.o11002055 
+  277  more alignCmd.sh.e11002055 
+  278  more alignCmd.sh.o11002055 
+  279  qstat
+  280  ls
+  281  more alignCmd.sh.o11002055 
+  282  pwd
+  283  ls
+  284  qstat
+  285  qdel 11002024
+  286  ls
+  287  qstat
+  288  logout
+  289  logout
+  290  cd /nobackup/scicompsoft/yuTest/GMR
+  291  ls
+  292  rm *~
+  293  ls
+  294  cd test
+  295  ls
+  296  rm *
+  297  ls
+  298  cd ..
+  299  ls
+  300  cd test
+  301  vim test.sh
+  302  qstat
+  303  history
+  304  vim alignCmd.sh
+  305  pwd
+  306  ls 
+  307  chmod + alignCmd.sh
+  308  chmod +x alignCmd.sh
+  309  ls
+  310  rm *~
+  311  ls
+  312  qstat
+  313  qsub -A dicksonb -b y -cwd -V -pe batch 16 /nobackup/scicompsoft/yuTest/GMR/test/alignCmd.sh
+  314  qstat
+  315  ls
+  316  more alignCmd.sh.o11361656 
+  317  ls
+  318  ls GMR_10E08_AE_01_05-fA01b_C080501_20080502033039250
+  319  ls GMR_10E08_AE_01_05-fA01b_C080501_20080502033039250/Outputs/
+  320  pwd
+  321  ls
+  322  qstat
+  323  ls
+  324  rm GMR_10E08_AE_01_05-fA01b_C080501_20080502033039250*
+  325  ls
+  326  rm core*
+  327  ls
+  328  ls ../data
+  329  bzip2 -h
+  330  ls
+  331  ls GMR_10E08_AE_01_05-fA01b_C080501_20080502033039250/
+  332  ls GMR_10E08_AE_01_05-fA01b_C080501_20080502033039250/Outputs/
+  333  rm -rf GMR_10E08_AE_01_05-fA01b_C080501_20080502033039250/
+  334  ls
+  335  rm alignCmd.sh.*
+  336  ls
+  337  rm test.sh 
+  338  rm Xvfb.5282.log 
+  339  ls
+  340  ls ../data
+  341  qsub -A dicksonb -b y -cwd -V -pe batch 16 /nobackup/scicompsoft/yuTest/GMR/test/alignCmd.sh
+  342  qstat
+  343  ls
+  344  qstat
+  345  ls
+  346  ls GMR_10E08_AE_01_05-fA01b_C080501_20080502033039250
+  347  ls GMR_10E08_AE_01_05-fA01b_C080501_20080502033039250/Outputs/
+  348  ls -lat GMR_10E08_AE_01_05-fA01b_C080501_20080502033039250/Outputs/
+  349  ls
+  350  qstat
+  351  ls ../data
+  352  ls
+  353  rm alignCmd.sh.*
+  354  ls
+  355  rm -rf GMR_10E08_AE_01_05-fA01b_C080501_20080502033039250*
+  356  ls
+  357  rm Xvfb.5282.log 
+  358  rm alignCmd.sh~
+  359  ls
+  360  qstat
+  361  qsub -A dicksonb -b y -cwd -V -pe batch 16 /nobackup/scicompsoft/yuTest/GMR/test/alignCmd.sh
+  362  qstat
+  363  ls
+  364  qstat
+  365  ls
+  366  ls -lat GMR_10E08_AE_01_05-fA01b_C080501_20080502033039250/Outputs/
+  367  qstat
+  368  ls -lat GMR_10E08_AE_01_05-fA01b_C080501_20080502033039250/Outputs/
+  369  ls
+  370  qstat
+  371  ls -lat GMR_10E08_AE_01_05-fA01b_C080501_20080502033039250/Outputs/
+  372  more alignCmd.sh.o11364010 
+  373  tail -f alignCmd.sh.o11364010 
+  374  qstat
+  375  ls
+  376  tail alignCmd.sh.o11364010 
+  377  tail alignCmd.sh.o11364010  | more
+  378  qstat
+  379  ls -lat GMR_10E08_AE_01_05-fA01b_C080501_20080502033039250/Outputs/
+  380  ls -lat GMR_10E08_AE_01_05-fA01b_C080501_20080502033039250/
+  381  ls /nobackup/scicompsoft/yuTest/GMR/data/GMR_10E08_AE_01_05-fA01b_C080501_20080502033039250.lsm.bz2
+  382  ls
+  383  rm *.e*
+  384  rm *.o*
+  385  ls
+  386  rm *.*o*
+  387  rm *.*e*
+  388  ls
+  389  qstat
+  390  qsub -A dicksonb -b y -cwd -V -pe batch 16 /nobackup/scicompsoft/yuTest/GMR/test/alignCmd.sh
+  391  qstat
+  392  ls
+  393  qstat
+  394  ls
+  395  qstat
+  396  ls
+  397  cd ..
+  398  ls
+  399  mkdir submit
+  400  cd submit
+  401  for i in /nobackup/scicompsoft/yuTest/GMR/*sh; do ls $i; done
+  402  for i in /nobackup/scicompsoft/yuTest/GMR/align/*sh; do ls $i; done
+  403  ls
+  404  for i in /nobackup/scicompsoft/yuTest/GMR/align/*sh; do qsub -A dicksonb -b y -cwd -V -pe batch 16 $i; done
+  405  qstat
+  406  ls
+  407  qstat
+  408  ls -lat
+  409  qstat
+  410  ls
+  411  rm *
+  412  ls
+  413  cd ..
+  414  ls
+  415  rm -rf submit/
+  416  ls
+  417  cd ..
+  418  ls
+  419  cd dicksonlab/
+  420  ls
+  421  cd warpJFRC2010and2014/
+  422  ls
+  423  rm *.*o*
+  424  rm *.*e*
+  425  ls
+  426  ls ../
+  427  ls ../../
+  428  ../../vaa3d -x ireg -f resamplebyspacing -i /nobackup/scicompsoft/yuTest/dicksonlab/warpJFRC2010and2014/wfb_btx_template_dpx_rec_c0.nii -o /nobackup/scicompsoft/yuTest/dicksonlab/warpJFRC2010and2014/wfb_btx_template_dpx_rec_ds.nii -p "#x 0.5 #y 0.5 #z 0.5"
+  429  reset
+  430  history
+  431  qsub -A dicksonb -b y -cwd -V -pe batch 16 '/nobackup/scicompsoft/yuTest/dicksonlab/warpJFRC2010and2014/alignCmd.sh' 
+  432  qstat
+  433  ls
+  434  qstat
+  435  qdel 11527504
+  436  rm *.*o*
+  437  rm *.*e*
+  438  mkdir submit
+  439  cd submit/
+  440  qsub -A dicksonb -b y -cwd -V -pe batch 16 '/nobackup/scicompsoft/yuTest/dicksonlab/warpJFRC2010and2014/alignCmd.sh' 
+  441  qstat
+  442  ls
+  443  more alignCmd.sh.o11527505 
+  444  tail alignCmd.sh.o11527505 
+  445  ls
+  446  pwd
+  447  cd ..
+  448  ls
+  449  cd calciumimaging/
+  450  ls
+  451  pwd
+  452  history
+  453  for i in $pwd/sub/align*.sh; do echo $i; done
+  454  for i in $PWD/sub/align*.sh; do echo $i; done
+  455  for i in $PWD/sub/align*.sh; do qsub -A dicksonb -b y -cwd -V -pe batch 16 $i; done
+  456  qstat
+  457  ls
+  458  qstat
+  459  more alignCmd1.sh.o11584391 
+  460  more alignCmd1.sh.e11584391 
+  461  ls
+  462  rm *.*o*
+  463  rm *.*e*
+  464  for i in $PWD/sub/align*.sh; do qsub -A dicksonb -b y -cwd -V -pe batch 16 $i; done
+  465  qstat
+  466  ls
+  467  qstat
+  468  more alignCmd1.sh.o11584416 
+  469  ls /misc/public
+  470  ls /misc/public/Kaiyu2Yang/
+  471  ls /misc/public/Kaiyu2Yang/1495_mflyA_g_7d
+  472  ls /misc/public/Kaiyu2Yang/*
+  473  tail alignCmd1.sh.o11584416 
+  474  qstat
+  475  ls
+  476  ls sub/1
+  477  ls /misc/public/
+  478  ls /misc/public/Kaiyu2Yang/
+  479  ls /misc/public/Kaiyu2Yang/1495_mflyA_g_7d
+  480  cp -r /misc/public/Kaiyu2Yang/ ./
+  481  ls
+  482  rm -rf /misc/public/Kaiyu2Yang/1495_mflyA_g_7d
+  483  rm -rf /misc/public/Kaiyu2Yang/1504_mflyA_g_7d
+  484  rm -rf /misc/public/Kaiyu2Yang/SS01495_mflyC_7d_s
+  485  ls /misc/public/Kaiyu2Yang/
+  486  ls
+  487  rm '/nobackup/scicompsoft/yuTest/dicksonlab/calciumimaging/sub/._.DS_Store' 
+  488  rm '/nobackup/scicompsoft/yuTest/dicksonlab/calciumimaging/sub/.DS_Store' 
+  489  logout
+  490  ls
+  491  ls /misc/public
+  492  ls /misc/public/Yang/
+  493  ls /misc/public/forHideo/
+  494  ls /misc/public/forHideo/JFRC2010/
+  495  cp /misc/public/forHideo/JFRC2010/JFRC2010_16bit.v3draw /nobackup/scicompsoft/yuTest/GMR/
+  496  qlogin
+  497  logout
+  498  cd /nobackup/scicompsoft/yuTest/
+  499  ls
+  500  cd dicksonlab/
+  501  ls
+  502  history
+  503  find . -name *btx*
+  504  ls
+  505  pwd
+  506  cd projects/gcamptemplate/
+  507  ls
+  508  rm *~
+  509  ls
+  510  chmod +x alignCmd*sh
+  511  ls
+  512  cd SS01506/
+  513  ls
+  514  qsub -A dicksonb -b y -cwd -V -pe batch 32 -l haswell=true /nobackup/scicompsoft/yuTest/dicksonlab/projects/gcamptemplate/alignCmd2.sh
+  515  qsub -A dicksonb -b y -cwd -V -pe batch 32 -l haswell=true /nobackup/scicompsoft/yuTest/dicksonlab/projects/gcamptemplate/alignCmd1.sh
+  516  qstat
+  517  ls
+  518  more alignCmd2.sh.o12713727 
+  519  ls /nobackup/scicompsoft/yuTest/dicksonlab/projects/gcamptemplate/SS01506/a/1506_mflyB_b_ds.nii
+  520  ls /nobackup/scicompsoft/yuTest/dicksonlab/projects/gcamptemplate/SS01506/b/1506_mflyB_b_ds.nii
+  521  rm *2.sh*
+  522  ls
+  523  qsub -A dicksonb -b y -cwd -V -pe batch 32 -l haswell=true /nobackup/scicompsoft/yuTest/dicksonlab/projects/gcamptemplate/alignCmd2.sh
+  524  qstat
+  525  logout
+  526  qlogin
+  527  logout
+  528  ls
+  529  ./matlab 
+  530  logout
+  531  ./matlab
+  532  logout
+  533  qlogin
+  534  ls /usr/local/include/*drmaa*
+  535  ls /usr/local
+  536  ls /usr/local/*drma*
+  537  ls /usr/local/*ge*
+  538  echo $PATH
+  539  ls /usr/local/uge_nodes/
+  540  ls /usr/local/uge_nodes/8.2.1
+  541  ls /usr/local/uge_nodes/8.2.1/include
+  542  ls /usr/local/uge_nodes/8.2.1/lib
+  543  ls /usr/local/uge_nodes/8.2.1/lib/lx-amd64/
+  544  ls
+  545  qstat
+  546  qdel 146*
+  547  qdel 14605879
+  548  qstat
+  549  logout
+  550  logout
+  551  qstat
+  552  ls
+  553  echo $GOPATH
+  554  ls
+  555  ls /lhome/yy
+  556  ls /sge/current/
+  557  ls /sge/current/include/
+  558  ls /sge/current/bin
+  559  ls -lat /sge
+  560  ls
+  561  echo $LD_LIBRARY_PATH 
+  562  pwd
+  563  cd work
+  564  ls
+  565  mkdir gocode
+  566  rm -rf gocode/
+  567  mkdir gospace
+  568  cd gospace
+  569  ls
+  570  vim ~/.bashrc
+  571  ls $SGE_ROOT
+  572  ls $SGE_ROOT/lib
+  573  ls /sge/8.2.1/lib/lx-amd64/
+  574  vim ~/.bashrc
+  575  ls /opt/
+  576  ls /home/yuy/work/gospace/
+  577  more ~/.bashrc
+  578  vim ~/.bashrc
+  579  vim ~/.bash_profile
+  580  vim ~/.bashrc
+  581  source ~/.bashrc
+  582  ls
+  583  git clone https://go.googlesource.com/go
+  584  echo $GOPATH
+  585  ls
+  586  cd go
+  587  ls
+  588  cd src
+  589  ls
+  590  ./all.bash
+  591  ls bin
+  592  cd ..
+  593  ls
+  594  ls lib
+  595  ls
+  596  git checkout go1.4.2
+  597  git checkout master
+  598  which go
+  599  ls
+  600  find ./ -name go
+  601  cd src
+  602  ls
+  603  ls cmd
+  604  ls cmd/go
+  605  ls go
+  606  ls
+  607  ./all.bash
+  608  yum list go
+  609  yum list *go*
+  610  cd ..
+  611  ls
+  612  mv ../go1.4.2.linux-amd64.tar.gz ./
+  613  ls
+  614  tar zxvf go1.4.2.linux-amd64.tar.gz 
+  615  ls
+  616  rm go1.4.2.linux-amd64.tar.gz 
+  617  ls
+  618  cd go
+  619  ls
+  620  ls bin
+  621  pwd
+  622  cd src
+  623  ls
+  624  vim all.bash
+  625  ./all.bash
+  626  cd ..
+  627  ls
+  628  ls include/
+  629  mv bin ../
+  630  mv include ../
+  631  ls lib
+  632  ls src
+  633  cd ..
+  634  ls
+  635  ls bin
+  636  which go
+  637  go get golang.org/x/tools/cmd/...
+  638  vim ~/.bashrc
+  639  ls
+  640  cp -r bin go/
+  641  cp -r include go/
+  642  source ~/.bashrc
+  643  go get golang.org/x/tools/cmd/...
+  644  echo $GOROOT
+  645  go get golang.org/x/tools/cmd/godoc
+  646  ls /usr/local/go
+  647  echo $GOROOT
+  648  go get golang.org/x/tools/cmd/godoc
+  649  go get golang.org/x/tools/cmd/...
+  650  ls
+  651  cd go/src
+  652  ls
+  653  ./all.bash
+  654  git pull
+  655  rm -rf *
+  656  ls
+  657  git pull
+  658  cd ..
+  659  git pull
+  660  ls
+  661  cd ..
+  662  ls
+  663  rm -rf go
+  664  git clone https://go.googlesource.com/go
+  665  ls
+  666  cd go
+  667  ls
+  668  cd src
+  669  ls
+  670  pwd
+  671  ls
+  672  ./all.bash
+  673  echo $GOROOT
+  674  vim all.bash
+  675  ./all.bash
+  676  vim make.bash
+  677  ./all.bash
+  678  ls /home/yuy/work/gospace/bin/go
+  679  vim make.bash
+  680  ./all.bash
+  681  echo $GOPATH
+  682  echo $GOROOT
+  683  ls /opt
+  684  vim make.bash
+  685  cd ..
+  686  ls
+  687  cp -r ../bin ./
+  688  cd src
+  689  ls
+  690  ./all.bash 
+  691  GOOS=linux GOARCH=amd64 ./make.bash --no-clean
+  692  go get golang.org/x/tools/cmd/...
+  693  GOOS=linux GOARCH=amd64 go build
+  694  ls /usr/local/
+  695  ls
+  696  go build
+  697  go --version
+  698  go env
+  699  go gopath
+  700  go help 
+  701  go help gopath
+  702  CGO_ENABLED=1 GOOS=linux GOARCH=amd64 go build
+  703  ln -s /home/yuy/work/gospace/go /usr/local/go
+  704  sudo ln -s /home/yuy/work/gospace/go /usr/local/go
+  705  pwd
+  706  cd ..
+  707  ls
+  708  cd ..
+  709  ls
+  710  go get -d github.com/dgruber/drmaa
+  711  which go
+  712  go --version
+  713  ls
+  714  rm -rf go1.4.2.linux-amd64.tar.gz 
+  715  ls
+  716  ls src
+  717  ls
+  718  ls bin
+  719  cd src
+  720  ls
+  721  cd github.com/dgruber/drmaa/
+  722  ls
+  723  go run example/example.go 
+  724  echo $GOROOT
+  725  ls /home/yuy/work/
+  726  ls
+  727  pwd
+  728  ls $GOROOT
+  729  ls
+  730  go --version
+  731  go run example/example.go 
+  732  vim ~/.bashrc
+  733  source ~/.bashrc
+  734  ls
+  735  go run example/example.go
+  736  pwd
+  737  ls
+  738  go
+  739  go run example/example.go
+  740  source ~/.bashrc
+  741  go run example/example.go
+  742  source ~/.bashrc
+  743  go run example/example.go
+  744  reset
+  745  history
+  746  vim ~/.bashrc
+  747  logout
+  748  echo $SGE_ROOT
+  749  cd /sge/8.2.1/
+  750  ls
+  751  cd bin
+  752  ls
+  753  cd lx-amd64/
+  754  ls
+  755  pwd
+  756  cd /lhome/yy
+  757  echo $GOPATH
+  758  qlogin
+  759  cd /nobackup/scicompsoft/yuTest/debugh
+  760  cd /nobackup/scicompsoft/yuTest/debug/
+  761  cd todd
+  762  ls
+  763  ./netpbm-redhat/pamtotiff
+  764  ./netpbm-redhat/bin/pamtotiff
+  765  rm -rf output/*
+  766  ls
+  767  reset
+  768  time sh mipCreator.sh ./output png $PWD/stitched-2171416244194902114.v3draw 0 1 2 1039
+  769  rm -rf output/*
+  770  reset
+  771  time sh mipCreator.sh ./output png $PWD/stitched-2171416244194902114.v3draw 0 1 2 1039
+  772  reset
+  773  time sh mipCreator.sh ./output png $PWD/stitched-2171416244194902114.v3draw 0 1 2 1039
+  774  reset
+  775  time sh mipCreator.sh ./output png $PWD/stitched-2171416244194902114.v3draw 0 1 2 1039
+  776  cd output
+  777  cat stitched-2171416244194902114_signal.ppm | /nobackup/scicompsoft/yuTest/debug/todd/netpbm-redhat//bin/pamtotiff -truecolor > stitched-2171416244194902114_signal.tif
+  778  rm '/nobackup/scicompsoft/yuTest/debug/todd/output/stitched-2171416244194902114_reference.ppm' '/nobackup/scicompsoft/yuTest/debug/todd/output/stitched-2171416244194902114_signal.png' '/nobackup/scicompsoft/yuTest/debug/todd/output/stitched-2171416244194902114_signal.ppm' '/nobackup/scicompsoft/yuTest/debug/todd/output/stitched-2171416244194902114_signal.tif' 
+  779  cd output
+  780  cd ..
+  781  reset
+  782  time sh mipCreator.sh ./output png $PWD/stitched-2171416244194902114.v3draw 0 1 2 1039
+  783  cd output
+  784  ls
+  785  /nobackup/scicompsoft/yuTest/debug/todd/netpbm-redhat//bin/pamtotiff -truecolor stitched-2171416244194902114_signal.ppm > stitched-2171416244194902114_signal.tif
+  786  rm *
+  787  cd ..
+  788  reset
+  789  time sh mipCreator.sh ./output png $PWD/stitched-2171416244194902114.v3draw 0 1 2 1039
+  790  ls
+  791  ls output/
+  792  rm -rf output/*
+  793  reset
+  794  time sh mipCreator.sh ./output png $PWD/stitched-2171416244194902114.v3draw 0 2
+  795  reset
+  796  mkdir output1
+  797  time sh mipCreator.sh ./output1 png $PWD/stitched-2171416244194902114.v3draw 0 2
+  798  mkdir output2
+  799  time sh mipCreator.sh ./output2 png $PWD/stitched-2171416244194902114.v3draw 0 2
+  800  ls
+  801  rm -rf output1
+  802  rm -rf output2
+  803  mkdir output1
+  804  time sh mipCreator.sh ./output2 png $PWD/stitched-2171416244194902114.v3draw 0 2
+  805  ls
+  806  rm -rf output1
+  807  mkdir output1
+  808  ls
+  809  time sh mipCreator.sh ./output1 png $PWD/stitched-2171416244194902114.v3draw 0 2
+  810  cd output
+  811  ls
+  812  ../vaa3d-redhat/vaa3d -x ireg -f iContrastEnhancer -i titched-2171416244194902114_reference.tif  -o titched-2171416244194902114_reference_test1.tif -p "#s 128 #m 5.0" 
+  813  ../vaa3d-redhat/vaa3d -x ireg -f iContrastEnhancer -i stitched-2171416244194902114_reference.tif  -o stitched-2171416244194902114_reference_test1.tif -p "#s 128 #m 5.0" 
+  814  ../vaa3d-redhat/vaa3d -x ireg -f iContrastEnhancer -i stitched-2171416244194902114_reference.tif  -o stitched-2171416244194902114_reference_test2.tif -p "#s 255 #m 5.0" 
+  815  ../vaa3d-redhat/vaa3d -x ireg -f iContrastEnhancer -i stitched-2171416244194902114_reference.tif  -o stitched-2171416244194902114_reference_test3.tif -p "#s 256 #m 5.0" 
+  816  ../vaa3d-redhat/vaa3d -x ireg -f iContrastEnhancer -i stitched-2171416244194902114_reference.tif  -o stitched-2171416244194902114_reference_test3.tif -p "#s 1024 #m 5.0" 
+  817  ../vaa3d-redhat/vaa3d -x ireg -f iContrastEnhancer -i ref.v3draw  -o ref_test1.tif -p " #m 5.0" 
+  818  ../vaa3d-redhat/vaa3d -x ireg -f iContrastEnhancer -i ref.v3draw  -o ref_test1.v3draw -p " #m 5.0" 
+  819  ls
+  820  ../vaa3d-redhat/vaa3d -x ireg -f iContrastEnhancer -i ref.v3draw  -o ref_test1.v3draw -p " #m 5.0" 
+  821  ls
+  822  ../vaa3d-redhat/vaa3d -x ireg -f iContrastEnhancer -i ref.v3draw  -o ref_test2.v3draw -p " #m 5.0" 
+  823  ls
+  824  logout
+  825  pwd
+  826  ls
+  827  uname -a
+  828  reset
+  829  cd /nobackup/scicompsoft/yuTest
+  830  ls
+  831  cd dicksonlab/
+  832  ls
+  833  ls -lat
+  834  cd calciumimaging/
+  835  ls
+  836  ls -lat
+  837  ls  /groups/jacs/jacsDev/servers/jacs-staging/executables/scripts/single_neuron/Toolkits/JBA/brainaligner
+  838  ./brainaligner 
+  839  ls
+  840  gedit align.sh 
+  841  nautilus
+  842  logout
+  843  ls
+  844  exit
+  845  groups
+  846  quit
+  847  logout
+  848  pwd
+  849  ls
+  850  cd /nobackup/
+  851  ls
+  852  ls mousebrainmicro
+  853  ls mousebrainmicro/stitch/
+  854  ls mousebrainmicro/stitch/StitchingFiles/
+  855  ls /nobackup/scicomp
+  856  ls /nobackup/scicompsoft
+  857  ls /nobackup/scicompsoft/yuTest/
+  858  du -sh /nobackup/scicompsoft/yuTest/
+  859  logout
+  860  ls
+  861  ./matlab
+  862  logout
+  863  ./matlab
+  864  logout
+  865  ls /misc/public
+  866  nautilus
+  867  logout
+  868  nautilus
+  869  logout
+  870  pwd
+  871  cd work/
+  872  ls
+  873  ls /misc/public
+  874  cp subject.nii /misc/public/XSJ/
+  875  cp target.nii /misc/public/XSJ/
+  876  ls /misc/public/XSJ/
+  877  logout
+  878  ls
+  879  nautilus
+  880  logout
+  881  ls /misc/public
+  882  ls /misc/public/Fluent2016/
+  883  ls
+  884  ls /lhome
+  885  cp -r /misc/public/Fluent2016/ ./Documents/
+  886  logout
+  887  ls
+  888  ls /groups/flyem/
+  889  ls /groups/flyem/data
+  890  ls /groups/flyem/data/dvid-data
+  891  ls /groups/flyem/data/dvid-data/labelsurf_mac/
+  892  ls /mnt/public
+  893  ls /misc/publid
+  894  ls /misc/public
+  895  mkdir /misc/public/Yang
+  896  cp -r /groups/flyem/data/dvid-data/labelsurf_mac /misc/public/Yang/
+  897  logout
+  898  ls
+  899  ls /groups/flyem/data/dvid-data/labelsurf_mac/
+  900  ls /groups/flyem/data/dvid-data/labelsurf_mac/test-v1/
+  901  du -sh /groups/flyem/data/dvid-data/labelsurf_mac/test-v1/
+  902  du -sh /misc/public/Yang/labelsurf_mac/test-v1/
+  903  logout
+  904  ls
+  905  pwd
+  906  cd /home
+  907  ls
+  908  cd /opt
+  909  ls
+  910  ls /opt/paragt
+  911  ls /opt/users/
+  912  mkdir /opt/Download
+  913  sudo mkdir /opt/Download
+  914  ls /opt/
+  915  ls /groups/flyem/home/zhaot/Work/
+  916  ls /groups/flyem/home/zhaot/Work/neutube_ws
+  917  which qmake
+  918  qmake --version
+  919  echo $PATH
+  920  ls /groups/flyem/home/zhaot/Work/neutube_ws/neurolabi
+  921  ls /opt/
+  922  ls /opt/bin
+  923  ls /groups/flyem/home/zhaot/Work/neutube_ws
+  924  ls /groups/flyem/home/zhaot/Work/
+  925  ls /groups/flyem/home/zhaot/Work/neutube_ws
+  926  ls /groups/flyem/home/zhaot/Work/neutube_ws/neuTube1_0
+  927  ls -lat /groups/flyem/home/zhaot/Work/neutube_ws/
+  928  ls /home/
+  929  glinfo
+  930  logout
+  931  ping paragt-ws1
+  932  ping paragt-ws1.hhmi.org
+  933  ssh paragt-ws1
+  934  ping yuy-ws.hhmi.org
+  935  ping paragt-ws1.hhmi.org
+  936  group
+  937  who
+  938  whoami
+  939  who
+  940  ping paragt-ws.hhmi.org
+  941  ssh -X paragt-ws.hhmi.org
+  942  logout
+  943  ls /misc/public
+  944  ls /misc/public/SJ2Yang/
+  945  pwd
+  946  ls
+  947  cd work/
+  948  ls
+  949  cp -r /misc/public/SJ2Yang/ ./
+  950  ls
+  951  logout
+  952  ls
+  953  cp -r /groups/jacs/jacsShare/yuTest/ ~/work
+  954  ls
+  955  cd work/
+  956  ls
+  957  du -sh yuTest
+  958  ls
+  959  sudo cp -r /groups/jacs/jacsShare/yuTest/Share4Christopher/ /lhome/yy/servers/yuTest
+  960  logout
+  961  ls /nobackup2
+  962  ls
+  963  ls /nobackup2
+  964  cd /nobackup2
+  965  ls
+  966  cd mouselight
+  967  ls
+  968  mkdir yuy
+  969  ls
+  970  ls arthurb/
+  971  du -sh yuy
+  972  ls
+  973  ls 2015-07-11-johan/
+  974  du -sh 2015-07-11-johan/
+  975  du -sh 2015-07-11-johan/*
+  976  tree 2015-07-11-johan/
+  977  tree 2015-07-11-johan/ > yuy/octree.txt
+  978  ls
+  979  cd 2015-07-11-johan/
+  980  ls
+  981  cp default.* ~/Dropbox\ \(HHMI\)/
+  982  ls
+  983  cp calculated_parameters.jl ../yuy/data/
+  984  cp transform.txt ../yuy/data
+  985  ls
+  986  cp -r 3 ../yuy/data
+  987  tree 3
+  988  ls
+  989  pwd
+  990  ls /
+  991  ls /groups/
+  992  which dvid
+  993  which g++
+  994  g++ --version
+  995  ls /usr/bin/
+  996  uname -a
+  997  ifconfig
+  998  logout
+  999  ls
+ 1000  cd /data
+ 1001  ls
+ 1002  cd mouselight/
+ 1003  ls
+ 1004  cd dvidspace/
+ 1005  ls
+ 1006  ps aux | grep dvid
+ 1007  dvid repos new MouseLightDataTest
+ 1008  source /data/dvid-env 
+ 1009  which dvid
+ 1010  dvid repos new MouseLightDataTest
+ 1011  UUID=c7c
+ 1012  dvid repo $UUID new uint8blk grayscale VoxelSize=250.02763671875,251.55907495471,1001.04044117647
+ 1013  dvid help
+ 1014  dvid -rpc=:7401 help
+ 1015  ps aux | grep dvid
+ 1016  more /data/mouselight/dvidspace/config/config826.toml
+ 1017  more /data/dvid-dbs/kvautobus-flyTEM.toml 
+ 1018  vim config/config826.toml 
+ 1019  dvid -rpc=:7401 shutdown
+ 1020  dvid -rpc=:7400 shutdown
+ 1021  reset
+ 1022  dvid -rpc=:7401 repos new MouseLightTest
+ 1023  UUID=0dd
+ 1024  dvid -rpc=:7401 repo $UUID new uint8blk grayscale VoxelSize=250.02763671875,251.55907495471,1001.04044117647
+ 1025  cat config/config826.toml 
+ 1026  ls
+ 1027  du -sh dvidstore
+ 1028  ls
+ 1029  ls config
+ 1030  tail config/august26.log 
+ 1031  more config/august26.log 
+ 1032  du -sh dvidstore
+ 1033  dvid -rpc=:7401 repo $UUID new keyvalue metadata
+ 1034  echo $UUID
+ 1035  ls
+ 1036  dvid -rpc=:7401 -stdin node $UUID metadata put mouselightbranch3 < ~/work/mouselight_2015_07_11_johan.json 
+ 1037  du -sh dvidstore
+ 1038  cat /proc/cpuinfo | grep 'model name' | uniq
+ 1039  lscpu
+ 1040  lsgpu
+ 1041  more /data/mouselight/dvidspace/config/config826.toml
+ 1042  dvid -rpc=:7401 shutdown
+ 1043  pwd
+ 1044  ls
+ 1045  history > historycmd_temdvid1.txt 
