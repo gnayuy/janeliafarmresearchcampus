@@ -1,0 +1,1000 @@
+    7  ls
+    8  cd submitted/
+    9  ls
+   10  qsub -A leet -pe batch 32 -l broadwell=true -j y -b y -cwd -V '/nrs/scicompsoft/yuy/flylight/brains/issue/C6_ZB22_T1_CEN_20140514_19_40X_R1/alignCmd.sh' 
+   11  qstat
+   12  qsub -A leet -pe batch 32 -l broadwell=true -j y -b y -cwd -V '/nrs/scicompsoft/yuy/flylight/brains/issue/C5_ZB21_T1_CEN_20140514_19_40X_R1/alignCmd.sh' 
+   13  qstat
+   14  ls
+   15  mkdir '/nrs/scicompsoft/yuy/flylight/brains/issue/C5_ZB21_T1_CEN_20140514_19_40X_R1/workdir' 
+   16  mkdir '/nrs/scicompsoft/yuy/flylight/brains/issue/C6_ZB22_T1_CEN_20140514_19_40X_R1/workdir' 
+   17  qstat
+   18  qsub -A leet -pe batch 32 -l broadwell=true -j y -b y -cwd -V '/nrs/scicompsoft/yuy/flylight/brains/issue/C5_ZB21_T1_CEN_20140514_19_40X_R1/alignCmd.sh' 
+   19  qsub -A leet -pe batch 32 -l broadwell=true -j y -b y -cwd -V '/nrs/scicompsoft/yuy/flylight/brains/issue/C6_ZB22_T1_CEN_20140514_19_40X_R1/alignCmd.sh' 
+   20  qstat
+   21  ls
+   22  cd ..
+   23  cd heatmap/
+   24  ls
+   25  cd realign/
+   26  ls
+   27  rm *.*o*
+   28  ls
+   29  rm -rf workdir/*
+   30  ls
+   31  rm *~
+   32  ls
+   33  qstat
+   34  qsub -A leet -pe batch 16 -l broadwell=true -j y -b y -cwd -V /nrs/scicompsoft/yuy/heatmap/realign/alignCmd.sh
+   35  qstat
+   36  ls
+   37  qstat
+   38  ls
+   39  rm *.*o*
+   40  ls
+   41  rm -rf workdir/*
+   42  qsub -A leet -pe batch 16 -l broadwell=true -j y -b y -cwd -V /nrs/scicompsoft/yuy/heatmap/realign/alignCmd.sh
+   43  qstat
+   44  ls
+   45  logout
+   46  ls
+   47  qstat
+   48  cd /nrs/scicompsoft/yuy
+   49  ls
+   50  cd heatmap/realign/
+   51  ls
+   52  rm *.*o*
+   53  ls
+   54  rm -rf workdir/*
+   55  ls
+   56  ls workdir/
+   57  history
+   58  qsub -A leet -pe batch 16 -l broadwell=true -j y -b y -cwd -V /nrs/scicompsoft/yuy/heatmap/realign/alignCmd.sh
+   59  qstat
+   60  ls
+   61  history > histcmd.txt
+   62  ls
+   63  qstat
+   64  logout
+   65  qlogin
+   66  qlogin -l broadwell=true
+   67  ls
+   68  pwd
+   69  cd work/
+   70  ls
+   71  mkdir zhengchang
+   72  ls /misc/public/
+   73  ls /misc/public/leiz
+   74  cp -r /misc/public/leiz/yang_demo/ ~/work/zhengchang/
+   75  du -sh zhengchang/
+   76  rm /misc/public/leiz/yang_demo/*
+   77  ls
+   78  pwd
+   79  ls
+   80  logout
+   81  pwd
+   82  cd work/flybrainaligner/
+   83  ls
+   84  git pull
+   85  cd vaa3d/
+   86  ls
+   87  ./build.cmake -h5j install
+   88  pwd
+   89  cd ..
+   90  ls
+   91  cd pipelines/
+   92  ls
+   93  cd brainaligner/
+   94  ls
+   95  cd scripts/
+   96  ls
+   97  cp brainalignPolarityPair_ds_dpx_1024px_INT_v2.sh brainalignPolarityPair_ds_dpx_1024px_INT_v3.sh
+   98  ls
+   99  cd ..
+  100  cd vaa3d/
+  101  ls
+  102  ./build.cmake -h5j install
+  103  find . -name MaskChan.h
+  104  ./build.cmake -h5j install
+  105  git diff
+  106  git add -u
+  107  git commit -m "add mask/chan loading"
+  108  git push
+  109  cd ..
+  110  git pull
+  111  git diff
+  112  cd vaa3d/
+  113  ls
+  114  git diff
+  115  ./build.cmake -h5j install
+  116  git diff
+  117  git add -u
+  118  git commit -m "add mask/chan file I/O"
+  119  git push
+  120  git diff
+  121  ./build.cmake -h5j install
+  122  lscpu
+  123  /nrs/scicompsoft/yuy/Toolkits/Vaa3D/vaa3d -cmd image-loader -convert '/nrs/scicompsoft/yuy/neuronseparation/GMR_76B06_AE_01-20160930_29_E1/original/ConsolidatedLabel.v3dpbd' '/nrs/scicompsoft/yuy/neuronseparation/GMR_76B06_AE_01-20160930_29_E1/original/ConsolidatedLabel.v3draw'
+  124  git diff
+  125  ./build.cmake -h5j install
+  126  git add -u
+  127  git commit -m "fix mask/chan reading by only use mask file"
+  128  git push
+  129  git diff
+  130  git add -u
+  131  git commit -m "remove some testing comments for mask/chan"
+  132  git push
+  133  git diff
+  134  ./build.cmake -h5j install
+  135  ls
+  136  ./build.cmake --help
+  137  ./build.cmake clean
+  138  ./build.cmake clobber
+  139  ./build.cmake -h5j install
+  140  which qmake
+  141  ls /home/yuy/Qt4.7.4/bin/
+  142  export PATH=/home/yuy/Qt4.7.4
+  143  which qmake
+  144  logout
+  145  ls
+  146  cd /nrs/scicompsoft/yuy
+  147  ls
+  148  cd heatmap/
+  149  ls
+  150  cd realign/
+  151  ls
+  152  cd stitched/
+  153  ls
+  154  ls *
+  155  ls -lath *
+  156  ls
+  157  pwd
+  158  cp ../alignCmd.sh ./
+  159  mv alignCmd.sh genAlignScript.sh
+  160  cd ..
+  161  find . -name gen*sh
+  162  more ./flylight/brains/genAlignmentScript.sh
+  163  pwd
+  164  ls
+  165  cd heatmap/realign/
+  166  ls
+  167  cd stitched/
+  168  ls
+  169  sh genAlignScript.sh /nrs/scicompsoft/yuy/heatmap/realign/stitched/TZL_tll-15-BLM00188_D2/stitched-1883982997531656290.v3draw
+  170  ls TZL_tll-15-BLM00188_D2/*
+  171  rm TZL_tll-15-BLM00188_D2/alignCmd.sh 
+  172  rm TZL_tll-15-BLM00188_D2/workdir/
+  173  rm -rf TZL_tll-15-BLM00188_D2/workdir/
+  174  for i in /nrs/scicompsoft/yuy/heatmap/realign/stitched/*/*.v3draw; do echo $i; done
+  175  for i in /nrs/scicompsoft/yuy/heatmap/realign/stitched/*/*.v3draw; do sh genAlignScript.sh $i; done
+  176  ls
+  177  ls *
+  178  qstat
+  179  history > histcmd.txt
+  180  grep qsub histcmd.txt 
+  181  for i in /nrs/scicompsoft/yuy/heatmap/realign/stitched/*/*.sh; do echo $i; done
+  182  for i in /nrs/scicompsoft/yuy/heatmap/realign/stitched/*/*.sh; do qsub -A leet -pe batch 32 -l broadwell=true -j y -b y -cwd -V $i; done
+  183  qstat
+  184  ls
+  185  qstat
+  186  logout
+  187  qlogin
+  188  logout
+  189  ls /misc/public
+  190  ls /misc/public/leiz
+  191  ls /misc/public/leiz/templateMatch/
+  192  ls /misc/public/leiz/templateMatch/*12*
+  193  cp /misc/public/leiz/templateMatch/*12* ~/work/
+  194  logout
+  195  ls /misc/public/leiz
+  196  ls /misc/public/leiz/templateMatch/
+  197  ls /misc/public/leiz/templateMatch/*13*marker
+  198  cp /misc/public/leiz/templateMatch/*13*marker ./
+  199  pwd
+  200  logout
+  201  cp ~/work/blended13.v3draw /misc/public/leiz/templateMatch/
+  202  logout
+  203  mv ~/work/blended12.v3draw /misc/public/leiz/templateMatch/
+  204  pwd
+  205  logout
+  206  cp /misc/public/leiz/templateMatch/*14* ~/work/
+  207  cp /home/yuy/work/blended14.v3draw /misc/public/leiz/templateMatch/
+  208  logout
+  209  cd /misc/public/Ying-Jou/
+  210  ls
+  211  cd heatmap/
+  212  ls
+  213  du -sh stitched/
+  214  rm -rf stitched/
+  215  ls
+  216  logout
+  217  crontab -l
+  218  exit
+  219  ps aux | grep dvid
+  220  ls
+  221  cd /data/mouselight/
+  222  ls
+  223  cd dvidspace/
+  224  ls
+  225  more runDVID.sh 
+  226  grep shutdown historycmd_temdvid.txt 
+  227  grep shutdown historycmd_temdvid1.txt 
+  228  dvid -rpc=:7401 shutdown
+  229  source dvid-env 
+  230  dvid -rpc=:7401 shutdown
+  231  ps aux | grep dvid
+  232  ls
+  233  cd ..
+  234  du -sh dvidspace/
+  235  logout
+  236  mkdir tem-dvid
+  237  ls
+  238  cd /data/mouselight/
+  239  ls
+  240  cp -r dvidspace/ ~/tem-dvid/
+  241  ls
+  242  ls dvidspace/
+  243  logout
+  244  echo $PATH
+  245  which qmake
+  246  export PATH=/home/yuy/Qt4.7.4/bin:$PATH
+  247  which qmake
+  248  qmake --version
+  249  pwd
+  250  cd work/flybrainaligner/vaa3d/
+  251  ./build.cmake -h5j install
+  252  echo $LD_LIBRARY_PATH 
+  253  export LD_LIBRARY_PATH=/home/yuy/Qt4.7.4/lib:$LD_LIBRARY_PATH 
+  254  ./build.cmake --help
+  255  ./build.cmake clobber
+  256  ./build.cmake -h5j install
+  257  ./build.cmake --help
+  258  ./build.cmake clobber
+  259  ./build.cmake -h5j install
+  260  git diff
+  261  git add -u
+  262  git commit -m "add test codes for loading v3dpbd file"
+  263  git push
+  264  uname -a
+  265  ls /proc
+  266  ls /proc/sys
+  267  ls /proc/sys/kernel
+  268  cat /proc/version 
+  269  gcc --version
+  270  cd ..
+  271  git pull
+  272  git diff
+  273  git pull
+  274  git diff
+  275  git add -u
+  276  git commit -m "fix v3dpbd 16-bit reading issues on Scientific Linux 7.2 by Mark"
+  277  git push
+  278  cd vaa3d/
+  279  ls
+  280  ./build.cmake -h5j install
+  281  ./build.cmake clobber
+  282  ./build.cmake -h5j install
+  283  which qmak3e
+  284  which qmake
+  285  ./build.cmake -h5j install
+  286  git diff
+  287  ./build.cmake -h5j install
+  288  git diff
+  289  git add -u
+  290  git commit -m "fix qstring converted to const char* and remove test codes"
+  291  git push
+  292  git diff
+  293  cd ..
+  294  git diff
+  295  cd vaa3d/
+  296  git diff
+  297  cd ..
+  298  git diff
+  299  ls
+  300  cd pipelines/
+  301  ls
+  302  cd brainaligner/
+  303  ls
+  304  cd scripts/
+  305  ls
+  306  git add brainalignPolarityPair_ds_dpx_1024px_INT_v3.sh
+  307  git commit -m "update v3 for 63x partial brain alignment"
+  308  git push
+  309  cd ..
+  310  git diff
+  311  logout
+  312  qlogin -l broadwell=true
+  313  logout
+  314  pwd
+  315  cd /nrs/scicompsoft/yuy
+  316  ls
+  317  cd neuronseparation/
+  318  ls
+  319  cd GMR_*E1
+  320  ls
+  321  ls align
+  322  mv aligned failure
+  323  ls
+  324  ls failure/
+  325  ls temp/
+  326  mv temp/ failure/
+  327  ls
+  328  mkdir submission
+  329  cd submission/
+  330  history > histcmd.txt
+  331  grep qsub histcmd.txt 
+  332   qsub -A flylight -pe batch 32 -l broadwell=true -j y -b y -cwd -V /nrs/scicompsoft/yuy/neuronseparation/GMR_76B06_AE_01-20160930_29_E1/alignCmdTest.sh
+  333  qstat
+  334  ls
+  335  qstat
+  336  ls ../workdir/
+  337  ls ../workdir/temp/
+  338  ls
+  339  qstat
+  340  cd ..
+  341  ls
+  342  cp alignCmdTest.sh alignCmdTest1.sh
+  343  mkdir workdir1
+  344  ls
+  345  vim alignCmdTest1.sh 
+  346  ls
+  347  cd submission/
+  348  ls
+  349   qsub -A flylight -pe batch 32 -l broadwell=true -j y -b y -cwd -V /nrs/scicompsoft/yuy/neuronseparation/GMR_76B06_AE_01-20160930_29_E1/alignCmdTest1.sh
+  350  qstat
+  351  ls
+  352   qsub -A flylight -pe batch 32 -l broadwell=true -j y -b y -cwd -V /nrs/scicompsoft/yuy/neuronseparation/GMR_76B06_AE_01-20160930_29_E1/alignCmdTest.sh
+  353   qsub -A flylight -pe batch 32 -l broadwell=true -j y -b y -cwd -V /nrs/scicompsoft/yuy/neuronseparation/GMR_76B06_AE_01-20160930_29_E1/alignCmdTest1.sh
+  354  qstat
+  355  qdel 14796656
+  356  qstat
+  357  qdel 14798626
+  358  rm -rf ../workdir1
+  359  mkdir ../workdir1
+  360   qsub -A flylight -pe batch 32 -l broadwell=true -j y -b y -cwd -V /nrs/scicompsoft/yuy/neuronseparation/GMR_76B06_AE_01-20160930_29_E1/alignCmdTest1.sh
+  361  qstat
+  362  ls
+  363  qstat
+  364  which qmake
+  365  qstat
+  366  pwd
+  367  ls
+  368  rm *.*o*
+  369  ls
+  370  rm ../workdir1/
+  371  mv ../workdir1/ ../workdir1old
+  372  mkdir ../workdir1
+  373   qsub -A flylight -pe batch 32 -l broadwell=true -j y -b y -cwd -V /nrs/scicompsoft/yuy/neuronseparation/GMR_76B06_AE_01-20160930_29_E1/alignCmdTest1.sh
+  374  qstat
+  375  ls
+  376  rm *.*o*
+  377  ls
+  378  ls ../workdir1
+  379  rm -rf ../workdir1
+  380  mkdir ../workdir1
+  381   qsub -A flylight -pe batch 32 -l broadwell=true -j y -b y -cwd -V /nrs/scicompsoft/yuy/neuronseparation/GMR_76B06_AE_01-20160930_29_E1/alignCmdTest1.sh
+  382  cd ..
+  383  ls
+  384  cd heatmap/
+  385  ls
+  386  cd realign/
+  387  ls
+  388  cd stitched/
+  389  ls
+  390  rm *.*o*
+  391  ls
+  392  ls */workdir/
+  393  ls */workdir/Brains
+  394  rm -rf */workdir/
+  395  ls
+  396  history >> histcmd.txt 
+  397  tail histcmd.txt 
+  398  grep qsub histcmd.txt 
+  399  ls
+  400  ls *
+  401  ls
+  402  for i in */; do echo $i; done
+  403  for i in */; do echo $i/workdir; done
+  404  for i in */; do mkdir $i/workdir; done
+  405  pwd
+  406  for i in /nrs/scicompsoft/yuy/heatmap/realign/stitched/alignCmd.sh; do ls $i; done
+  407  for i in /nrs/scicompsoft/yuy/heatmap/realign/stitched/*/alignCmd.sh; do ls $i; done
+  408  for i in /nrs/scicompsoft/yuy/heatmap/realign/stitched/*/alignCmd.sh; do  qsub -A leet -pe batch 32 -l broadwell=true -j y -b y -cwd -V $i; done
+  409  qstat
+  410  rm -rf */workdir/
+  411  ls
+  412  rm *.*o*
+  413  ls
+  414  for i in */; do mkdir $i/workdir; done
+  415  for i in /nrs/scicompsoft/yuy/heatmap/realign/stitched/*/alignCmd.sh; do  qsub -A leet -pe batch 32 -l broadwell=true -j y -b y -cwd -V $i; done
+  416  cd ..
+  417  ls
+  418  cd neuronseparation/
+  419  ls
+  420  cd GMR_76B06_AE_01-20160930_29_E1/
+  421  ls
+  422  cd submission/
+  423  ls
+  424  rm -rf ../workdir1
+  425  mkdir ../workdir1
+  426  qstat
+  427   qsub -A flylight -pe batch 32 -l broadwell=true -j y -b y -cwd -V /nrs/scicompsoft/yuy/neuronseparation/GMR_76B06_AE_01-20160930_29_E1/alignCmdTest1.sh
+  428  qstat
+  429   qsub -A flylight -pe batch 32 -l broadwell=true -j y -b y -cwd -V /nrs/scicompsoft/yuy/neuronseparation/GMR_76B06_AE_01-20160930_29_E1/alignCmdTest1.sh
+  430  qdel 15459887
+  431  qstat
+  432  pwd
+  433  qstat
+  434   qsub -A flylight -pe batch 32 -l broadwell=true -j y -b y -cwd -V /nrs/scicompsoft/yuy/neuronseparation/GMR_76B06_AE_01-20160930_29_E1/alignCmdTest1.sh
+  435  ls
+  436  qstat
+  437  ls
+  438  pwd
+  439  time cp -r ../../../heatmap/realign/stitched/ /misc/public/Ying-Jou/heatmap/
+  440  ls
+  441  ls /misc/public/Ying-Jou/
+  442  ls /misc/public/Ying-Jou/heatmap/
+  443  time cp -r ../../../heatmap/stitched/stitched /misc/public/Ying-Jou/heatmap/
+  444  ls ../../../heatmap/realign/
+  445  ls ../../../heatmap/realign/stitched/stitched/
+  446  time cp -r ../../../heatmap/realign/stitched/stitched/ /misc/public/Ying-Jou/heatmap/
+  447  ls /misc/public/Ying-Jou/heatmap/
+  448  ls /misc/public/Ying-Jou/heatmap/stitched/
+  449  ls
+  450  cd ..
+  451  ls
+  452  cd ..
+  453  cd heatmap/
+  454  cd realign/
+  455  ls
+  456  mkdir submission
+  457  cd submission/
+  458  history > histcmd.txt
+  459  grep qsub histcmd.txt 
+  460  for i in /nrs/scicompsoft/yuy/heatmap/realign/alignedproblem1/*/alignCmd.sh; do  qsub -A leet -pe batch 32 -l broadwell=true -j y -b y -cwd -V $i; done
+  461  for i in /nrs/scicompsoft/yuy/heatmap/realign/alignedproblem2/*/alignCmd.sh; do  qsub -A leet -pe batch 32 -l broadwell=true -j y -b y -cwd -V $i; done
+  462  qstat
+  463  ls
+  464  cd ..
+  465  ls
+  466  ls alignedproblem1
+  467  ls
+  468  cp -r alignedproblem1 /misc/public/Ying-Jou/heatmap/
+  469  ls
+  470  ls /misc/public/Ying-Jou/heatmap/
+  471  du -sh /misc/public/Ying-Jou/heatmap/alignedproblem1/
+  472  rm -rf /misc/public/Ying-Jou/heatmap/alignedproblem1/
+  473  cp -r alignedproblem1/alignedproblem1/ /misc/public/Ying-Jou/heatmap/
+  474  cp -r alignedproblem2/alignedproblem2/ /misc/public/Ying-Jou/heatmap/
+  475  ls /groups/jacs/jacsDev/devstore/flylight/Alignment/114/728/2379771818866114728/align/
+  476  ls /groups/jacs/jacsDev/devstore/flylight/Alignment/114/728/2379771818866114728/align/sge_config/
+  477  ls /groups/jacs/jacsDev/devstore/flylight/Alignment/114/728/2379771818866114728/align/sge_config/alignCmd.sh 
+  478  more /groups/jacs/jacsDev/devstore/flylight/Alignment/114/728/2379771818866114728/align/sge_config/alignCmd.sh 
+  479  /groups/jacs/jacsD
+  480  ls /groups/jacs/jacsDev/servers/foster-ws/executables/scripts/single_neuron/Toolkits
+  481  ls -lath /groups/jacs/jacsDev/servers/foster-ws/executables/scripts/single_neuron/Toolkits
+  482  ls -l /groups/jacs/jacsDev/servers/foster-ws/gitfiles/branch/janelia-workstation/compute/scripts/single_neuron/Toolkits/Vaa3D
+  483  cd ..
+  484  ls
+  485  cd brainaligner/
+  486  ls
+  487  more run_configured_aligner.sh
+  488  cd ..
+  489  ls /misc/public/leiz
+  490  ls /misc/public/leiz/templateMatch/
+  491  ls /misc/public/leiz/templateMatch/*15*
+  492  cp /misc/public/leiz/templateMatch/*15* ~/work/
+  493  cp ~/work/blended15.v3draw /mis
+  494  ls ~/work/blended1*
+  495  rm ~/work/blended1*
+  496  ls ~/work/*15*
+  497  rm ~/work/*15*marker
+  498  ls /misc/public/leiz/templateMatch/
+  499  qstat
+  500  qstat -u fosterl
+  501  logout
+  502  qlogin
+  503  logout
+  504  ls /groups/jacs/jacsDev/devstore/flylight/Separation/993/320/2381338157778993320/separate/sge_config/neuSepCmd.sh
+  505  logout
+  506  qlogin
+  507  lscpu
+  508  lsgpu
+  509  deviceQuery
+  510  ls /usr/local/
+  511  ls /usr/local/cuda-8.0/
+  512  ls /usr/local/cuda-8.0/NVIDIA_CUDA-8.0_Samples/
+  513  ls /usr/local/cuda-7.5/
+  514  ls /usr/local/cuda-7.5/samples/
+  515  ls /usr/local/cuda
+  516  ls /usr/local/cuda/bin
+  517  ls /usr/local/cuda/NVIDIA_CUDA-8.0_Samples/
+  518  ls /usr/local/cuda/NVIDIA_CUDA-8.0_Samples/common/
+  519  ls /usr/local/cuda/NVIDIA_CUDA-8.0_Samples/
+  520  cd /nrs/scicompsoft/yuy
+  521  ls
+  522  cd debug
+  523  ls
+  524  mkdir neuronseparation
+  525  cd neuronseparation/
+  526  cp /groups/jacs/jacsDev/devstore/flylight/Separation/606/056/2381950331165606056/separate/sge_config/neuSepCmd.sh ./
+  527  cp /groups/jacs/jacsDev/devstore/flylight/Separation/606/056/2381950331165606056/separate/sge_config/* ./
+  528  ls
+  529  more neuSepCmd.s
+  530  more neuSepCmd.sh
+  531  ls
+  532  more neuSepConfiguration.1 
+  533  cp /groups/jacs/jacsDev/devstore/flylight/Alignment/537/640/2381888005154537640/align/Brains/Aligned63xScale.v3dpbd ./
+  534  cp /groups/jacs/jacsDev/devstore/flylight/Alignment/537/640/2381888005154537640/align/Neurons/NeuronAligned63xScale.v3dpbd ./
+  535  ls
+  536  cd ..
+  537  ls
+  538  ls /groups/jacs/jacsDev/devstore/flylight/Alignment/537/640/2381888005154537640/align
+  539  ls
+  540  mkdir align
+  541  ls
+  542  cd align
+  543  cp /groups/jacs/jacsDev/devstore/flylight/Alignment/537/640/2381888005154537640/align/sge_config/alignCmd.sh ./
+  544  ls
+  545  cp /groups/jacs/jacsDev/devstore/flylight/Alignment/537/640/2381888005154537640/align/sge_config/* ./
+  546  ls
+  547  more alignConfiguration.1 
+  548  more alignCmd.sh 
+  549  /groups/jacs/jacsDev/devstore/flylight/Sample/197/352/2380202371327197352/merg
+  550  ls /groups/jacs/jacsDev/devstore/flylight/Sample/197/352/2380202371327197352/merge/tile-2380202371935371432.v3draw
+  551  cp /groups/jacs/jacsDev/devstore/flylight/Sample/197/352/2380202371327197352/merge/tile-2380202371935371432.v3draw ./
+  552  ls /groups/jacs/jacsDev/devstore/flylight/Separation/667/176/2380204145018667176/separate/ConsolidatedLabel.v3dpbd
+  553  cp /groups/jacs/jacsDev/devstore/flylight/Separation/667/176/2380204145018667176/separate/ConsolidatedLabel.v3dpbd ./
+  554  ls
+  555  pwd
+  556  history >> histcmd.txt 
+  557  grep qsub histcmd.txt 
+  558  pwd
+  559  ls
+  560  qsub -A flylight -pe batch 32 -l broadwell=true -j y -b y -cwd -V /nrs/scicompsoft/yuy/debug/align/alignCmd.sh
+  561  qstat
+  562  ls
+  563  qstat
+  564  ls
+  565  ls workdir/
+  566  ls workdir/Neurons/
+  567  ls
+  568  pwd
+  569  ls ..
+  570  ls ../neuronseparation/
+  571  cd ../neuronseparation/
+  572  cp ../align/workdir/Neurons/NeuronAligned63xScale.v3draw ./
+  573  cp ../align/workdir/Brains/Aligned63xScale.v3draw ./
+  574  ls
+  575  more neuSepCmd.sh
+  576  ls /groups/jacs/jacsDev/servers/foster-ws/executables/scripts/single_neuron
+  577  ls /groups/jacs/jacsDev/servers/foster-ws/executables/scripts/single_neuron/BrainAligner/
+  578  ls /groups/jacs/jacsDev/servers/foster-ws/executables/scripts/
+  579  ls /groups/jacs/jacsDev/servers/foster-ws/executables/scripts/brainaligner/
+  580  ls /groups/jacs/jacsDev/servers/foster-ws/executables/scripts/brainaligner/systemvars.apconf 
+  581  diff /groups/jacs/jacsDev/servers/foster-ws/executables/scripts/brainaligner/systemvars.apconf ~/work/flybrainaligner/pipelines/brainaligner/scripts/systemvars.apconf 
+  582  vim ~/work/flybrainaligner/pipelines/brainaligner/scripts/systemvars.apconf 
+  583  diff /groups/jacs/jacsDev/servers/foster-ws/executables/scripts/brainaligner/systemvars.apconf ~/work/flybrainaligner/pipelines/brainaligner/scripts/systemvars.apconf 
+  584  vim ~/work/flybrainaligner/pipelines/brainaligner/scripts/systemvars.apconf 
+  585  diff /groups/jacs/jacsDev/servers/foster-ws/executables/scripts/brainaligner/systemvars.apconf ~/work/flybrainaligner/pipelines/brainaligner/scripts/systemvars.apconf 
+  586  pwd
+  587  cd ..
+  588  mkdir Toolkits/CMTK
+  589  ls Toolkits/CMTK
+  590  ls Toolkits/CMTK/bin
+  591  ls Toolkits/
+  592  diff Toolkits/ANTS/ANTS Toolkits/ANTS_old/ANTS 
+  593  ls -l  Toolkits/ANTS/ANTS Toolkits/ANTS_old/ANTS 
+  594  ldd -l Toolkits/ANTS/ANTS 
+  595  ldd Toolkits/ANTS/ANTS 
+  596  ldd Toolkits/ANTS_old/ANTS 
+  597  ls
+  598  /home/yuy/work/cmtk3/registration
+  599  Toolkits/CMTK/bin/registration
+  600  Toolkits/CMTK/bin/registration --version
+  601  ldd Toolkits/CMTK/bin/registration
+  602  pwd
+  603  ls
+  604  cd registration/
+  605  ls
+  606  more brainAlignerJfrc2010Cmtk.sh
+  607  ls
+  608  ls reformatted/
+  609  ls -lath reformatted/
+  610  ls
+  611  history >> histcmd.txt
+  612  grep qsub histcmd.txt 
+  613  mkdir submission
+  614  cd submission/
+  615  for i in /nrs/scicompsoft/yuy/registration/images/*; do echo $i; done
+  616  for i in /nrs/scicompsoft/yuy/registration/images/*/alignCmd.sh; do echo $i; done
+  617  for i in /nrs/scicompsoft/yuy/registration/images/*/alignCmd.sh; do ls $i; done
+  618  for i in /nrs/scicompsoft/yuy/registration/images/*/alignCmd.sh; do qsub -A dicksonb -pe batch 32 -l broadwell=true -j y -b y -cwd -V $i; done
+  619  qstat
+  620  history 
+  621  cd /nrs/scicompsoft/yuy
+  622  cd registration/
+  623  ls
+  624  vim genAlignScript.sh 
+  625  more genAlignScript.sh 
+  626  ls
+  627  gedit genAlignScript.sh 
+  628  ls images
+  629  ls images/*/alignCmd.sh
+  630  ls images/*/reformatted
+  631  ls
+  632  ls images
+  633  pwd
+  634  ls VT005002_AE_01-20131024_33_I1/images
+  635  ls images/VT005002_AE_01-20131024_33_I1/images
+  636  pwd
+  637  cd ..
+  638  qstat
+  639  lgout
+  640  logout
+  641  qlogin
+  642  logout
+  643  cat /etc/issue.net
+  644  uname -a
+  645  cat /etc/lsb-release
+  646  cat /etc/redhat-release
+  647  logout
+  648   cat /etc/lsb-release
+  649  cat /etc/issue.net
+  650  qlogin
+  651  cat /etc/redhat-release
+  652  logout
+  653  cd /nrs/scicompsoft/yuy
+  654  ls
+  655  cd larvalreg/
+  656  ls
+  657  cd Confocal_63X_2014-09-15_Br/
+  658  ls
+  659  cd stack_TIFF/
+  660  ls
+  661  ls affine.txt/
+  662  mv affine.txt/ affine.xform/
+  663  ls
+  664  ls affine.xform/
+  665  more affine.xform/registration 
+  666  which warp
+  667  more ../../../
+  668  more ../../../registration/brainAlignerJfrc2010Cmtk.sh
+  669  CMTKDIR=/nrs/scicompsoft/yuy/Toolkits/CMTK/bin
+  670  CMTKALIGNER=${CMTKDIR}/munger
+  671  $CMTKDIR/warp
+  672  qlogin
+  673  pwd
+  674  cd /nrs/scicompsfot/yuy/
+  675  ls /nrs/scicompsoft/yuy
+  676  ls
+  677  cd /nrs/scicompsoft/yuy
+  678  ls
+  679  cd larvalreg/Confocal_63X_2014-09-15_Br/stack_TIFF/
+  680  ls
+  681  CMTKDIR=/nrs/scicompsoft/yuy/Toolkits/CMTK/bin
+  682  $CMTKDIR/warp
+  683  $CMTKDIR/registration
+  684  time $CMTKDIR/warp -o ffd80.xform --grid-spacing 80 --exploration 30 --coarsest 4 --accuracy 0.8 --refine 4 --energy-weight 1e-1 --initial affine.xform Ers_rs_c0.nii Aga_rs_c0.nii 
+  685  time $CMTKDIR/warp -o ffd80.xform --grid-spacing 80 --exploration 30 --coarsest 4 --accuracy 0.8 --refine 4 --energy-weight 1e-1 --initial affine.xform Ers_rs_c0.nii Aga_rs_c0.nii  -v
+  686  time $CMTKDIR/warp -o ffd80.xform --grid-spacing 80 --exploration 30 --coarsest 4 --accuracy 0.8 --refine 4 --energy-weight 1e-1 --initial affine.xform Ers_rs_c0.nii Aga_rs_c0.nii
+  687  qlogin
+  688  cd /nrs/scicompsoft/yuy
+  689  ls
+  690  cd larvalreg/Confocal_63X_2014-09-15_Br/stack_TIFF/
+  691  ls
+  692  more ../../../registration/brainAlignerJfrc2010Cmtk.sh
+  693  CMTKDIR=/nrs/scicompsoft/yuy/Toolkits/CMTK/bin
+  694  $CMTKDIR/reformatx
+  695  time $CMTKDIR/reformatx -o Aga_rs_ga.nii --floating Aga_rs_c0.nii Ers_rs_c0.nii affine.xform
+  696  ls /groups/larvalscreen
+  697  ls /groups/larvalscreen/SingleNeuron
+  698  logout
+  699  cd ~/work/flybrainaligner/
+  700  ls
+  701  cd vaa3d/
+  702  cd ..
+  703  git pull
+  704  git diff
+  705  cd
+  706  cd /nrs/scicompsys/yuy/
+  707  cd /nrs/scicompsoft/yuy/larvalreg/
+  708  ls
+  709  cd Confocal_63X_2014-09-15_Br/test/
+  710  ls
+  711  sh process1.sh E.nii A.nii
+  712  ln -s Edsgf_rs_c0.nii Edsgfrs.nii
+  713  cd images/
+  714  ls
+  715  mv Adsgfga_rs_c0.nii Adsgfgars.nii
+  716  ls
+  717  cd ..
+  718  CMTKDIR=/nrs/scicompsoft/yuy/Toolkits/CMTK/bin
+  719  CMTKALIGNER=${CMTKDIR}/munger
+  720  $CMTKALIGNER -v -b $CMTKDIR -a -w -r 0102030405 -X 26 -C 8 -G 80 -R 4 -A '--accuracy 0.8' -W '--accuracy 2' -T 16 -s ${FBase}dsgfrs.nii images
+  721  time $CMTKALIGNER -v -b $CMTKDIR -a -w -r 0102030405 -X 26 -C 8 -G 80 -R 4 -A '--accuracy 0.8' -W '--accuracy 2' -T 16 -s Edsgfrs.nii images
+  722  ls images
+  723  time $CMTKALIGNER -v -b $CMTKDIR -a -w -r 0102030405 -X 26 -C 8 -G 80 -R 4 -A '--accuracy 0.8' -W '--accuracy 2' -T 16 -s Edsgfrs.nii images
+  724  ls
+  725  time $CMTKALIGNER -v -b $CMTKDIR -a -w -r 0102030405 -X 26 -C 8 -G 80 -R 4 -A '--accuracy 0.8' -W '--accuracy 2' -T 16 -s Edsgfrs.nii images
+  726  logout
+  727  qlogin
+  728  logout
+  729  echo  $FSLOUTPUTTYPE
+  730  logout
+  731  echo  $FSLOUTPUTTYPE
+  732  qlogin
+  733  logout
+  734  cd work/NeuronSeparator/
+  735  ls
+  736  mkdir build
+  737  cd build/
+  738  ccmake ..
+  739  make -j8
+  740  ccmake ..
+  741  ls ..
+  742  ls ../mylib
+  743  cd ../mylib
+  744  ls
+  745  make -j8
+  746  make -f Makefile 
+  747  more Makefile 
+  748  make all
+  749  make mylib
+  750  ls
+  751  cd ..
+  752  ls
+  753  cd build/
+  754  ccmake ..
+  755  make
+  756  ls /usr/local/lib
+  757  ls /usr/local/
+  758  ls /usr/local/lib64
+  759  ls /usr/local/lib
+  760  ls /usr/lib64/libtiff.so
+  761  ldd /usr/lib64/libtiff.so
+  762  ls
+  763  cd ..
+  764  ls
+  765  logout
+  766  qlogin
+  767  logout
+  768  lscpu
+  769  cd work/flybrainaligner/
+  770  ls
+  771  cd vaa3d/
+  772  ls
+  773  ./build.cmake -h5j install
+  774  ls
+  775  ./build.cmake -h5j install
+  776  lscpu
+  777  cd work/
+  778  ls
+  779  which ANTS
+  780  cd /nrs/scicompsys/yuy
+  781  ls
+  782  cd /nrs/scicompsys/yuy
+  783  cd /nrs/scicompsoft/yuy
+  784  ls
+  785  cd leiz
+  786  ls
+  787  mv ~/work/add2* ./
+  788  ls
+  789  ln -s /nrs/scicompsoft/yuy/Toolkits/ANTS/ANTS ./
+  790  ls
+  791  echo $ITK_GLOBAL_DEFAULT_NUMBER_OF_THREADS 
+  792  export ITK_GLOBAL_DEFAULT_NUMBER_OF_THREADS=32
+  793  echo $ITK_GLOBAL_DEFAULT_NUMBER_OF_THREADS 
+  794  F=add2.nii.gz 
+  795  M=add2jfrc2013.nii.gz 
+  796  time ANTS 3 -m CC[ $F, $M, 1, 4] -t SyN[0.5] -r Gauss[3, 0.5] -i 100x70x50 -o ./ccAdd
+  797  time ./ANTS 3 -m CC[ $F, $M, 1, 4] -t SyN[0.5] -r Gauss[3, 0.5] -i 100x70x50 -o ./ccAdd
+  798  time ./ANTS 3 -m CC[ $F, $M, 1, 4] -t SyN[0.5] -r Gauss[3, 0.5] -i 100x70x50x0 -o ./ccAdd
+  799  ls
+  800  vim alignCmd.sh
+  801  pwd
+  802  ls
+  803  ls on
+  804  ls
+  805  rm -rf on
+  806  ls
+  807  gedit alignCmd.sh 
+  808  echo $ITK_GLOBAL_DEFAULT_NUMBER_OF_THREADS 
+  809  pwd
+  810  ls /nrs/scicompsoft/yuy/Toolkits/ANTS/ANTS
+  811  ls
+  812  chmod 755 alignCmd.sh
+  813  ls
+  814  qsub -A kelemank -pe batch 32 -l haswell=true -j y -b y -cwd -V /nrs/scicompsoft/yuy/leiz/alignCmd.sh
+  815  qstat
+  816  ls
+  817  more alignCmd.sh.o19156371 
+  818  qstat
+  819  tail alignCmd.sh.o19156371 
+  820  qstat
+  821  ls
+  822  /nrs/scicompsoft/yuy/Toolkits/ANTS/WarpImageMultiTransform 3 add2jfrc2013.nii.gz add2jfrc2013_warped.nii.gz -R add2.nii.gz ccAddWarp.nii.gz ccAddAffine.txt --use-BSpline
+  823  qlogin -l haswell=true
+  824  qstat
+  825  qlogin -l haswell=true
+  826  ls -l /groups/jacs/jacsDev/servers/foster-ws/executables/scripts/single_neuron/Toolkits
+  827  ls /groups/jacs/jacsDev/devstore/nerna/Sample/037/224/2395040914453037224/stitch/stitched-2254921476522115109.v3draw
+  828  ls /groups/jacs/jacsDev/devstore/nerna/Sample/246/952/2395207538032246952/merge/tile-2395207538241962152.v3draw
+  829  logout
+  830  ls /misc/public/leiz
+  831  ls /misc/public/leiz/templateMatch/
+  832  cd work/
+  833  ls mask_*
+  834  cp mask_* /misc/public/leiz/templateMatch/
+  835  ls -l /groups/jacs/jacsHosts/servers/jacs-data4/executables/scripts/single_neuron/Toolkits
+  836  logout
+  837  cd /misc/public/leiz
+  838  ls
+  839  cd templateMatch/
+  840  ls
+  841  ls MBCresults/
+  842  ls
+  843  pwd
+  844  cd Gcamp2017_lobes/
+  845  ls
+  846  cp GCaMP2017_fullMB_g_7.tif ~/work/
+  847  ls
+  848  cd ..
+  849  ls
+  850  cp mask_g_aligned.v3draw ~/work/
+  851  ls
+  852  mv mask_g_aligned.v3draw mask_g_aligned_old.v3draw 
+  853  cp /home/yuy/work/mask_g_aligned.v3draw ./
+  854  ls
+  855  logout
+  856  uname -a
+  857  lscpu
+  858  lsb_release -a
+  859  cd work/flybrainaligner/jba/
+  860  ls
+  861  mkdir build
+  862  cd build/
+  863  ccmake ..
+  864  make -j8
+  865  ls ../../
+  866  cd ..
+  867  ls
+  868  ls vaa3d/
+  869  ls vaa3d/v3d_main/
+  870  ln -s vaa3d/v3d_main/basic_c_fun/ ./
+  871  ls
+  872  cd jba/build/
+  873  make -j8
+  874  ls
+  875  ls c++
+  876  ls newmat11/
+  877  ls
+  878  ls c++
+  879  cd ..
+  880  ls
+  881  find . -name jba
+  882  cd c++
+  883  ls
+  884  cd ..
+  885  ls
+  886  cd build/
+  887  ls
+  888  cd c++
+  889  ls
+  890  make 
+  891  cd ..
+  892  cd c++
+  893  ls
+  894  make -f jba.makefile 
+  895  ls ../../
+  896  cd ..
+  897  ln -s vaa3d/v3d_main/ ./
+  898  ls
+  899  cd jba/c++
+  900  make -f jbs.makefile
+  901  ls
+  902  make -f jba.makefile 
+  903  ls
+  904  cd ..
+  905  ls
+  906  cd ..
+  907  ls
+  908  cd vaa3d/
+  909  ls
+  910  cd v3d_main/
+  911  ls
+  912  cd jba
+  913  ls
+  914  ls c++
+  915  cd c++
+  916  make -f jba.makefile 
+  917  ls
+  918  ls ../
+  919  ls
+  920  make -j8
+  921  ls
+  922  cd ..
+  923  ls
+  924  cd newmat11/
+  925  ls
+  926  cd ..
+  927  ls
+  928  gedit README_jba 
+  929  ls
+  930  cd c++
+  931  ls
+  932  make
+  933  cd ..
+  934  ls
+  935  diff c++ ~/work/flybrainaligner/jba/c++
+  936  cd ..
+  937  git pull
+  938  ls
+  939  rm basic_c_fun/
+  940  ls
+  941  rm v3d_main/
+  942  ls
+  943  git pull
+  944  ls
+  945  ls jba
+  946  rm -rf jba
+  947  git diff
+  948  git pull
+  949  ls
+  950  rm basic_c_fun/
+  951  rm -rf basic_c_fun/
+  952  ls
+  953  ls vaa3d/
+  954  ls vaa3d/v3d_main/
+  955  ls
+  956  git pull
+  957  cd vaa3d/v3d_main/
+  958  ls
+  959  ls basic_c_fun/
+  960  git pull
+  961  git diff
+  962  ls
+  963  cd ..
+  964  gi
+  965  ls
+  966  pwd
+  967  ls
+  968  cd ..
+  969  ls
+  970  cd flybrainaligner
+  971  ls
+  972  cd vaa3d/
+  973  ls
+  974  ./build.cmake -h5j install
+  975  dos2unix build.cmake
+  976  git diff
+  977  pwd
+  978  git pull
+  979  git diff
+  980  ls
+  981  ./build.cmake -h5j install
+  982  which qmake
+  983  export PATH=/home/yuy/Qt4.7.4/bin:$PATH
+  984  export LD_LIBRARY_PATH=/home/yuy/Qt4.7.4/lib:$LD_LIBRARY_PATH 
+  985  ./build.cmake -h5j install
+  986  /usr/lib64/qt4/demos
+  987  ls /usr/lib64/qt4/demos
+  988  ls /usr/lib64/qt4/
+  989  ls /usr/lib64/qt4/bin
+  990   /usr/lib64/qt4/bin/qmake --version
+  991  export QT_DEMO_PREFIX=/home/yuy/Qt4.7.4/demos
+  992  ./build.cmake -h5j install
+  993  which qmake
+  994  qmake --version
+  995  ls
+  996  ./build.cmake -h5j install -DQT_DEMO_PREFIX=/home/yuy/Qt4.7.4/demos
+  997  echo $PATH
+  998  echo $LD_LIBRARY_PATH 
+  999  which qmake
+ 1000  logout
+ 1001  which qmake
+ 1002  echo $PATH
+ 1003  history
+ 1004  pwd
+ 1005  ls
+ 1006  history >> histcmd.txt

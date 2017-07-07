@@ -1,0 +1,5 @@
+    1  export HOME=/home/yuy
+    2  source ~/.bashrc
+    3  ls
+    4  ls historycmd.txt 
+    5  history > historycmd1.txt 

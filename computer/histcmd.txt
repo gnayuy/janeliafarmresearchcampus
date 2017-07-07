@@ -1,0 +1,223 @@
+    1  export HOME=/home/yuy
+    2  source ~/.bashrc
+    3  which flirt
+    4  ls /lhome/yy/work/tools/fsl
+    5  ls /lhome/yy/work/tools/fsl/etc
+    6  ls /lhome/yy/work/tools/fsl/etc/fslconf
+    7  gedit /lhome/yy/work/tools/fsl/etc/fslconf/fsl.sh
+    8  ls
+    9  cd work
+   10  ls
+   11  cd flybrainaligner/
+   12  ls
+   13  gi
+   14  ls
+   15  ls vaa3d/
+   16  ls /nrs/scicompsoft/yuy/
+   17  ls vaa3d/
+   18  ls vaa3d/v3d_main/
+   19  ls vaa3d/bin/
+   20  ls vaa3d/
+   21  pwd
+   22  cd
+   23  cd work/flybrainaligner/
+   24  ls
+   25  ls vaa3d/
+   26  gi
+   27  ls
+   28  ls vaa3d/
+   29  git diff
+   30  ls
+   31  mkdir pipelines
+   32  mkdir pipelines/merge
+   33  mkdir pipelines/stitch
+   34  mkdir pipelines/brainaligner
+   35  cd pipelines/merge/
+   36  ls
+   37  cp /groups/jacs/jacsHosts/servers/jacs-data2/executables/scripts/single_neuron/MergePipeline/imgMerge.sh ./
+   38  gedit imgMerge.sh 
+   39  cp '/nrs/scicompsoft/yuy/flylight/mergeCmd.sh' ./
+   40  cp '/nrs/scicompsoft/yuy/flylight/genMergeScript.sh' ./
+   41  ls
+   42  vim README.md
+   43  more README.md 
+   44  cd ..
+   45  cd stitch/
+   46  ls
+   47  cp '/nrs/scicompsoft/yuy/flylight/stitchCmd.sh' ./
+   48  cp '/nrs/scicompsoft/yuy/flylight/genStitchScript.sh' ./
+   49  vim README.md
+   50  cd ..
+   51  ls
+   52  cd brainaligner/
+   53  ls
+   54  cp '/nrs/scicompsoft/yuy/brainaligner/systemvars.apconf' ./
+   55  cp '/nrs/scicompsoft/yuy/brainaligner/README.txt' ./
+   56  cp '/nrs/scicompsoft/yuy/brainaligner/common.sh' ./
+   57  cp '/nrs/scicompsoft/yuy/brainaligner/createVerificationMovie.sh' ./
+   58  cd ..
+   59  git add pipelines/
+   60  git commit -m "add pipelines"
+   61  git push
+   62  git pull
+   63  git push
+   64  git diff
+   65  git pull
+   66  ls
+   67  git pull
+   68  pwd
+   69  ls /groups/jacs/jacsHosts/servers/jacs-data4/executables/scripts/single_neuron/BrainAligner/
+   70  ls /groups/jacs/jacsHosts/servers/jacs-data4/executables/scripts/single_neuron/
+   71  ls /groups/jacs/jacsHosts/servers/jacs-data4/executables/scripts/single_neuron/MergePipeline/
+   72  ls /groups/jacs/jacsHosts/servers/jacs-data4/executables/scripts/single_neuron/MergePipeline/imgMerge.sh 
+   73  ls /groups/jacs/jacsHosts/servers/jacs-data4/executables/scripts/single_neuron/FijiMacros/
+   74  ls /groups/jacs/jacsHosts/servers/jacs-data4/executables/scripts/single_neuron/LsmTools/
+   75  ls /groups/jacs/jacsHosts/servers/jacs-data4/executables/scripts/single_neuron/NeuronSeparator/
+   76  pwd
+   77  cd ..
+   78  cp -r /groups/jacs/jacsHosts/servers/jacs-data4/executables/scripts ./
+   79  ls
+   80  ls scripts/
+   81  ls scripts/single_neuron/
+   82  ls scripts/brainaligner
+   83  pwd
+   84  ls
+   85  ls scripts/
+   86  ls -lath
+   87  pwd
+   88  rm scripts/
+   89  rm -rf scripts/
+   90  ls
+   91  ls scripts/
+   92  rm scripts/
+   93  rm -L scripts/
+   94  rm scripts
+   95  ls
+   96  cp -r /groups/jacs/jacsHosts/servers/jacs/executables/scripts_5.1.0 ./scripts
+   97  ls scripts/
+   98  cd flybrainaligner/
+   99  cd pipelines/brainaligner/
+  100  ls
+  101  cp '/home/yuy/work/scripts/single_neuron/BrainAligner/run_configured_aligner.sh' ./
+  102  ls
+  103  git pull
+  104  git add run_configured_aligner.sh 
+  105  git commit -m "add run_configured_aligner.sh"
+  106  git commit -m "add config to brainaligner"
+  107  git push
+  108  ls
+  109  git pull
+  110  cp run_configured_aligner.sh /nrs/scicompsoft/yuy/brainaligner/
+  111  which flirt
+  112  cp /lhome/yuy/work/tools/fsl/bin/flirt /nrs/scicompsoft/yuy/ToolkitsTest/FSL/
+  113  pwd
+  114  gedit
+  115  pwd
+  116  ls
+  117  git pull
+  118  git diff
+  119  diff run_configured_aligner.sh /nrs/scicompsoft/yuy/brainaligner/run_configured_aligner.sh
+  120  cp /nrs/scicompsoft/yuy/brainaligner/run_configured_aligner.sh ./
+  121  git diff
+  122  git add -u
+  123  git commit -m "updates run_configured_aligner.sh"
+  124  git commit -m "updates pipeline conf"
+  125  git push
+  126  git diff
+  127  cd ..
+  128  ls
+  129  mkdir toolkits
+  130  cd toolkits/
+  131  mkdir linux-x86_64
+  132  ls
+  133  cd linux-x86_64/
+  134  ls
+  135  mkdir qt
+  136  cd qt
+  137  cp -r /groups/jacs/jacsHosts/servers/jacs/executables/Qt-4.7.4-redhat ./
+  138  ls
+  139  du -sh Qt-4.7.4-redhat/
+  140  mv Qt-4.7.4-redhat/ Qt4.7.4
+  141  ls
+  142  cd Qt4.7.4/
+  143  ls
+  144  du -sh *
+  145  ls doc
+  146  du -sh doc/*
+  147  rm -rf doc/html/
+  148  ls
+  149  cd ..
+  150  du -sh Qt4.7.4/
+  151  tar -czvf Qt4.7.4.tar.gz Qt4.7.4/
+  152  ls
+  153  ls -lath
+  154  du -sh Qt4.7.4/*
+  155  rm -rf Qt4.7.4/doc/
+  156  rm Qt4.7.4.tar.gz 
+  157  tar -czvf Qt4.7.4.tar.gz Qt4.7.4/
+  158  ls -lath
+  159  rm -rf Qt4.7.4
+  160  ls
+  161  cd .
+  162  cd ..
+  163  ls
+  164  mkdir FSL
+  165  mkdir ANTS
+  166  ls
+  167  ls /nrs/scicompsoft/yuy/Toolkits/
+  168  ls /nrs/scicompsoft/yuy/Toolkits/FSL/
+  169  cp /nrs/scicompsoft/yuy/Toolkits/FSL/flirt FSL/
+  170  cp /nrs/scicompsoft/yuy/Toolkits/ANTS/* ANTS/
+  171  ls
+  172  ls FSL
+  173  ls ANTS/
+  174  cp -r /nrs/scicompsoft/yuy/Toolkits/JBA/ ./
+  175  ls
+  176  ls JBA/
+  177  ls qt
+  178  ls
+  179  cd ..
+  180  ls
+  181  cd ..
+  182  ls
+  183  cd flybrainaligner/
+  184  ls
+  185  git add toolkits
+  186  git commit -m "add binary tools compiled in Linux"
+  187  git push
+  188  ls
+  189  git pull
+  190  pwd
+  191  cd
+  192  cd 
+  193  ls
+  194  cd debug
+  195  ls
+  196  ls workdir/
+  197  ls workdir/temp/
+  198  ls workdir/temp/Outputs/
+  199  ls
+  200  ls Toolkits/
+  201  ls Toolkits/Vaa3D/
+  202  ls -l Toolkits/Vaa3D/
+  203  Toolkits/Vaa3D/vaa3d -cmd image-loader -convert '/home/yuy/debug/configured_templates/wfb_atx_template_ori.tif' '/home/yuy/debug/configured_templates/wfb_atx_template_ori.v3dpbd'  
+  204  Toolkits/Vaa3D/vaa3d -cmd image-loader -convert '/home/yuy/debug/configured_templates/wfb_atx_template_rec.tif' '/home/yuy/debug/configured_templates/wfb_atx_template_rec.v3dpbd' 
+  205  which nail
+  206  time nail -f imageReadWrite -i '/home/yuy/debug/configured_templates/wfb_atx_template_ori.tif' -o '/home/yuy/debug/configured_templates/wfb_atx_template_ori.nii.gz' 
+  207  nail -f help
+  208  nail -v
+  209  which nail
+  210  nail --version
+  211  pwd
+  212  ls
+  213  Toolkits/Vaa3D/vaa3d -h
+  214  Toolkits/Vaa3D/vaa3d -x ireg -f splitColorChannels -i '/nrs/scicompsoft/yuy/flylight/brains/B4_ZB10_T1_CEN_20160318_24_40X_R1.v3draw' 
+  215* Toolkits/Vaa3D/vaa3d -x ireg -f mergeColorChannels -i '/nrs/scicompsoft/yuy/flylight/brains/B4_ZB10_T1_CEN_20160318_24_40X_R1_c0.v3draw' '/nrs/scicompsoft/yuy/flylight/brains/B4_ZB10_T1_CEN_20160318_24_40X_R1_c1.v3draw' '/nrs/scicompsoft/yuy/flylight/brains/B4_ZB10_T1_CEN_20160318_24_40X_R1_c2.v3draw' -
+  216  ls -l test.
+  217  ls -l test.v3draw 
+  218  ls
+  219  more test.sh
+  220  ls workdir/
+  221  ls
+  222  Toolkits/Vaa3D/vaa3d -x ireg -f zmip -i test.v3draw -o testmip.tif
+  223  history >> histcmd.txt
